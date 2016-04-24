@@ -1,4 +1,5 @@
 var mosca = require('mosca')
+var globalCounter = 0;
 
 var database = {
   type: 'redis',
@@ -26,7 +27,8 @@ server.on('clientConnected', function(client) {
 
 // fired when a message is received
 server.on('published', function(packet, client) {
-  console.log('Published', packet.payload);
+  var unixtimestamp =   Math.round(new Date().getTime()/1000);
+  console.log((globalCounter++).toString(), 'Published', packet.payload, unixtimestamp);
 });
 
 // fired when the mqtt server is ready
