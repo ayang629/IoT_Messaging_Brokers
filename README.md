@@ -32,7 +32,7 @@ To run server:
 	
 To launch clients:
 
-	$ clients.sh [simple | mqttjs] [num_clients] [QoS]
+	$ clients.sh [simple | mqttjs] [num_clients] [msgs_per_client] [QoS]
 
 	e.g: 
 

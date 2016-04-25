@@ -12,7 +12,7 @@ case "$1" in
 ("mosca") #prepare mosca configuration
 	echo "Preparing mosca server..."
 	redis-server --daemonize yes #run as daemon so server can be executed
-	node brokers/mosca_server.js
+	node brokers/mosca_server.js 2>&1 | tee broker_output.txt
 ;;
 ("mosquitto") #preparing mosquitto configuration
 	echo "Preparing mosquitto server..."
