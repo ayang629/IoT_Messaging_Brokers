@@ -1,9 +1,10 @@
 # IoT_Messaging_Brokers
 
-To come: 
-	script to run installations/configurations on PI's
+To come
 
-	script to plug in data analysis document
+	- script to run installations/configurations on PI's
+
+	- script to plug in data analysis document
 
 REQUIREMENTS:
 
@@ -27,7 +28,10 @@ REQUIREMENTS:
 	
 	
 The servers take one of 3 options: mosca, mosquitto, and ponte.
-The mosca server will take whatever information it receives and output it into a data file called data.txt.
+The mosca broker will take whatever information it receives and output it into a data file called mosca_output.txt.
+The ponte broker will launch brokers and listen for messages from HTTP, MQTT, and COAP and output data into ponte_output.txt
+The mosquitto broker will launch and take whatever information it receives and output data into mosquitto_output.txt
+
 To terminate the server, simply provide a SIGINT (ctrl-c) command, which will trigger a trap to clean up the background 
 process (i.e: the redis server).
 
@@ -40,9 +44,7 @@ To run server:
 	$ ./servers.sh mosca
 
 	
-The clients take one of 3 options: simple (bare-mosquitto calls), mqttjs, and paho. Currently only the mqttjs client is 
-implemented. The num_clients argument determines how many clients the clients.sh script will run at once, and the 
-msgs_per_client represents the number of messages each client will attempt to publish. 
+The clients take one of 3 options: simple (bare-mosquitto calls), mqttjs, and paho. Currently only the mqttjs and simple paho client are implemented. The num_clients argument determines how many clients the clients.sh script will run at once, and the msgs_per_client represents the number of messages each client will attempt to publish. 
 
 To launch clients:
 
