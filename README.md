@@ -2,28 +2,31 @@
 
 To come: 
 	script to run installations/configurations on PI's
+
 	script to plug in data analysis document
 
 REQUIREMENTS:
 
 	bash - >3
 
-	mosca - 1.*.* (for mosca broker)
+	mosca - 1.*.* (for mosca broker; files should be included in node_modules directory)
 
-	mosquitto - 1.4.* (for mosquitto server/simple client)
+	mosquitto - 1.4.* (Either go to mosquitto.org or use brew install mosquitto if you have homebrew)
 
-	mqtt - 3.*.*
+	mqtt - 3.*.* 
 
-	nodejs - 4.*.*
+	mqttjs - 1.9.* (files should be already included in node_modules directory)
 
-	ponte - 0.0.16 (for ponte broker)
+	nodejs - 4.*.* (go to nodejs.org to install)
+
+	ponte - 0.0.16 (for ponte broker; run npm install ponte bunyan -g to install globally)
 
 	python - 2.7+ (for paho)
 
-	redis - 3.*.* (for mosca/ponte)
+	redis - 3.*.* (for mosca/ponte; go to redis.io and download the latest stable version)
 	
 	
-The servers take one of 3 options: mosca, mosquitto, and ponte. Currently, only the mosca server is implemented.
+The servers take one of 3 options: mosca, mosquitto, and ponte.
 The mosca server will take whatever information it receives and output it into a data file called data.txt.
 To terminate the server, simply provide a SIGINT (ctrl-c) command, which will trigger a trap to clean up the background 
 process (i.e: the redis server).

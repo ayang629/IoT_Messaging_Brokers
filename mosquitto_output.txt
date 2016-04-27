@@ -1,0 +1,4 @@
+1461736438: mosquitto version 1.4.8 (build date 2016-02-14 11:22:37-0800) starting
+1461736438: Config loaded from brokers/broker_config.conf.
+1461736438: Opening ipv4 listen socket on port 1883.
+1461736438: Opening ipv6 listen socket on port 1883.

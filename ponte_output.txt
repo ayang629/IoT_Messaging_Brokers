@@ -1,0 +1,3 @@
+{"name":"Config Test Logger","hostname":"Andrews-MacBook-Pro-2.local","pid":647,"service":"MQTT","level":30,"mqtt":1883,"msg":"server started","time":"2016-04-27T05:54:30.087Z","v":0}
+{"name":"Config Test Logger","hostname":"Andrews-MacBook-Pro-2.local","pid":647,"service":"HTTP","level":30,"port":3000,"msg":"server started","time":"2016-04-27T05:54:30.095Z","v":0}
+{"name":"Config Test Logger","hostname":"Andrews-MacBook-Pro-2.local","pid":647,"service":"CoAP","level":30,"port":3000,"msg":"server started","time":"2016-04-27T05:54:30.096Z","v":0}
