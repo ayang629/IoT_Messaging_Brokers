@@ -1,18 +1,26 @@
 var mqtt    = require('mqtt');
 var client  = mqtt.connect({ host: '192.168.0.10', port: 1883 });
-var numPublishes = parseInt(process.argv.slice(2));
+var process = require('process');
  
 client.on('connect', function () {
-  client.subscribe('presence');
-  while(numPublishes--){
-  	var randMsg = Math.floor(Math.random() * 10000000) + 1;  
-  	client.publish('presence', randMsg.toString(), {qos:2});
-  }
-  client.end();
+  	var clientType = process.argv.slice(2)[0];
+  	console.log(clientType);
+  	if (clientType == "pub"){
+		client.subscribe('presence');
+		var numPublishes = parseInt(process.argv.slice(2)[2]);
+		while(numPublishes--){ 
+		  	var pidBuffer = new Buffer(process.pid.toString());
+		  	client.publish('presence', pidBuffer, {qos:parseInt(process.argv.slice(2)[1])});
+		}
+		client.end();
+	}else{
+		console.log("implement sub fxnality");
+	}
 });
+
  
 client.on('message', function (topic, message) {
   // message is Buffer 
-  console.log(message.toString());
-  client.end();
+  var unixtimestamp =  Math.round(new Date().getTime()/1000);
+  console.log('Published', message.toString(), unixtimestamp);
 });

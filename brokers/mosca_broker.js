@@ -1,4 +1,6 @@
-var mosca = require('mosca')
+var mosca = require('mosca'),
+    mqtt    = require('mqtt-packet'),
+    parser    = mqtt.parser();
 var globalCounter = 0;
 
 var database = {
@@ -22,13 +24,23 @@ var server = new mosca.Server(moscaSettings);
 server.on('ready', setup);
 
 server.on('clientConnected', function(client) {
-    console.log('client connected', client.id);     
+    var unixtimestamp =   Math.round(new Date().getTime()/1000);
+    console.log('CLIENT_CONN', client.id, client.subscriptions, unixtimestamp);     
 });
 
 // fired when a message is received
 server.on('published', function(packet, client) {
   var unixtimestamp =   Math.round(new Date().getTime()/1000);
-  console.log((globalCounter++).toString(), 'Published', packet.payload, unixtimestamp);
+  if((packet.payload) instanceof Buffer){
+    console.log("CLIENT_PUB", (globalCounter++).toString() , packet.payload.toString(), unixtimestamp);
+  }else{
+    console.log("CLIENT_ACTION" , packet.topic, packet.payload, unixtimestamp);
+  }
+});
+
+server.on('subscribed', function(topic, client) {
+  var unixtimestamp =   Math.round(new Date().getTime()/1000);
+  console.log("CLIENT_SUB", topic, client.id, unixtimestamp);
 });
 
 // fired when the mqtt server is ready

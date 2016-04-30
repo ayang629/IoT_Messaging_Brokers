@@ -1,3 +1,5 @@
-{"name":"Config Test Logger","hostname":"Andrews-MacBook-Pro-2.local","pid":647,"service":"MQTT","level":30,"mqtt":1883,"msg":"server started","time":"2016-04-27T05:54:30.087Z","v":0}
-{"name":"Config Test Logger","hostname":"Andrews-MacBook-Pro-2.local","pid":647,"service":"HTTP","level":30,"port":3000,"msg":"server started","time":"2016-04-27T05:54:30.095Z","v":0}
-{"name":"Config Test Logger","hostname":"Andrews-MacBook-Pro-2.local","pid":647,"service":"CoAP","level":30,"port":3000,"msg":"server started","time":"2016-04-27T05:54:30.096Z","v":0}
+{"name":"Config Test Logger","hostname":"dhcp-v025-149.mobile.uci.edu","pid":839,"service":"MQTT","level":30,"mqtt":1883,"msg":"server started","time":"2016-04-27T15:02:14.474Z","v":0}
+{"name":"Config Test Logger","hostname":"dhcp-v025-149.mobile.uci.edu","pid":839,"service":"HTTP","level":30,"port":3000,"msg":"server started","time":"2016-04-27T15:02:14.482Z","v":0}
+{"name":"Config Test Logger","hostname":"dhcp-v025-149.mobile.uci.edu","pid":839,"service":"CoAP","level":30,"port":3000,"msg":"server started","time":"2016-04-27T15:02:14.482Z","v":0}
+{"name":"Config Test Logger","hostname":"dhcp-v025-149.mobile.uci.edu","pid":839,"service":"MQTT","level":30,"msg":"server closed","time":"2016-04-27T15:04:14.441Z","v":0}
+server stopped

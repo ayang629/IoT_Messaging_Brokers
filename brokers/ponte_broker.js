@@ -29,6 +29,10 @@ var opts = {
 };
 var server = ponte(opts);
  
+server.on("connect", function(client, buffer){
+  console.log("Server connected", client, buffer);
+});
+
 server.on("updated", function(resource, buffer) {
   console.log("Resource Updated", resource, buffer);
 });

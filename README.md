@@ -51,11 +51,14 @@ To launch clients:
 	NOTE: The QoS option, while present, is not functioning yet and may/may not be included in the command line call.
 	 	  Regardless, the script will still function.
 
-	$ ./clients.sh [simple | mqttjs | paho] [num_clients] [msgs_per_client] [QoS]
+	$ ./clients.sh [simple | mqttjs] [pub | sub] [num_clients] [QoS] [msgs_per_client]
+
+	   [msgs_per_client argument only needed if pub is given as argument 2]
 
 	e.g: 
 
-	$ ./clients.sh mqttjs 50 1000 0
+	$ ./clients.sh mqttjs pub 50 2 1000 
+	$ ./clients.sh mqttjs sub 25 1
 	
 
 
