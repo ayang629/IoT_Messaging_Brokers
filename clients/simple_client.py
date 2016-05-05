@@ -2,12 +2,12 @@ import paho.mqtt.client as mqtt
 import sys
 
 class MQTT_Client:
-	def __init__(self, num_msgs):
+	def __init__(self, num_msgs, ip_addr):
 		self.client = mqtt.Client()
 		self.client.on_connect = self.on_connect
 		self.client.on_message = self.on_message
 		self.num_msgs = num_msgs
-		self.client.connect("192.168.0.10", 1883, 60)
+		self.client.connect(ip_addr, 1883, 180)
 		print "Client connected!"
 
 	def run(self):
@@ -27,5 +27,6 @@ class MQTT_Client:
 
 if __name__ == "__main__":
 	num_msgs = sys.argv[1]
-	client = MQTT_Client(num_msgs)
+	ip_addr = sys.argv[2]
+	client = MQTT_Client(num_msgs, ip_addr)
 	client.run()
