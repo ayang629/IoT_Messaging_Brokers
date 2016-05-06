@@ -11,11 +11,13 @@ client.on('connect', function () {
 		while(numPublishes--){ 
 		  	var pidBuffer = new Buffer(process.pid.toString());
 		  	var unixtimestamp =  Math.round(new Date().getTime()/1000);
-  			console.log('PUB', pidBuffer.toString(), unixtimestamp);
+  			console.log('PUB', topic, pidBuffer.toString(), unixtimestamp);
 		  	client.publish(topic, pidBuffer, {qos:parseInt(qos)});
 		}
 	}else if(clientType == "sub"){
 		var subTopic = topic;
+		var unixtimestamp =  Math.round(new Date().getTime()/1000);
+		console.log('SUB', subTopic, unixtimestamp)
 		client.subscribe(subTopic, {qos:parseInt(qos)});
 	}
 });
@@ -24,5 +26,5 @@ client.on('connect', function () {
 client.on('message', function (topic, message, packet) {
   // message is Buffer 
   var unixtimestamp =  Math.round(new Date().getTime()/1000);
-  console.log('SUB', message.toString(), unixtimestamp);
+  console.log('RECV', message.toString(), unixtimestamp);
 });

@@ -54,12 +54,12 @@ else
 fi
 
 
-if [[ "$EXP_TYPE" -eq "throughput" ]]; then
+if [[ "$EXP_TYPE" == "throughput" ]]; then #Option throughput: run throughput experiment
 	echo "Running throughput experiment..."
 	NUM_SUBS=`expr $NUM_TOPICS / $SUBS_PER_TOPIC`
 	TOPIC_NAMES=()
 	TOPIC="topic"
-	if [[ "$MULTIPURPOSE" -eq "no" ]]; then
+	if [[ "$MULTIPURPOSE" == "no" ]]; then
 		for i in $(seq 1 1 "$NUM_SUBS") #first launch clients that are subscribers
 		do
 			TOPIC="$TOPIC$i"
@@ -68,10 +68,11 @@ if [[ "$EXP_TYPE" -eq "throughput" ]]; then
 			TOPIC_NAMES+=($TOPIC)
 			TOPIC="topic"
 		done
+		sleep 5
 		for j in $(seq 0 1 "`expr $NUM_SUBS - 1`") #launch publishers to publish messages to clients
 		do
 			MSGS_PER_CLIENT=`expr $MSGS_PER_TOPIC / $PUBS_PER_TOPIC`
-			bash clients.sh "$CLIENT_TYPE" pub "$PUBS_PER_TOPIC" "$QOS" "$TOPIC" "$MSGS_PER_CLIENT" "$j" &
+			bash clients.sh "$CLIENT_TYPE" pub "$PUBS_PER_TOPIC" "$QOS" "${TOPIC_NAMES[$j]}" "$MSGS_PER_CLIENT" "$j" &
 			CLIENT_PIDS+=($!)
 		done
 	else

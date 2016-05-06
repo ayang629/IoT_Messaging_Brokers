@@ -71,15 +71,12 @@ To run client experiment:
 
 To launch clients in subgroup:
 
-	NOTE: The QoS option, while present, is not functioning yet and may/may not be included in the command line call.
-	 	  Regardless, the script will still function.
-
 	$ ./clients.sh [simple | mqttjs] [pub | sub] [num_clients] [QoS] [topic] [num_msgs (ONLY IF PUB chosen)]
 
 	e.g: 
 
 	$ ./clients.sh mqttjs pub 50 2 test_topic 1000 1
-	
+
 	$ ./clients.sh mqttjs sub 25 1 test_topic 1
 	
 
