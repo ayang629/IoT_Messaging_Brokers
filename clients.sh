@@ -14,6 +14,9 @@ if [[ "$CLIENT_TYPE" == "pub" ]]; then
 	FILE_INC=$7
 elif [[ "$CLIENT_TYPE" == "sub" ]]; then
 	FILE_INC=$6
+elif [[ "$CLIENT_TYPE" == "multi" ]]; then
+	NUM_MSGS=$6
+	FILE_INC=$7
 fi
 
 trap ctrl_c INT
@@ -44,8 +47,16 @@ case "$CLIENT" in
 	do
 		NUM_BASE=$(expr $FILE_INC \* $i)
 		NUM_INC=$(expr $NUM_BASE + $i)
-		echo "Writing output to clientLogs/$CLIENT_TYPE$NUM_INC.txt"
-		node clients/mqtt_client.js "$CLIENT_TYPE" "$QOS" "$NUM_MSGS" "$TOPIC" "$IP_ADDR" 2>&1 | tee "clientLogs/$CLIENT_TYPE$NUM_INC.txt" &
+		if [[ "$CLIENT_TYPE" == "pub" ]]; then
+			echo "Launching publisher..."
+			node clients/mqtt_client.js "$CLIENT_TYPE" "$QOS" "$NUM_MSGS" "$TOPIC" "$IP_ADDR" 2>&1 | tee "pubLogs/$CLIENT_TYPE$NUM_INC.txt" &
+		elif [[ "$CLIENT_TYPE" == "sub" ]]; then
+			echo "Launching subscriber..."
+			node clients/mqtt_client.js "$CLIENT_TYPE" "$QOS" "$NUM_MSGS" "$TOPIC" "$IP_ADDR" 2>&1 | tee "subLogs/$CLIENT_TYPE$NUM_INC.txt" &
+		elif [[ "$CLIENT_TYPE" == "multi" ]]; then
+			echo "Launching multipurpose..."
+			node clients/mqtt_client.js "$CLIENT_TYPE" "$QOS" "$NUM_MSGS" "$TOPIC" "$IP_ADDR" 2>&1 | tee "multiLogs/$CLIENT_TYPE$NUM_INC.txt" &
+		fi	
 		CLIENT_PIDS+=($!)
 	done		
 	#echo "All clients launched. Script will sleep for 180 seconds."

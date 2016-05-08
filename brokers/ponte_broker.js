@@ -1,13 +1,12 @@
 var ponte = require("ponte");
+var ascoltatori = require('ascoltatori');
+
 var opts = {
-  logger: {
-    level: 'info'
-  },
   http: {
     port: 3000 // tcp 
   },
   mqtt: {
-    port: 1883 // tcp 
+    port: 3001 // tcp 
   },
   coap: {
     port: 3000 // udp 
@@ -19,7 +18,8 @@ var opts = {
   },
   broker: {
     // same as https://github.com/mcollina/ascoltatori#redis
-    type: "redis",
+    type: "mqtt",
+    port: 1883,
     host: "localhost"
   },
   logger: {
@@ -34,7 +34,8 @@ server.on("connect", function(client, buffer){
 });
 
 server.on("updated", function(resource, buffer) {
-  console.log("Resource Updated", resource, buffer);
+  var unixtimestamp =   Math.round(new Date().getTime());
+  console.log("CLIENT_PUB", resource, buffer.toString(), unixtimestamp);
 });
  
 // Stop the server after 1 minute 

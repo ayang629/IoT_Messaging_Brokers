@@ -26,6 +26,7 @@ REQUIREMENTS:
 
 	redis - 3.*.* (for mosca/ponte; go to redis.io and download the latest stable version)
 		
+	other Node-related dependencies are included in the package.json (downloaded into the node_modules folder)
 
 The servers take one of 3 options: mosca, mosquitto, and ponte.
 The mosca broker will take whatever information it receives and output it into a data file called mosca_output.txt.
@@ -64,14 +65,42 @@ To run client experiment:
 
 		subscribers_per_topic: The number of clients that will subscribe to a topic
 
-		multipurpose_clients: [yes | no], will tell script to dynamically configure all clients to act as a publisher and a subscriber. NOT IMPLEMENTED YET. 
+		multipurpose_clients: [yes | no], will tell script to dynamically configure all clients to act as a publisher and a subscriber.
 
 		client_type: Specify what type of client you want to implement
+
+To test different server experiments: (Currently, only the mqttjs clients provide correct experiment output)
+
+	Pure Mosquitto: (Pure, lightweight MQTT broker)
+
+		$ ./servers.sh mosquitto 
+
+		$ ./experiment_driver.sh [experiment_conf]
+
+	Mosca: (MQTT broker in NodeJS)
+
+		$ ./servers.sh mosca
+
+		$ ./experiment_driver.sh [experiment_conf]
+
+	Ponte: (Multiprotocol bridge to handle HTTP and COAP messages)
+
+		$ ./servers.sh ponte
+
+		$ ./servers.sh mosca
+
+		$ ./experiment_driver.sh [experiment_conf]
+
+To run analysis script on experiment results:
+
+	$ ./processOutput.sh [pubsub | multi] [mosquitto | mosca | ponte]
+
+	Details of output: (TBD)
 
 
 To launch clients in subgroup:
 
-	$ ./clients.sh [simple | mqttjs] [pub | sub] [num_clients] [QoS] [topic] [num_msgs (ONLY IF PUB chosen)]
+	$ ./clients.sh [simple | mqttjs] [pub | sub | multi] [num_clients] [QoS] [topic] [num_msgs (ONLY IF PUB chosen)]
 
 	e.g: 
 
