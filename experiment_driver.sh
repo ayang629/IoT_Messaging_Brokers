@@ -38,11 +38,11 @@ else
 	echo "Running default configuration..."
 	EXP_TYPE="throughput"
 
-	NUM_TOPICS=10
+	NUM_TOPICS=5
 
 	PUBS_PER_TOPIC=1
 
-	MSGS_PER_TOPIC=100
+	MSGS_PER_TOPIC=1000
 
 	SUBS_PER_TOPIC=1
 
@@ -69,7 +69,7 @@ if [[ "$EXP_TYPE" == "throughput" ]]; then #Option throughput: run throughput ex
 			TOPIC_NAMES+=($TOPIC)
 			TOPIC="topic"
 		done
-		sleep 5
+		sleep 3
 		for j in $(seq 0 1 "`expr $NUM_PUBS - 1`") #launch publishers to publish messages to clients
 		do
 			MSGS_PER_CLIENT=`expr $MSGS_PER_TOPIC / $PUBS_PER_TOPIC`

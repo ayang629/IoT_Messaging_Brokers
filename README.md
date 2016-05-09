@@ -55,7 +55,7 @@ To run client experiment:
 	
 	Options in configuration file:
 	
-		experiment_type: What type of experiment to run. NOT IMPLEMENTED YET.
+		experiment_type: What type of experiment to run.
 		
 		num_topics: The number of unique topics to be instantiated.
 
@@ -93,9 +93,20 @@ To test different server experiments: (Currently, only the mqttjs clients provid
 
 To run analysis script on experiment results:
 
-	$ ./processOutput.sh [pubsub | multi] [mosquitto | mosca | ponte]
+	$ ./processOutput.sh [pubsub | multi] [mosquitto | mosca | ponte] [num_topics] [num_msgs] 
 
-	Details of output: (TBD)
+	Details of output: 
+		Packets lost: [True | False]
+
+		"topic avg(ms) min(ms) max(ms) percent_packets_received" --> for each topic
+
+		Total average delay (ms)
+
+To clean scripts:
+
+	Cleans all files in multiLogs/ pubLogs/ and subLogs/ automatically. Deletes server output file too
+
+	$ ./cleanLogs.sh [mosca | mosquitto | ponte]
 
 
 To launch clients in subgroup:

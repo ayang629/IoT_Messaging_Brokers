@@ -9,10 +9,10 @@ rm subLogs/*
 
 if [ "$#" -eq 1 ]; then
 	if [[ "$1" == "mosquitto" ]]; then
-		rm mosquitto_output.txt
+		rm serverLogs/mosquitto_output.txt
 	elif [[ "$1" == "mosca" ]]; then
-		rm mosca_output.txt
+		rm serverLogs/mosca_output.txt
 	elif [[ "$1" == "ponte" ]]; then
-		rm ponte_output.txt
+		rm serverLogs/ponte_output.txt
 	fi
 fi

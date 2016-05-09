@@ -1,6 +1,6 @@
 var mqtt    = require('mqtt');
 var process = require('process');
-var client  = mqtt.connect({ host: process.argv.slice(2)[4], port: 1883 });
+var client  = mqtt.connect({ host: process.argv.slice(2)[4], port: 3001 });
  
 
 client.on('connect', function () {
