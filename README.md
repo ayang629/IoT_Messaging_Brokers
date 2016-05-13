@@ -93,7 +93,7 @@ To test different server experiments: (Currently, only the mqttjs clients provid
 
 To run analysis script on experiment results:
 
-	$ ./processOutput.sh [pubsub | multi] [mosquitto | mosca | ponte] [num_topics] [num_msgs] 
+	$ ./processOutput.sh [pubsub | multi] [mosquitto | mosca | ponte] [num_topics] [num_msgs] [subs_per_topic]
 
 	Details of output: 
 		Packets lost: [True | False]
