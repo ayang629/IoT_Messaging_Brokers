@@ -1,0 +1,12 @@
+Packet Loss: True
+topic	avg(ms)	min(ms)	max(ms)	percent
+topic0 	1.0   	0     	136   	99.9% 
+Total Avg delay: 1.0 ms
+Packet Loss: True
+topic	avg(ms)	min(ms)	max(ms)	percent
+topic0 	1591.0	525   	2421  	99.9% 
+topic1 	1539.0	7     	2357  	100.0%
+topic2 	1808.0	526   	2613  	100.0%
+topic3 	1554.0	522   	2240  	100.0%
+topic4 	1677.0	563   	2455  	100.0%
+Total Avg delay: 1633.8 ms

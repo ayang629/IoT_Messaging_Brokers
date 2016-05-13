@@ -1,0 +1,34 @@
+1463105991: mosquitto version 1.4.8 (build date 2016-02-14 11:22:37-0800) starting
+1463105991: Config loaded from brokers/broker_config.conf.
+1463105991: Opening ipv6 listen socket on port 1883.
+1463105991: Opening ipv4 listen socket on port 1883.
+1463105998: New connection from 192.168.0.3 on port 1883.
+1463105998: New client connected from 192.168.0.3 as mqttjs_48627d16 (c1, k10).
+1463105998: New connection from 192.168.0.3 on port 1883.
+1463105998: New client connected from 192.168.0.3 as mqttjs_abf66799 (c1, k10).
+1463105998: New connection from 192.168.0.3 on port 1883.
+1463105998: New client connected from 192.168.0.3 as mqttjs_1d0763e8 (c1, k10).
+1463105998: New connection from 192.168.0.3 on port 1883.
+1463105998: New client connected from 192.168.0.3 as mqttjs_451330a (c1, k10).
+1463105998: New connection from 192.168.0.3 on port 1883.
+1463105998: New client connected from 192.168.0.3 as mqttjs_a5cf07c (c1, k10).
+1463106001: New connection from 192.168.0.3 on port 1883.
+1463106001: New client connected from 192.168.0.3 as mqttjs_72a52d07 (c1, k10).
+1463106001: New connection from 192.168.0.3 on port 1883.
+1463106001: New client connected from 192.168.0.3 as mqttjs_d9e5cac (c1, k10).
+1463106001: New connection from 192.168.0.3 on port 1883.
+1463106001: New client connected from 192.168.0.3 as mqttjs_606d4b5c (c1, k10).
+1463106002: New connection from 192.168.0.3 on port 1883.
+1463106002: New client connected from 192.168.0.3 as mqttjs_d4376b39 (c1, k10).
+1463106002: New connection from 192.168.0.3 on port 1883.
+1463106002: New client connected from 192.168.0.3 as mqttjs_c6067e89 (c1, k10).
+1463106003: Socket error on client mqttjs_72a52d07, disconnecting.
+1463106003: Socket error on client mqttjs_48627d16, disconnecting.
+1463106003: Socket error on client mqttjs_451330a, disconnecting.
+1463106003: Socket error on client mqttjs_a5cf07c, disconnecting.
+1463106003: Socket error on client mqttjs_d9e5cac, disconnecting.
+1463106003: Socket error on client mqttjs_d4376b39, disconnecting.
+1463106003: Socket error on client mqttjs_c6067e89, disconnecting.
+1463106003: Socket error on client mqttjs_abf66799, disconnecting.
+1463106003: Socket error on client mqttjs_1d0763e8, disconnecting.
+1463106003: Socket error on client mqttjs_606d4b5c, disconnecting.

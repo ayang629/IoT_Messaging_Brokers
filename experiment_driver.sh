@@ -61,7 +61,7 @@ if [[ "$EXP_TYPE" == "throughput" ]]; then #Option throughput: run throughput ex
 	TOPIC_NAMES=()
 	TOPIC="topic"
 	if [[ "$MULTIPURPOSE" == "no" ]]; then
-		for i in $(seq 0 1 "`expr $NUM_SUBS - 1`") #first launch clients that are subscribers
+		for i in $(seq 0 1 "`expr $NUM_TOPICS - 1`") #first launch clients that are subscribers
 		do
 			TOPIC="$TOPIC$i"
 			bash clients.sh "$CLIENT_TYPE" sub "$SUBS_PER_TOPIC" "$QOS" "$TOPIC" "$i" &
@@ -70,14 +70,14 @@ if [[ "$EXP_TYPE" == "throughput" ]]; then #Option throughput: run throughput ex
 			TOPIC="topic"
 		done
 		sleep 3
-		for j in $(seq 0 1 "`expr $NUM_PUBS - 1`") #launch publishers to publish messages to clients
+		for i in $(seq 0 1 "`expr $NUM_TOPICS - 1`") #launch publishers to publish messages to clients
 		do
 			MSGS_PER_CLIENT=`expr $MSGS_PER_TOPIC / $PUBS_PER_TOPIC`
-			bash clients.sh "$CLIENT_TYPE" pub "$PUBS_PER_TOPIC" "$QOS" "${TOPIC_NAMES[$j]}" "$MSGS_PER_CLIENT" "$j" &
+			bash clients.sh "$CLIENT_TYPE" pub "$PUBS_PER_TOPIC" "$QOS" "${TOPIC_NAMES[$i]}" "$MSGS_PER_CLIENT" "$i" &
 			CLIENT_PIDS+=($!)
 		done
 	else
-		for i in $(seq 0 1 "`expr $NUM_SUBS - 1`") #Launch the clients with a multipurpose configuration
+		for i in $(seq 0 1 "`expr $NUM_TOPICS - 1`") #Launch the clients with a multipurpose configuration
 		do
 			TOPIC="$TOPIC$i"
 			MSGS_PER_CLIENT=`expr $MSGS_PER_TOPIC / $PUBS_PER_TOPIC`

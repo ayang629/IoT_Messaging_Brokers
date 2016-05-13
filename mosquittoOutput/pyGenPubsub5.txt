@@ -30,6 +30,7 @@ topic2	16.0	0	105	100.0%
 topic3	10.0	0	83	100.0%
 topic4	11.0	0	254	100.0%
 Total Avg delay: 10.8 ms
+
 Packet Loss: False
 topic	avg(ms)	min(ms)	max(ms)	percent
 topic0	32.0	0	131	100.0%

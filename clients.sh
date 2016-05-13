@@ -43,21 +43,23 @@ case "$CLIENT" in
 ;;
 ("mqttjs") #launch daemon mqttjs clients
 	echo "Launching $NUM_CLIENTS mqttjs clients"
+	OFFSET=0
 	for i in $(seq 1 1 "$NUM_CLIENTS")
 	do
-		NUM_BASE=$(expr $FILE_INC \* $i)
+		NUM_BASE=$(expr $NUM_CLIENTS \* $FILE_INC)
 		NUM_INC=$(expr $NUM_BASE + $i)
 		if [[ "$CLIENT_TYPE" == "pub" ]]; then
 			echo "Launching publisher..."
-			node clients/mqtt_client.js "$CLIENT_TYPE" "$QOS" "$NUM_MSGS" "$TOPIC" "$IP_ADDR" 2>&1 | tee "pubLogs/$CLIENT_TYPE$NUM_INC.txt" &
+			node clients/mqtt_client.js "$CLIENT_TYPE" "$QOS" "$NUM_MSGS" "$TOPIC" "$IP_ADDR" "$OFFSET" 2>&1 | tee "pubLogs/$CLIENT_TYPE$NUM_INC.txt" &
 		elif [[ "$CLIENT_TYPE" == "sub" ]]; then
 			echo "Launching subscriber..."
-			node clients/mqtt_client.js "$CLIENT_TYPE" "$QOS" "$NUM_MSGS" "$TOPIC" "$IP_ADDR" 2>&1 | tee "subLogs/$CLIENT_TYPE$NUM_INC.txt" &
+			node clients/mqtt_client.js "$CLIENT_TYPE" "$QOS" "$NUM_MSGS" "$TOPIC" "$IP_ADDR" "$OFFSET" 2>&1 | tee "subLogs/$CLIENT_TYPE$NUM_INC.txt" &
 		elif [[ "$CLIENT_TYPE" == "multi" ]]; then
 			echo "Launching multipurpose..."
-			node clients/mqtt_client.js "$CLIENT_TYPE" "$QOS" "$NUM_MSGS" "$TOPIC" "$IP_ADDR" 2>&1 | tee "multiLogs/$CLIENT_TYPE$NUM_INC.txt" &
+			node clients/mqtt_client.js "$CLIENT_TYPE" "$QOS" "$NUM_MSGS" "$TOPIC" "$IP_ADDR" "$OFFSET" 2>&1 | tee "multiLogs/$CLIENT_TYPE$NUM_INC.txt" &
 		fi	
 		CLIENT_PIDS+=($!)
+		OFFSET=`expr $OFFSET + "$NUM_MSGS"`
 	done		
 	#echo "All clients launched. Script will sleep for 180 seconds."
 	#echo "Kill actively running processes with ctrl-c. If scripts completed, kill errors will come up. This is expected"
