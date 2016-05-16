@@ -1,12 +1,184 @@
 Packet Loss: True
 topic	avg(ms)	min(ms)	max(ms)	percent
-topic0 	1.0   	0     	136   	99.9% 
-Total Avg delay: 1.0 ms
+topic0 	1378.0	2     	1698  	49.3% 
+topic1 	1633.0	1511  	1899  	70.7% 
+topic2 	0     	9999999	0     	0.0%  
+topic3 	0     	9999999	0     	0.0%  
+topic4 	0     	9999999	0     	0.0%  
+Total Avg delay: 1505.5 ms
 Packet Loss: True
 topic	avg(ms)	min(ms)	max(ms)	percent
-topic0 	1591.0	525   	2421  	99.9% 
-topic1 	1539.0	7     	2357  	100.0%
-topic2 	1808.0	526   	2613  	100.0%
-topic3 	1554.0	522   	2240  	100.0%
-topic4 	1677.0	563   	2455  	100.0%
-Total Avg delay: 1633.8 ms
+topic0 	1378.0	2     	1698  	49.3% 
+topic1 	1633.0	1511  	1899  	70.7% 
+topic2 	0     	9999999	0     	0.0%  
+topic3 	0     	9999999	0     	0.0%  
+topic4 	0     	9999999	0     	0.0%  
+Total Avg delay: 1505.5 ms
+Packet Loss: True
+topic	avg(ms)	min(ms)	max(ms)	percent
+topic0 	1378.0	2     	1698  	49.3% 
+topic1 	1633.0	1511  	1899  	70.7% 
+topic2 	0     	9999999	0     	0.0%  
+topic3 	0     	9999999	0     	0.0%  
+topic4 	0     	9999999	0     	0.0%  
+Total Avg delay: 1505.5 ms
+Packet Loss: True
+topic	avg(ms)	min(ms)	max(ms)	percent
+topic0 	1378.0	2     	1698  	49.3% 
+topic1 	1633.0	1511  	1899  	70.7% 
+topic2 	0     	9999999	0     	0.0%  
+topic3 	0     	9999999	0     	0.0%  
+topic4 	0     	9999999	0     	0.0%  
+Total Avg delay: 1505.5 ms
+Packet Loss: True
+topic	avg(ms)	min(ms)	max(ms)	percent
+topic0 	1378.0	2     	1698  	49.3% 
+topic1 	1633.0	1511  	1899  	70.7% 
+topic2 	0     	9999999	0     	0.0%  
+topic3 	0     	9999999	0     	0.0%  
+topic4 	0     	9999999	0     	0.0%  
+Total Avg delay: 1505.5 ms
+Packet Loss: True
+topic	avg(ms)	min(ms)	max(ms)	percent
+topic0 	1378.0	2     	1698  	49.3% 
+topic1 	1633.0	1511  	1899  	70.7% 
+topic2 	0     	9999999	0     	0.0%  
+topic3 	0     	9999999	0     	0.0%  
+topic4 	0     	9999999	0     	0.0%  
+Total Avg delay: 1505.5 ms
+Packet Loss: True
+topic	avg(ms)	min(ms)	max(ms)	percent
+topic0 	1378.0	2     	1698  	49.3% 
+topic1 	1633.0	1511  	1899  	70.7% 
+topic2 	0     	9999999	0     	0.0%  
+topic3 	0     	9999999	0     	0.0%  
+topic4 	0     	9999999	0     	0.0%  
+Total Avg delay: 1505.5 ms
+Packet Loss: True
+topic	avg(ms)	min(ms)	max(ms)	percent
+topic0 	1378.0	2     	1698  	49.3% 
+topic1 	1633.0	1511  	1899  	70.7% 
+topic2 	0     	9999999	0     	0.0%  
+topic3 	0     	9999999	0     	0.0%  
+topic4 	0     	9999999	0     	0.0%  
+Total Avg delay: 1505.5 ms
+Packet Loss: True
+topic	avg(ms)	min(ms)	max(ms)	percent
+topic0 	1378.0	2     	1698  	49.3% 
+topic1 	1633.0	1511  	1899  	70.7% 
+topic2 	0     	9999999	0     	0.0%  
+topic3 	0     	9999999	0     	0.0%  
+topic4 	0     	9999999	0     	0.0%  
+Total Avg delay: 1505.5 ms
+Packet Loss: True
+topic	avg(ms)	min(ms)	max(ms)	percent
+topic0 	1378.0	2     	1698  	49.3% 
+topic1 	1633.0	1511  	1899  	70.7% 
+topic2 	0     	9999999	0     	0.0%  
+topic3 	0     	9999999	0     	0.0%  
+topic4 	0     	9999999	0     	0.0%  
+Total Avg delay: 1505.5 ms
+Packet Loss: True
+topic	avg(ms)	min(ms)	max(ms)	percent
+topic0 	1378.0	2     	1698  	49.3% 
+topic1 	1633.0	1511  	1899  	70.7% 
+topic2 	0     	9999999	0     	0.0%  
+topic3 	0     	9999999	0     	0.0%  
+topic4 	0     	9999999	0     	0.0%  
+Total Avg delay: 1505.5 ms
+Packet Loss: True
+topic	avg(ms)	min(ms)	max(ms)	percent
+topic0 	1378.0	2     	1698  	49.3% 
+topic1 	1633.0	1511  	1899  	70.7% 
+topic2 	0     	9999999	0     	0.0%  
+topic3 	0     	9999999	0     	0.0%  
+topic4 	0     	9999999	0     	0.0%  
+Total Avg delay: 1505.5 ms
+Packet Loss: True
+topic	avg(ms)	min(ms)	max(ms)	percent
+topic0 	1378.0	2     	1698  	49.3% 
+topic1 	1633.0	1511  	1899  	70.7% 
+topic2 	0     	9999999	0     	0.0%  
+topic3 	0     	9999999	0     	0.0%  
+topic4 	0     	9999999	0     	0.0%  
+Total Avg delay: 1505.5 ms
+Packet Loss: True
+topic	avg(ms)	min(ms)	max(ms)	percent
+topic0 	1378.0	2     	1698  	49.3% 
+topic1 	1633.0	1511  	1899  	70.7% 
+topic2 	0     	9999999	0     	0.0%  
+topic3 	0     	9999999	0     	0.0%  
+topic4 	0     	9999999	0     	0.0%  
+Total Avg delay: 1505.5 ms
+Packet Loss: True
+topic	avg(ms)	min(ms)	max(ms)	percent
+topic0 	1378.0	2     	1698  	49.3% 
+topic1 	1633.0	1511  	1899  	70.7% 
+topic2 	0     	9999999	0     	0.0%  
+topic3 	0     	9999999	0     	0.0%  
+topic4 	0     	9999999	0     	0.0%  
+Total Avg delay: 1505.5 ms
+Packet Loss: True
+topic	avg(ms)	min(ms)	max(ms)	percent
+topic0 	1378.0	2     	1698  	49.3% 
+topic1 	1633.0	1511  	1899  	70.7% 
+topic2 	0     	9999999	0     	0.0%  
+topic3 	0     	9999999	0     	0.0%  
+topic4 	0     	9999999	0     	0.0%  
+Total Avg delay: 1505.5 ms
+Packet Loss: True
+topic	avg(ms)	min(ms)	max(ms)	percent
+topic0 	1378.0	2     	1698  	49.3% 
+topic1 	1633.0	1511  	1899  	70.7% 
+topic2 	0     	9999999	0     	0.0%  
+topic3 	0     	9999999	0     	0.0%  
+topic4 	0     	9999999	0     	0.0%  
+Total Avg delay: 1505.5 ms
+Packet Loss: True
+topic	avg(ms)	min(ms)	max(ms)	percent
+topic0 	1378.0	2     	1698  	49.3% 
+topic1 	1633.0	1511  	1899  	70.7% 
+topic2 	0     	9999999	0     	0.0%  
+topic3 	0     	9999999	0     	0.0%  
+topic4 	0     	9999999	0     	0.0%  
+Total Avg delay: 1505.5 ms
+Packet Loss: True
+topic	avg(ms)	min(ms)	max(ms)	percent
+topic0 	1378.0	2     	1698  	49.3% 
+topic1 	1633.0	1511  	1899  	70.7% 
+topic2 	0     	9999999	0     	0.0%  
+topic3 	0     	9999999	0     	0.0%  
+topic4 	0     	9999999	0     	0.0%  
+Total Avg delay: 1505.5 ms
+Packet Loss: True
+topic	avg(ms)	min(ms)	max(ms)	percent
+topic0 	1378.0	2     	1698  	49.3% 
+topic1 	1633.0	1511  	1899  	70.7% 
+topic2 	0     	9999999	0     	0.0%  
+topic3 	0     	9999999	0     	0.0%  
+topic4 	0     	9999999	0     	0.0%  
+Total Avg delay: 1505.5 ms
+Packet Loss: True
+topic	avg(ms)	min(ms)	max(ms)	percent
+topic0 	1378.0	2     	1698  	49.3% 
+topic1 	1633.0	1511  	1899  	70.7% 
+topic2 	0     	9999999	0     	0.0%  
+topic3 	0     	9999999	0     	0.0%  
+topic4 	0     	9999999	0     	0.0%  
+Total Avg delay: 1505.5 ms
+Packet Loss: True
+topic	avg(ms)	min(ms)	max(ms)	percent
+topic0 	1378.0	2     	1698  	49.3% 
+topic1 	1633.0	1511  	1899  	70.7% 
+topic2 	0     	9999999	0     	0.0%  
+topic3 	0     	9999999	0     	0.0%  
+topic4 	0     	9999999	0     	0.0%  
+Total Avg delay: 1505.5 ms
+Packet Loss: True
+topic	avg(ms)	min(ms)	max(ms)	percent
+topic0 	1378.0	2     	1698  	49.3% 
+topic1 	1633.0	1511  	1899  	70.7% 
+topic2 	0     	9999999	0     	0.0%  
+topic3 	0     	9999999	0     	0.0%  
+topic4 	0     	9999999	0     	0.0%  
+Total Avg delay: 1505.5 ms

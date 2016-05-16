@@ -1,5 +1,4 @@
 import sys
-import matplotlib
 import os
 import numpy
 
@@ -27,8 +26,11 @@ class Topic:
 		return str(float(self.received) / float(self.total_topic_msgs) * 100) + "%"
 
 	def get_average_latency(self):
-		return float(numpy.sum(self.dict.values()) / self.received) if self.received != 0 else 0
-
+		sum_values = numpy.sum(self.dict.values())
+		if(type(sum_values) is list):
+			return float(sum(sum_values) / self.received) if self.received != 0 else 0
+		else:
+			return float(sum_values/self.received) if self.received != 0 else 0
 	def update_minmax(self, difference):
 		if(self.min > difference):
 			self.min = difference

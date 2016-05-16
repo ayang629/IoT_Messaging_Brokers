@@ -87,7 +87,7 @@ To test different server experiments: (Currently, only the mqttjs clients provid
 
 		$ ./servers.sh ponte
 
-		$ ./servers.sh mosca
+		$ ./servers.sh mosca #This launches the mosca broker on top of ponte
 
 		$ ./experiment_driver.sh [experiment_conf]
 
@@ -95,12 +95,35 @@ To run analysis script on experiment results:
 
 	$ ./processOutput.sh [pubsub | multi] [mosquitto | mosca | ponte] [num_topics] [num_msgs] [subs_per_topic]
 
-	Details of output: 
-		Packets lost: [True | False]
+	#If you want to just run the throughput experiment individually:
 
-		"topic avg(ms) min(ms) max(ms) percent_packets_received" --> for each topic
+		$ ./process[Server | Client]Throughput.sh [pubsub | multi] [mosca | ponte] [num_topics] [subs_per_topic]
 
-		Total average delay (ms)
+	Details of output (in expResults directory): 
+		
+		In Latency file (named '[pubsub | multi]Output[num_topics].txt'):
+
+			Packets lost: [True | False]
+
+			"topic avg(ms) min(ms) max(ms) percent_packets_received" --> for each topic
+
+			Total average delay (ms)
+
+		In Server throughput files (named [mosca | ponte]ServerThroughtput.txt, [mosca | ponte]ClientThroughtput.txt):
+
+			Start time (unix timestamp)
+
+			End time (unix timestamp)
+
+			Time elapsed (in milliseconds): end time - start time
+
+			Messages received: total number of messages received by the broker
+
+			Total messages: total number of messages sent by all the clients in a given experiment (derived from num_topics and subs_per_topic)
+
+			Percentage received: percentage of messages that were received by the broker.
+
+			Throughput: average number of messages that reached the broker per second
 
 To clean scripts:
 

@@ -36,7 +36,7 @@ if [[ "$#" -eq 1 ]]; then
 
 else
 	echo "Running default configuration..."
-	EXP_TYPE="throughput"
+	EXP_TYPE="latency"
 
 	NUM_TOPICS=5
 
@@ -54,8 +54,8 @@ else
 fi
 
 #NOTE: Can change options to just directly call the client_type
-if [[ "$EXP_TYPE" == "throughput" ]]; then #Option throughput: run throughput experiment
-	echo "Running throughput experiment..."
+if [[ "$EXP_TYPE" == "latency" ]]; then #Option throughput: run latency experiment
+	echo "Running latency experiment..."
 	NUM_SUBS=`expr $NUM_TOPICS \* $SUBS_PER_TOPIC`
 	NUM_PUBS=`expr $NUM_TOPICS \* $PUBS_PER_TOPIC`
 	TOPIC_NAMES=()
@@ -87,6 +87,8 @@ if [[ "$EXP_TYPE" == "throughput" ]]; then #Option throughput: run throughput ex
 			TOPIC="topic"
 		done
 	fi
+elif [[ "$EXP_TYPE" == "throughput" ]]; then
+	echo "Running throughput experiment..."
 fi
 
 sleep 120

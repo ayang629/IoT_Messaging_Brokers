@@ -1,6 +1,6 @@
 var mqtt    = require('mqtt');
 var process = require('process');
-var client  = mqtt.connect({ host: process.argv.slice(2)[4], port: 1883 });
+var client  = mqtt.connect({ host: process.argv.slice(2)[4], port: 3001});
  
 
 client.on('connect', function () {
@@ -13,27 +13,27 @@ client.on('connect', function () {
 		var counter = offset;
 		while(numPublishes--){ 
 		  	var pidBuffer = new Buffer(process.pid.toString() + " " + (counter++));
-		  	var unixtimestamp =  new Date().getTime()
+		  	var unixtimestamp =  new Date().getTime();
   			console.log('PUB', topic, pidBuffer.toString(), unixtimestamp);
 		  	client.publish(topic, pidBuffer, {qos:parseInt(qos)});
 		}
 	}else if(clientType == "sub"){
 		var subTopic = topic;
-		var unixtimestamp =  new Date().getTime()
-		console.log('SUB', subTopic, unixtimestamp)
+		var unixtimestamp =  new Date().getTime();
+		console.log('SUB', subTopic, unixtimestamp);
 		client.subscribe(subTopic, {qos:parseInt(qos)});
 	}
 	else if(clientType == "multi"){
 		//First, subscribe to the topic given
 		var subTopic = topic;
-		var unixtimestamp =  new Date().getTime()
-		console.log('SUB', subTopic, unixtimestamp)
+		var unixtimestamp =  new Date().getTime();
+		console.log('SUB', subTopic, unixtimestamp);
 		client.subscribe(subTopic, {qos:parseInt(qos)}); //callback publish 
 		var numPublishes = parseInt(process.argv.slice(2)[2]);
 		var counter = offset;
 		while(numPublishes--){ 
 		  	var pidBuffer = new Buffer(process.pid.toString()+ " " + (counter++));
-		  	var unixtimestamp =  new Date().getTime()
+		  	var unixtimestamp =  new Date().getTime();
   			console.log('PUB', topic, pidBuffer.toString(), unixtimestamp);
 		  	client.publish(topic, pidBuffer, {qos:parseInt(qos)});
 		}

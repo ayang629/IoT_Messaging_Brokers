@@ -1,12 +1,17 @@
 #!/bin/bash
 
-#usage: ./processOutput.sh [pubsub | multi] [mosquitto | mosca | ponte] [num_topics] [num_msgs] [subs_per_topic]
+#usage: ./processLatency.sh [pubsub | multi] [mosquitto | mosca | ponte] [num_topics] [num_msgs] [subs_per_topic]
 
 TYPE=$1
 BROKER=$2
 NUM_TOPICS=$3
 NUM_MSGS=$4
 SUBS_PER_TOPIC=$5
+
+if [[ "$BROKER" == "ponte" ]] || [[ "$BROKER" == "mosca" ]]; then
+	echo "Processing server throughput..."
+	./processServerThroughput.sh "$TYPE" "$BROKER" "$NUM_TOPICS" "$NUM_MSGS"
+fi
 
 if [[ "$TYPE" == "multi" ]]; then
 	echo "Processing multipurpose output..."
@@ -56,4 +61,9 @@ elif [[ "$TYPE" == "pubsub" ]]; then
 	python generateGraph.py "expResults/pubsubOutput$NUM_TOPICS.txt" "$NUM_TOPICS" "$NUM_MSGS" "$SUBS_PER_TOPIC" >> "expResults/pyGenPubsub$NUM_TOPICS.txt"
 else
 	echo "Invalid output options: Legal options are [pubsub | multi]"
+fi
+
+if [[ "$BROKER" == "ponte" ]] || [[ "$BROKER" == "mosca" ]]; then
+	echo "Processing client throughput..."
+	./processClientThroughput.sh "$TYPE" "$BROKER" "$NUM_TOPICS" "$NUM_MSGS"
 fi

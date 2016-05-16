@@ -3,7 +3,7 @@ var ascoltatori = require('ascoltatori');
 
 var opts = {
   http: {
-    port: 3000 // tcp 
+    port: 8080 // tcp 
   },
   mqtt: {
     port: 3001 // tcp 
@@ -35,7 +35,7 @@ server.on("connect", function(client, buffer){
 
 server.on("updated", function(resource, buffer) {
   var unixtimestamp =   Math.round(new Date().getTime());
-  console.log("CLIENT_PUB", resource, buffer.toString(), unixtimestamp);
+  console.log("CLIENT_PUB", resource.toString(), buffer.toString(), unixtimestamp);
 });
  
 // Stop the server after 1 minute 

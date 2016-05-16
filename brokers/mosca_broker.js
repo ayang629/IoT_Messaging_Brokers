@@ -32,7 +32,7 @@ server.on('clientConnected', function(client) {
 server.on('published', function(packet, client) {
   var unixtimestamp =   Math.round(new Date().getTime());
   if((packet.payload) instanceof Buffer){
-    console.log("CLIENT_PUB", packet.payload.toString(), (globalCounter++).toString(), unixtimestamp);
+    console.log("CLIENT_PUB", (globalCounter++).toString(), unixtimestamp);
   }else{
     console.log("CLIENT_ACTION", packet.topic, packet.payload, unixtimestamp);
   }

@@ -1,0 +1,9 @@
+Running Throughput experiment with mosca (5 Topics)
+Running Throughput experiment with mosca (5 Topics)
+Start time: 1463377610527
+End time: 1463377612578
+Time elapsed: 2051
+Msgs received: 1201
+Total messages sent by clients: 5000
+Percent received: 24.00%
+Throughput (per sec) : 580.00

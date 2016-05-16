@@ -65,6 +65,12 @@ case "$CLIENT" in
 	#echo "Kill actively running processes with ctrl-c. If scripts completed, kill errors will come up. This is expected"
 	sleep 180
 ;;
+("http") #launch daemon 
+	echo "Launching $NUM_CLIENTS http clients..."
+;;
+("coap")
+	echo "Launching $NUM_CLIENTS coap clients..."
+;;
 *)
 	echo "ERROR: $CLIENT is not a legal client option!"
 	exit 1
