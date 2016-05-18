@@ -1,10 +1,12 @@
 # IoT_Messaging_Brokers
 
-To come
+To come (the to-do list):
 
-	- script to run installations/configurations on PI's
+	- Kafka/redis-cluster integration
 
-	- script to plug in data analysis document
+	- increased plug-and-play functionality
+
+	- More documentation...
 
 REQUIREMENTS:
 
