@@ -1,0 +1,7 @@
+1463602705: mosquitto version 1.4.8 (build date 2016-02-14 11:22:37-0800) starting
+1463602705: Config loaded from brokers/broker_config.conf.
+1463602705: Opening ipv4 listen socket on port 1883.
+1463602705: Opening ipv6 listen socket on port 1883.
+1463602707: New connection from 127.0.0.1 on port 1883.
+1463602707: New client connected from 127.0.0.1 as mqttjs_7041729a (c1, k3000).
+1463602708: Socket error on client mqttjs_7041729a, disconnecting.

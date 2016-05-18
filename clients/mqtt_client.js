@@ -17,7 +17,13 @@ client.on('connect', function () {
   			console.log('PUB', topic, pidBuffer.toString(), unixtimestamp);
 		  	client.publish(topic, pidBuffer, {qos:parseInt(qos)});
 		}
+		console.log("Finished publishing...");
+		process.exit();
 	}else if(clientType == "sub"){
+		setTimeout(function () {
+		  console.log('Timing out...');
+		  process.exit();
+		}, 15000);
 		var subTopic = topic;
 		var unixtimestamp =  new Date().getTime();
 		console.log('SUB', subTopic, unixtimestamp);

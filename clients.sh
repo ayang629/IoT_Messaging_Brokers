@@ -39,7 +39,6 @@ case "$CLIENT" in
 	done
 	#echo "All clients launched. Script will sleep for 180 seconds."
 	#echo "Kill actively running processes with ctrl-c. If scripts completed, kill errors will come up. This is expected"
-	sleep 180 #have client script hang so longer running clients can 
 ;;
 ("mqttjs") #launch daemon mqttjs clients
 	echo "Launching $NUM_CLIENTS mqttjs clients"
@@ -62,8 +61,7 @@ case "$CLIENT" in
 		OFFSET=`expr $OFFSET + "$NUM_MSGS"`
 	done		
 	#echo "All clients launched. Script will sleep for 180 seconds."
-	#echo "Kill actively running processes with ctrl-c. If scripts completed, kill errors will come up. This is expected"
-	sleep 180
+	#echo "Kill actively running processes with ctrl-c. If scripts completed, kill errors will come up. This is expected
 ;;
 ("http") #launch daemon 
 	echo "Launching $NUM_CLIENTS http clients..."

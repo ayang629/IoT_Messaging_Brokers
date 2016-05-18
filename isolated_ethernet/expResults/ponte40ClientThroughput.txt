@@ -1,0 +1,45 @@
+
+Running Throughput experiment with ponte (40 Topics)
+Start time: 1463392031956
+End time: 1463392081339
+Time elapsed: 49383
+Msgs received: 23946
+Total messages sent by clients: 40000
+Percent received: 59.00%
+Throughput (per sec) : 480.00
+
+Running Throughput experiment with ponte (40 Topics)
+Start time: 1463392203189
+End time: 1463392252689
+Time elapsed: 49500
+Msgs received: 22765
+Total messages sent by clients: 40000
+Percent received: 56.00%
+Throughput (per sec) : 450.00
+
+Running Throughput experiment with ponte (40 Topics)
+Start time: 1463392367832
+End time: 1463392417289
+Time elapsed: 49457
+Msgs received: 22548
+Total messages sent by clients: 40000
+Percent received: 56.00%
+Throughput (per sec) : 450.00
+
+Running Throughput experiment with ponte (40 Topics)
+Start time: 1463392530386
+End time: 1463392578921
+Time elapsed: 48535
+Msgs received: 22348
+Total messages sent by clients: 40000
+Percent received: 55.00%
+Throughput (per sec) : 460.00
+
+Running Throughput experiment with ponte (40 Topics)
+Start time: 1463392688924
+End time: 1463392740439
+Time elapsed: 51515
+Msgs received: 25498
+Total messages sent by clients: 40000
+Percent received: 63.00%
+Throughput (per sec) : 490.00

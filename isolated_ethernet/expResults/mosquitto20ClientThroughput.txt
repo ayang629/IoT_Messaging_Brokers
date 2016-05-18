@@ -1,0 +1,50 @@
+
+
+Running Throughput experiment with mosquitto (20 Topics)
+Start time: 1463394030515
+End time: 1463394059326
+Time elapsed: 28811
+Msgs received: 20000
+Total messages sent by clients: 20000
+Percent received: 100.00%
+Throughput (per sec) : 690.00
+
+
+Running Throughput experiment with mosquitto (20 Topics)
+Start time: 1463394119962
+End time: 1463394149636
+Time elapsed: 29674
+Msgs received: 20000
+Total messages sent by clients: 20000
+Percent received: 100.00%
+Throughput (per sec) : 670.00
+
+
+Running Throughput experiment with mosquitto (20 Topics)
+Start time: 1463394247283
+End time: 1463394276517
+Time elapsed: 29234
+Msgs received: 20000
+Total messages sent by clients: 20000
+Percent received: 100.00%
+Throughput (per sec) : 680.00
+
+
+Running Throughput experiment with mosquitto (20 Topics)
+Start time: 1463394332272
+End time: 1463394362567
+Time elapsed: 30295
+Msgs received: 20000
+Total messages sent by clients: 20000
+Percent received: 100.00%
+Throughput (per sec) : 660.00
+
+
+Running Throughput experiment with mosquitto (20 Topics)
+Start time: 1463394417199
+End time: 1463394448714
+Time elapsed: 31515
+Msgs received: 20000
+Total messages sent by clients: 20000
+Percent received: 100.00%
+Throughput (per sec) : 630.00

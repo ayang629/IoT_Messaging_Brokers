@@ -7,13 +7,12 @@ BROKER=$2
 NUM_TOPICS=$3
 NUM_MSGS=$4
 
-if [ ! -f "expResults/${BROKER}ClientThroughput.txt" ]; then
+if [ ! -f "expResults/${BROKER}${NUM_TOPICS}ClientThroughput.txt" ]; then
 	echo "Output file expResults/${BROKER}${NUM_TOPICS}ClientThroughput.txt not found"
 	touch "expResults/${BROKER}${NUM_TOPICS}ClientThroughput.txt"
 fi
 
 FILENAME="expResults/${CLIENT_TYPE}Output${NUM_TOPICS}.txt"
-echo "" >> "expResults/${BROKER}${NUM_TOPICS}ServerThroughput.txt" #new line
 echo "Running Throughput experiment with ${BROKER} (${NUM_TOPICS} Topics)" >> "expResults/${BROKER}${NUM_TOPICS}ClientThroughput.txt"
 #print out sorted raw data (uncomment below to show)
 #cat $FILENAME | grep "CLIENT_PUB" | awk '{print $5}' | sort | uniq -c | sort -nr  >> "expResults/${BROKER}${NUM_TOPICS}ClientThroughput.txt"
@@ -42,3 +41,4 @@ echo "Percent received: ${PERCENT_RECVD}%" >> "expResults/${BROKER}${NUM_TOPICS}
 
 THROUGHPUT=`echo "scale=2;$MSGS_RECVD/$TIME_ELAPSED*1000" | bc -l`
 echo "Throughput (per sec) : $THROUGHPUT" >> "expResults/${BROKER}${NUM_TOPICS}ClientThroughput.txt"
+echo "" >> "expResults/${BROKER}${NUM_TOPICS}ClientThroughput.txt" #new line

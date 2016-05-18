@@ -11,17 +11,17 @@ var opts = {
   coap: {
     port: 3000 // udp 
   },
-  persistence: {
-    // same as http://mcollina.github.io/mosca/docs/lib/persistence/redis.js.html
-    type: "redis",
-    host: "localhost"
-  },
-  broker: {
-    // same as https://github.com/mcollina/ascoltatori#redis
-    type: "mqtt",
-    port: 1883,
-    host: "localhost"
-  },
+  // persistence: {
+  //   // same as http://mcollina.github.io/mosca/docs/lib/persistence/redis.js.html
+  //   type: "redis",
+  //   host: "localhost"
+  // },
+  // broker: {
+  //   // same as https://github.com/mcollina/ascoltatori#redis
+  //   type: "mqtt",
+  //   port: 1883,
+  //   host: "localhost"
+  // },
   logger: {
     level: 20,
     name: "Config Test Logger"

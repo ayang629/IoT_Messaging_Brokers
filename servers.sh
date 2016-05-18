@@ -12,7 +12,7 @@ function ctrl_c() { #Handles shutting down redis server
 case "$1" in
 ("mosca") #prepare mosca configuration
 	echo "Preparing mosca broker..."
-	redis-server --daemonize yes #run as daemon so broker can be executed
+	#redis-server --daemonize yes #run as daemon so broker can be executed
 	node brokers/mosca_broker.js 2>&1 | tee serverLogs/mosca_output.txt
 ;;
 ("mosquitto") #preparing mosquitto configuration

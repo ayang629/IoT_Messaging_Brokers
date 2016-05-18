@@ -1,23 +1,31 @@
-var mosca = require('mosca'),
-    mqtt    = require('mqtt-packet'),
-    parser    = mqtt.parser();
+var mosca = require('mosca');
+    // mqtt    = require('mqtt-packet'),
+    // parser    = mqtt.parser();
 var globalCounter = 0;
 
-var database = {
-  type: 'redis',
-  redis: require('redis'),
-  db: 12,
-  port: 6379,
-  return_buffers: true, // to handle binary payloads
-  host: "localhost"
+// var pubsubsettings = {
+//   type: 'redis',
+//   redis: require('redis'),
+//   db: 12,
+//   port: 6379,
+//   return_buffers: true, // to handle binary payloads
+//   host: "localhost"
+// };
+
+var pubsubsettings = {
+  type: 'mqtt',
+  json: false,
+  mqtt: require('mqtt'),
+  host: '127.0.0.1',
+  port: 1883
 };
 
 var moscaSettings = {
-  port: 1883,
-  backend: database,
-  persistence: {
-    factory: mosca.persistence.Redis
-  }
+  port: 3001,
+  backend: pubsubsettings,
+  // persistence: {
+  //   factory: mosca.persistence.Redis
+  // }
 };
 
 var server = new mosca.Server(moscaSettings);

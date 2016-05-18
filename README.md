@@ -28,30 +28,40 @@ REQUIREMENTS:
 		
 	other Node-related dependencies are included in the package.json (downloaded into the node_modules folder)
 
-The servers take one of 3 options: mosca, mosquitto, and ponte.
-The mosca broker will take whatever information it receives and output it into a data file called mosca_output.txt.
-The ponte broker will launch brokers and listen for messages from HTTP, MQTT, and COAP and output data into ponte_output.txt
-The mosquitto broker will launch and take whatever information it receives and output data into mosquitto_output.txt
+The brokers take one of 3 options: mosca, mosquitto, and ponte.
 
-To terminate the server, simply provide a SIGINT (ctrl-c) command, which will trigger a trap to clean up the background 
-process (i.e: the redis server).
+	The mosquitto broker is a barebones broker that listens on port 1883 by default.
+
+	The mosca broker uses a mosquitto broker that listens on port 1883. The mosca broker itself listens on port 3001. 
+
+	The ponte broker uses a mosca instance (port 3001) as well as CoAP (3000) and HTTP (port 8080) servers. 
+
+
+To terminate the server, simply provide a SIGINT (ctrl-c) command, which will trigger a trap to clean up background 
+processes (e.g: redis persistence server, sleep calls, active node clients).
 
 To run server individually:
 	
-	$ ./servers.sh [mosquitto | mosca | ponte]
+	$ ./servers.sh [mosquitto | mosca | ponte] 
 
-	e.g:
+	NOTE: As mentioned, the mosca server needs running mosquitto broker as it uses it for its pubsub capabilities. 
+
+	# ./servers.sh mosquitto
 
 	$ ./servers.sh mosca
 
 	
-The clients take one of 3 options: simple (bare-mosquitto calls), mqttjs, and paho. Currently only the mqttjs and simple paho client are implemented. The num_clients argument determines how many clients the clients.sh script will run at once, and the msgs_per_client represents the number of messages each client will attempt to publish. 
+The clients take one of 3 options: simple (bare-mosquitto calls), mqttjs, and paho. 
 
-To run client experiment:
+CURRENTLY, ONLY THE MQTTJS CLIENT IS CONFIGURED FOR EXPERIMENTS. 
 
-	First, make sure server script is configured. Then, run the following command
+The num_clients argument determines how many clients the clients.sh script will run at once, and the msgs_per_client represents the number of messages each client will attempt to publish. 
 
-	$ ./experiment.sh conf_file
+To run client experiment (NOTE, MQTTJS CLIENT SENDS TO PORT 3001 BY DEFAULT, change to 1883 when running pure mosquitto):
+
+	First, make sure your servers are running. Then, run the following command
+
+	$ ./experiment.sh experiment.conf
 	
 	Options in configuration file:
 	
@@ -69,7 +79,9 @@ To run client experiment:
 
 		client_type: Specify what type of client you want to implement
 
-To test different server experiments: (Currently, only the mqttjs clients provide correct experiment output)
+		num_experiments: the number of times you want to run this experiment 
+
+To test different server experiments:
 
 	Pure Mosquitto: (Pure, lightweight MQTT broker)
 
@@ -79,6 +91,8 @@ To test different server experiments: (Currently, only the mqttjs clients provid
 
 	Mosca: (MQTT broker in NodeJS)
 
+		$ ./servers.sh mosquitto 
+
 		$ ./servers.sh mosca
 
 		$ ./experiment_driver.sh [experiment_conf]
@@ -87,21 +101,22 @@ To test different server experiments: (Currently, only the mqttjs clients provid
 
 		$ ./servers.sh ponte
 
+		#OPTIONAL TO OVERLAY SEPARATE MOSCA BROKER 
 		$ ./servers.sh mosca #This launches the mosca broker on top of ponte
 
 		$ ./experiment_driver.sh [experiment_conf]
 
 To run analysis script on experiment results:
 
-	$ ./processOutput.sh [pubsub | multi] [mosquitto | mosca | ponte] [num_topics] [num_msgs] [subs_per_topic]
+	$ ./processOutput.sh [pubsub | multi] [mosquitto | mosca | ponte] [num_topics] [num_msgs] [subs_per_topic] [num_exps]
 
 	#If you want to just run the throughput experiment individually:
 
-		$ ./process[Server | Client]Throughput.sh [pubsub | multi] [mosca | ponte] [num_topics] [subs_per_topic]
+		$ ./process[Server | Client]Throughput.sh [pubsub | multi] [mosca | ponte] [num_topics] [subs_per_topic] [num_exps]
 
 	Details of output (in expResults directory): 
 		
-		In Latency file (named '[pubsub | multi]Output[num_topics].txt'):
+		In Latency file (named 'pyGen[pubsub | multi]Output[num_topics].txt'):
 
 			Packets lost: [True | False]
 
@@ -109,7 +124,9 @@ To run analysis script on experiment results:
 
 			Total average delay (ms)
 
-		In Server throughput files (named [mosca | ponte]ServerThroughtput.txt, [mosca | ponte]ClientThroughtput.txt):
+		In Server throughput files 
+
+		(named [mosca | ponte][num_topics]ServerThroughput.txt, [mosca | ponte][num_topicsClientThroughput.txt):
 
 			Start time (unix timestamp)
 
@@ -141,6 +158,12 @@ To launch clients in subgroup:
 	$ ./clients.sh mqttjs pub 50 2 test_topic 1000 1
 
 	$ ./clients.sh mqttjs sub 25 1 test_topic 1
+
+To launch node client (mqttjs) directly:
+
+	$ node clients/mqtt_client.js [pub | sub] [0 | 1 | 2] [num_msgs_to_publish] [topic_name] [host] [msg_offset]
+
+		#num_msgs_to_publish and msg_offset don't matter for sub option 
 	
 
 

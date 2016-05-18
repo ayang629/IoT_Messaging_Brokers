@@ -69,7 +69,7 @@ def process_file(lines, line_len, num_msgs, subs_per_topic):
 	topic_dict = dict()
 	topic_set = set()
 	order = []
-	index = 1 #first line shows #topics, so start at index 1
+	index = 0 #first line shows #topics, so start at index 1
 	while (index < line_len-subs_per_topic):
 		pub_split = lines[index].split(" ")
 		topic = pub_split[1]
@@ -108,7 +108,7 @@ if __name__ == "__main__":
 	subs_per_topic = int(sys.argv[4])
 	lines = open_file(filename)
 	line_len = len(lines)
-	if ( line_len-1 != 2*num_topics*num_msgs ): #check if packet loss was detected
+	if ( line_len != 2*num_topics*num_msgs ): #check if packet loss was detected
 		print "Packet Loss: True"
 	else:
 		print "Packet Loss: False"
