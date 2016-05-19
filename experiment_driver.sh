@@ -54,7 +54,7 @@ else
 
 	QOS=1
 fi
-IP_ADDR="127.0.0.1"
+IP_ADDR="128.195.52.93"
 #NOTE: Can change options to just directly call the client_type
 if [[ "$EXP_TYPE" == "latency" ]]; then #Option throughput: run latency experiment
 	for x in $(seq 1 1 $EXP_RUNS)
@@ -80,10 +80,9 @@ if [[ "$EXP_TYPE" == "latency" ]]; then #Option throughput: run latency experime
 				TOPIC_NAMES+=($TOPIC)
 				TOPIC="topic"
 			done
-			sleep 3
-			OFFSET=0
 			for i in $(seq 0 1 "`expr $NUM_TOPICS - 1`") #launch publishers to publish messages to clients
 			do
+				OFFSET=0
 				MSGS_PER_CLIENT=`expr $MSGS_PER_TOPIC / $PUBS_PER_TOPIC`
 				TOPIC="$TOPIC$i"
 				for j in $(seq 1 1 "$PUBS_PER_TOPIC")
@@ -91,7 +90,7 @@ if [[ "$EXP_TYPE" == "latency" ]]; then #Option throughput: run latency experime
 					NUM_BASE=$(expr $PUBS_PER_TOPIC \* $i)
 					NUM_INC=$(expr $NUM_BASE + $j)
 					echo "pubLogs/pub${x}_$NUM_INC.txt"
-					node clients/mqtt_client.js pub "$QOS" "$MSGS_PER_CLIENT" "$TOPIC" "$IP_ADDR" "$j" 2>&1 | tee "pubLogs/pub${x}_$NUM_INC.txt" &
+					node clients/mqtt_client.js pub "$QOS" "$MSGS_PER_CLIENT" "$TOPIC" "$IP_ADDR" "$OFFSET" 2>&1 | tee "pubLogs/pub${x}_$NUM_INC.txt" &
 					CLIENT_PIDS="$CLIENT_PIDS $!"
 					OFFSET=`expr $OFFSET + "$MSGS_PER_CLIENT"`
 				done

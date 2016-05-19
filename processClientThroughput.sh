@@ -6,7 +6,7 @@ CLIENT_TYPE=$1
 BROKER=$2
 NUM_TOPICS=$3
 NUM_MSGS=$4
-
+NUM_EXPS=$5
 if [ ! -f "expResults/${BROKER}${NUM_TOPICS}ClientThroughput.txt" ]; then
 	echo "Output file expResults/${BROKER}${NUM_TOPICS}ClientThroughput.txt not found"
 	touch "expResults/${BROKER}${NUM_TOPICS}ClientThroughput.txt"
@@ -33,7 +33,7 @@ echo "Time elapsed: $TIME_ELAPSED" >> "expResults/${BROKER}${NUM_TOPICS}ClientTh
 MSGS_RECVD=`cat $FILENAME | grep "RECV"| wc | awk '{print $1}'`
 echo "Msgs received: $MSGS_RECVD" >> "expResults/${BROKER}${NUM_TOPICS}ClientThroughput.txt"
 
-TOTAL_MSGS=`expr $NUM_TOPICS \* $NUM_MSGS`
+TOTAL_MSGS=`expr $NUM_TOPICS \* $NUM_MSGS \* $NUM_EXPS`
 echo "Total messages sent by clients: $TOTAL_MSGS" >> "expResults/${BROKER}${NUM_TOPICS}ClientThroughput.txt"
 
 PERCENT_RECVD=`echo  "scale=2;$MSGS_RECVD/$TOTAL_MSGS*100" | bc -l`

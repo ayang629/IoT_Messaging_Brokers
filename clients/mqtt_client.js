@@ -1,7 +1,14 @@
 var mqtt    = require('mqtt');
 var process = require('process');
-var client  = mqtt.connect({ host: process.argv.slice(2)[4], port: 3001});
- 
+var sleep = require('sleep');
+var options = {
+  host: process.argv.slice(2)[4],
+  port: 2883,
+  keepalive:600
+};
+var client  = mqtt.connect(options);
+var expectedCounter = 0; 
+
 
 client.on('connect', function () {
   	var clientType = process.argv.slice(2)[0];
@@ -16,6 +23,7 @@ client.on('connect', function () {
 		  	var unixtimestamp =  new Date().getTime();
   			console.log('PUB', topic, pidBuffer.toString(), unixtimestamp);
 		  	client.publish(topic, pidBuffer, {qos:parseInt(qos)});
+		  	sleep.usleep(100000); //SLEEP FOR 100 MS
 		}
 		console.log("Finished publishing...");
 		process.exit();
@@ -23,7 +31,7 @@ client.on('connect', function () {
 		setTimeout(function () {
 		  console.log('Timing out...');
 		  process.exit();
-		}, 15000);
+		}, 300000);
 		var subTopic = topic;
 		var unixtimestamp =  new Date().getTime();
 		console.log('SUB', subTopic, unixtimestamp);
