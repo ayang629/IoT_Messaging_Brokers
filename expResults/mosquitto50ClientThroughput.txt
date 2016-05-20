@@ -1,0 +1,18 @@
+Running Throughput experiment with mosquitto (50 Topics)
+Start time: 1463761109417
+End time: 1463761110574
+Time elapsed: 1157
+Msgs received: 500
+Total messages sent by clients: 500
+Percent received: 100.00%
+Throughput (per sec) : 430.00
+
+Running Throughput experiment with mosquitto (50 Topics)
+Start time: 1463761109417
+End time: 1463761110574
+Time elapsed: 1157
+Msgs received: 500
+Total messages sent by clients: 500
+Percent received: 100.00%
+Throughput (per sec) : 430.00
+

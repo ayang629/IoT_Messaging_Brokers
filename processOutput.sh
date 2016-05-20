@@ -69,8 +69,7 @@ do
 		echo "Invalid output options: Legal options are [pubsub | multi]"
 	fi
 
-	if [[ "$BROKER" == "ponte" ]] || [[ "$BROKER" == "mosca" ]]; then
-		echo "Processing client throughput..."
-		./processClientThroughput.sh "$TYPE" "$BROKER" "$NUM_TOPICS" "$NUM_MSGS" "$NUM_EXPS"
-	fi
+	echo "Processing client throughput..."
+	./processClientThroughput.sh "$TYPE" "$BROKER" "$NUM_TOPICS" "$NUM_MSGS" "$NUM_EXPS"
+
 done

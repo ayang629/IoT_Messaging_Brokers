@@ -89,7 +89,7 @@ To test different server experiments:
 
 		$ ./servers.sh mosquitto 
 
-		$ ./experiment_driver.sh [experiment_conf]
+		$ ./experiment_driver.sh experiment_conf
 
 	Mosca: (MQTT broker in NodeJS)
 
@@ -97,7 +97,7 @@ To test different server experiments:
 
 		$ ./servers.sh mosca
 
-		$ ./experiment_driver.sh [experiment_conf]
+		$ ./experiment_driver.sh experiment_conf
 
 	Ponte: (Multiprotocol bridge to handle HTTP and COAP messages)
 
@@ -108,13 +108,15 @@ To test different server experiments:
 
 		$ ./experiment_driver.sh [experiment_conf]
 
-To run analysis script on experiment results:
+To run analysis script on experiment results (IMPORTANT: DO NOT CHANGE experiment.conf WHEN RUNNING THIS):
 
-	$ ./processOutput.sh [pubsub | multi] [mosquitto | mosca | ponte] [num_topics] [num_msgs] [subs_per_topic] [num_exps]
+	$ ./processOutput.sh [pubsub | multi] [mosquitto | mosca | ponte] 
 
-	#If you want to just run the throughput experiment individually:
+To run serverSide analysis script (only mosca and ponte should allow this as server logs are formatted correctly:
+	
+	$ ./processServerOutput.sh [pubsub | multi] [mosca | ponte]
 
-		$ ./process[Server | Client]Throughput.sh [pubsub | multi] [mosca | ponte] [num_topics] [subs_per_topic] [num_exps]
+	NOTE: CHANGES TO THIS WILL BE MADE SOON. CAUTION WHEN USING RIGHT NOW.
 
 	Details of output (in expResults directory): 
 		
@@ -151,7 +153,7 @@ To clean scripts:
 	$ ./cleanLogs.sh [mosca | mosquitto | ponte]
 
 
-To launch clients in subgroup:
+To launch clients in subgroup (OBSOLETE, USE experiment_driver.sh):
 
 	$ ./clients.sh [simple | mqttjs] [pub | sub | multi] [num_clients] [QoS] [topic] [num_msgs (ONLY IF PUB chosen)]
 
@@ -163,7 +165,7 @@ To launch clients in subgroup:
 
 To launch node client (mqttjs) directly:
 
-	$ node clients/mqtt_client.js [pub | sub] [0 | 1 | 2] [num_msgs_to_publish] [topic_base] [host] [msg_offset] [clients_per_process]
+	$ node clients/mqtt_client.js [pub | sub] [0 | 1 | 2] [num_msgs_to_publish] [topic_base_num] [host] [msg_offset] [clients_per_process]
 
 		#num_msgs_to_publish and msg_offset don't matter for sub option 
 	

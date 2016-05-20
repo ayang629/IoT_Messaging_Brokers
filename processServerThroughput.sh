@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#usage: ./processServerThroughput.sh [pubsub | multi] [mosquitto mosca | ponte] 
+#usage: ./processServerThroughput.sh [pubsub | multi] [mosca | ponte] 
 DATA=`cat experiment.conf | grep -e '^-'`
 CLIENT_TYPE=$1
 BROKER=$2
