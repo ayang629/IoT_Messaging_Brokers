@@ -1,13 +1,16 @@
 #!/bin/bash
 
-#usage: ./processOutput.sh [pubsub | multi] [mosquitto | mosca | ponte] [num_topics] [num_msgs] [subs_per_topic] [num_exps]
+#usage: ./processOutput.sh [pubsub | multi] [mosquitto | mosca | ponte] 
+#IMPORTANT: DO NOT CHANGE EXPERIMENT.CONF UNTIL YOU'VE RUN THIS SCRIPT TO PROCESS THE OUTPUT
 
 TYPE=$1
 BROKER=$2
-NUM_TOPICS=$3
-NUM_MSGS=$4
-SUBS_PER_TOPIC=$5
-NUM_EXPS=$6
+DATA=`cat experiment.conf | grep -e '^-'`
+NUM_TOPICS=`echo "$DATA" | sed -n 2p | awk '{print $2}'`
+NUM_MSGS=`echo "$DATA" | sed -n 4p | awk '{print $2}'`
+NUM_EXPS=`echo "$DATA" | sed -n 9p | awk '{print $2}'` 
+SUBS_PER_TOPIC=`echo "$DATA" | sed -n 5p | awk '{print $2}'`
+CLIENTS_PER_PROCESS=`echo "$DATA" | sed -n 10p | awk '{print $2}'` 
 for x in $(seq 1 1 "$NUM_EXPS")
 do
 	# if [[ "$BROKER" == "ponte" ]] || [[ "$BROKER" == "mosca" ]]; then
@@ -27,7 +30,7 @@ do
 			echo $FILENAME
 			FILENAME="multi"
 		done
-		cat "expResults/multiOutputTemp$NUM_TOPICS.txt" |  grep -v "SUB" | grep -v "Timing" | grep -v "Finished" | sort -n -k2,2 -k4,4 -k1,1 > "expResults/multiOutput$NUM_TOPICS.txt"
+		cat "expResults/multiOutputTemp$NUM_TOPICS.txt" |  grep -v "SUB" | grep -v "Timing" | grep -v "Finished" | grep -v "Exiting" | sort -n -k2,2 -k4,4 -k1,1 > "expResults/multiOutput$NUM_TOPICS.txt"
 		rm -f "expResults/multiOutputTemp$NUM_TOPICS.txt"
 		echo "Running python script..."
 		if [ ! -f "expResults/pyGenMulti$NUM_TOPICS.txt" ]; then
@@ -55,7 +58,7 @@ do
 			cat "pubLogs/pub${x}_${i}.txt" >> "expResults/pubsubOutputTemp$NUM_TOPICS.txt"
 		done
 		#sort the files together
-		cat "expResults/pubsubOutputTemp$NUM_TOPICS.txt" | grep -v "SUB" | grep -v "Timing" | grep -v "Finished" | sort -k4,4n -k2,2 | grep -v "Number topics"  > "expResults/pubsubOutput$NUM_TOPICS.txt"
+		cat "expResults/pubsubOutputTemp$NUM_TOPICS.txt" | grep -v "SUB" | grep -v "Timing" | grep -v "Finished" | grep -v "Exiting" |sort -k4,4n -k2,2 | grep -v "Number topics"  > "expResults/pubsubOutput$NUM_TOPICS.txt"
 		rm -f "expResults/pubsubOutputTemp$NUM_TOPICS.txt" #remove intermediate file
 		if [ ! -f "expResults/pyGenPubsub$NUM_TOPICS.txt" ]; then #create experiment output file if does not exist
 			echo "Output file not found"

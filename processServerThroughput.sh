@@ -1,12 +1,12 @@
 #!/bin/bash
 
-#usage: ./processServerThroughput.sh [pubsub | multi] [mosca | ponte] [num_topics] [num_msgs] [num_exps]
-
+#usage: ./processServerThroughput.sh [pubsub | multi] [mosquitto mosca | ponte] 
+DATA=`cat experiment.conf | grep -e '^-'`
 CLIENT_TYPE=$1
 BROKER=$2
-NUM_TOPICS=$3
-NUM_MSGS=$4
-NUM_EXPS=$5
+NUM_TOPICS=`echo "$DATA" | sed -n 2p | awk '{print $2}'`
+NUM_MSGS=`echo "$DATA" | sed -n 4p | awk '{print $2}'`
+NUM_EXPS=`echo "$DATA" | sed -n 9p | awk '{print $2}'` 
 for x in $(seq 1 1 "$NUM_EXPS")
 do
 	if [ ! -f "expResults/${BROKER}${NUM_TOPICS}ServerThroughput.txt" ]; then

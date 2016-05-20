@@ -46,7 +46,7 @@ else
 
 	PUBS_PER_TOPIC=1
 
-	MSGS_PER_TOPIC=1000
+	MSGS_PER_TOPIC=100
 
 	SUBS_PER_TOPIC=1
 
@@ -57,10 +57,13 @@ else
 	QOS=1
 
 	EXP_RUNS=1
+
+	CLIENTS_PER_PROCESS=1
 fi
 IP_ADDR="128.195.52.93"
 #NOTE: Can change options to just directly call the client_type
 if [[ "$EXP_TYPE" == "latency" ]]; then #Option throughput: run latency experiment
+	echo "RUNNING $EXP_RUNS EXPERIMENT(S)"
 	for x in $(seq 1 1 $EXP_RUNS)
 	do
 		echo "Running latency experiment..."
@@ -76,24 +79,24 @@ if [[ "$EXP_TYPE" == "latency" ]]; then #Option throughput: run latency experime
 				do
 					NUM_BASE=$(expr $SUBS_PER_TOPIC \* $i)
 					NUM_INC=$(expr $NUM_BASE + $j)
-					echo "subLogs/sub${x}_$NUM_INC.txt"
+					echo "subLogs/sub${x}_$NUM_INC.txt: NEW TOPIC BASE: $TOPIC_OFFSET"
 					node clients/mqtt_client.js sub "$QOS" 0 "$TOPIC_OFFSET" "$IP_ADDR" "$OFFSET" "$CLIENTS_PER_PROCESS" 2>&1 | tee "subLogs/sub${x}_$NUM_INC.txt" &
 					CLIENT_PIDS="$CLIENT_PIDS $!"
 				done
 				TOPIC_OFFSET=`expr $TOPIC_OFFSET + $CLIENTS_PER_PROCESS`
 			done
-			sleep 10
+			sleep 5
 			PUB_LOOPS=`expr $NUM_TOPICS / $CLIENTS_PER_PROCESS`
+			TOPIC_OFFSET=0
 			for i in $(seq 0 1 "`expr "$PUB_LOOPS" - 1`") #launch publishers to publish messages to clients
 			do
 				OFFSET=0
-				TOPIC_OFFSET=0
 				MSGS_PER_CLIENT=`expr $MSGS_PER_TOPIC / $PUBS_PER_TOPIC`
 				for j in $(seq 1 1 "$PUBS_PER_TOPIC") #THIS FOR LOOP WILL BREAK WITH UNIQUE ID'S IF RUNS > 1
 				do
 					NUM_BASE=$(expr $PUBS_PER_TOPIC \* $i)
 					NUM_INC=$(expr $NUM_BASE + $j)
-					echo "pubLogs/pub${x}_$NUM_INC.txt"
+					echo "pubLogs/pub${x}_$NUM_INC.txt: NEW TOPIC BASE: $TOPIC_OFFSET"
 					node clients/mqtt_client.js pub "$QOS" "$MSGS_PER_CLIENT" "$TOPIC_OFFSET" "$IP_ADDR" "$OFFSET" "$CLIENTS_PER_PROCESS" 2>&1 | tee "pubLogs/pub${x}_$NUM_INC.txt" &
 					CLIENT_PIDS="$CLIENT_PIDS $!"
 					OFFSET=`expr $OFFSET + "$MSGS_PER_CLIENT"`
