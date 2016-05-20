@@ -163,7 +163,7 @@ To launch clients in subgroup:
 
 To launch node client (mqttjs) directly:
 
-	$ node clients/mqtt_client.js [pub | sub] [0 | 1 | 2] [num_msgs_to_publish] [topic_name] [host] [msg_offset]
+	$ node clients/mqtt_client.js [pub | sub] [0 | 1 | 2] [num_msgs_to_publish] [topic_base] [host] [msg_offset] [clients_per_process]
 
 		#num_msgs_to_publish and msg_offset don't matter for sub option 
 	
