@@ -1,14 +1,18 @@
 var mqtt    = require('mqtt');
 var process = require('process');
 var clientType = process.argv.slice(2)[0];
+var totalToRecv = parseInt(process.argv.slice(2)[2]) * parseInt(process.argv.slice(2)[6]);
 var numTopics = parseInt(process.argv.slice(2)[6]);
 var topicBase = parseInt(process.argv.slice(2)[3]);
 var topicLimit = topicBase + numTopics;
 var outputIndexArray = []
+var globalCounter = parseInt(process.argv.slice(2)[5]);
 var counterArray = [];
 var clientArray = [];
 var clrIntArray = []; //takes setInterval return object to stop calling the interval 
 var numClosed = 0;
+var totalReceived = 0;
+
 
 function sleep(ms){
     var start = new Date().getTime(), expire = start + ms;
@@ -21,7 +25,7 @@ function create_client(clientArray, i){
 	var topic = "topic" + i;
 	var options = {
 	  host: process.argv.slice(2)[4],
-	  port: 2883,
+	  port: 1883,
 	  keepalive:600,
 	  clientId: clientType + "_mqttjs_" + topic
 	};
@@ -31,13 +35,21 @@ function create_client(clientArray, i){
 	client.on('message', function (topic, message, packet) {
 	  // message is Buffer 
 	  var unixtimestamp =  new Date().getTime()
+	  var string_msg =  message.toString();
+	  totalReceived += 1;
 	  console.log('RECV', topic, message.toString(), unixtimestamp);
+	  if(totalReceived >= totalToRecv){
+	  		//console.log("Finished receiving topic " + topic);
+	  		console.log("Exiting subscriber process...");
+  			client.end();
+  			process.exit();
+	  }
 	});
 
 	client.on('connect', function (options) {
 	  	var qos = process.argv.slice(2)[1];
 	  	var index = i - topicBase;
-	  	outputIndexArray[index] = (parseInt(process.argv.slice(2)[5]) * index); //indexing messages so they're unique
+	  	//outputIndexArray[index] = (parseInt(process.argv.slice(2)[5]) * index); //indexing messages so they're unique
 	  	if (clientType == "pub"){
 	  		var numPublishes = parseInt(process.argv.slice(2)[2]);
 	  		counterArray[index] = numPublishes;
@@ -48,11 +60,11 @@ function create_client(clientArray, i){
 					clearInterval(clrIntArray[index]);
 					numClosed += 1;
 					if (numClosed >= numTopics){
-						console.log("Exiting process...");
+						console.log("Exiting publishing process...");
 						process.exit();
 					}
 				}else{
-					var pidBuffer = new Buffer(process.pid.toString() + " " + (outputIndexArray[index]++));
+					var pidBuffer = new Buffer(process.pid.toString() + " " + (globalCounter++));
 					var unixtimestamp =  new Date().getTime();
 					client.publish(topic, pidBuffer, {qos:parseInt(qos)});
 					console.log('PUB', topic, pidBuffer.toString(), unixtimestamp);
@@ -66,7 +78,7 @@ function create_client(clientArray, i){
 			setTimeout(function () {
 			  console.log('Timing out...');
 			  process.exit();
-			}, 30000);
+			}, 600000);
 			var subTopic = topic;
 			var unixtimestamp =  new Date().getTime();
 			client.subscribe(subTopic, {qos:parseInt(qos)});

@@ -1,3 +1,5 @@
-{"name":"Config Test Logger","hostname":"dhcp-053188.ics.uci.edu","pid":8958,"service":"MQTT","level":30,"mqtt":3001,"msg":"server started","time":"2016-05-18T20:19:30.406Z","v":0}
-{"name":"Config Test Logger","hostname":"dhcp-053188.ics.uci.edu","pid":8958,"service":"HTTP","level":30,"port":8080,"msg":"server started","time":"2016-05-18T20:19:30.415Z","v":0}
-{"name":"Config Test Logger","hostname":"dhcp-053188.ics.uci.edu","pid":8958,"service":"CoAP","level":30,"port":3000,"msg":"server started","time":"2016-05-18T20:19:30.416Z","v":0}
+{"name":"Config Test Logger","hostname":"dhcp-053188.ics.uci.edu","pid":19767,"service":"MQTT","level":30,"mqtt":3001,"msg":"server started","time":"2016-05-20T19:37:40.991Z","v":0}
+{"name":"Config Test Logger","hostname":"dhcp-053188.ics.uci.edu","pid":19767,"service":"HTTP","level":30,"port":8080,"msg":"server started","time":"2016-05-20T19:37:41.000Z","v":0}
+{"name":"Config Test Logger","hostname":"dhcp-053188.ics.uci.edu","pid":19767,"service":"CoAP","level":30,"port":3000,"msg":"server started","time":"2016-05-20T19:37:41.001Z","v":0}
+{"name":"Config Test Logger","hostname":"dhcp-053188.ics.uci.edu","pid":19767,"service":"MQTT","level":30,"msg":"server closed","time":"2016-05-20T19:39:40.980Z","v":0}
+server stopped

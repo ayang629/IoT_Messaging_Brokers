@@ -60,7 +60,10 @@ else
 
 	CLIENTS_PER_PROCESS=1
 fi
-IP_ADDR="128.195.52.93"
+# IP_ADDR="127.0.0.1"
+IP_ADDR_SUB="52.53.213.156"  
+IP_ADDR_PUB="52.63.72.235"   
+
 #NOTE: Can change options to just directly call the client_type
 if [[ "$EXP_TYPE" == "latency" ]]; then #Option throughput: run latency experiment
 	echo "RUNNING $EXP_RUNS EXPERIMENT(S)"
@@ -72,35 +75,37 @@ if [[ "$EXP_TYPE" == "latency" ]]; then #Option throughput: run latency experime
 		if [[ "$MULTIPURPOSE" == "no" ]]; then
 			OFFSET=0
 			SUB_LOOPS=`expr $NUM_TOPICS / $CLIENTS_PER_PROCESS`
-			TOPIC_OFFSET=0
+			TOPIC_OFFSET=1
 			for i in $(seq 0 1 "`expr $SUB_LOOPS - 1`") #first launch clients that are subscribers
 			do
+				MSGS_PER_CLIENT=`expr $MSGS_PER_TOPIC / $PUBS_PER_TOPIC`
 				for j in $(seq 1 1 "$SUBS_PER_TOPIC") #THIS FOR LOOP WILL BREAK WITH UNIQUE ID'S IF RUNS > 1
 				do
 					NUM_BASE=$(expr $SUBS_PER_TOPIC \* $i)
 					NUM_INC=$(expr $NUM_BASE + $j)
 					echo "subLogs/sub${x}_$NUM_INC.txt: NEW TOPIC BASE: $TOPIC_OFFSET"
-					node clients/mqtt_client.js sub "$QOS" 0 "$TOPIC_OFFSET" "$IP_ADDR" "$OFFSET" "$CLIENTS_PER_PROCESS" 2>&1 | tee "subLogs/sub${x}_$NUM_INC.txt" &
+					node clients/mqtt_client.js sub "$QOS" "$MSGS_PER_CLIENT" "$TOPIC_OFFSET" "$IP_ADDR_SUB" "$OFFSET" "$CLIENTS_PER_PROCESS" 2>&1 | tee "subLogs/sub${x}_$NUM_INC.txt" &
 					CLIENT_PIDS="$CLIENT_PIDS $!"
 				done
 				TOPIC_OFFSET=`expr $TOPIC_OFFSET + $CLIENTS_PER_PROCESS`
 			done
 			sleep 5
 			PUB_LOOPS=`expr $NUM_TOPICS / $CLIENTS_PER_PROCESS`
-			TOPIC_OFFSET=0
+			TOPIC_OFFSET=1
+			OFFSET=0
+			MSGS_PER_CLIENT=`expr $MSGS_PER_TOPIC / $PUBS_PER_TOPIC`
+			MSGS_TOTAL=`expr $MSGS_PER_TOPIC \* $CLIENTS_PER_PROCESS`
 			for i in $(seq 0 1 "`expr "$PUB_LOOPS" - 1`") #launch publishers to publish messages to clients
 			do
-				OFFSET=0
-				MSGS_PER_CLIENT=`expr $MSGS_PER_TOPIC / $PUBS_PER_TOPIC`
-				for j in $(seq 1 1 "$PUBS_PER_TOPIC") #THIS FOR LOOP WILL BREAK WITH UNIQUE ID'S IF RUNS > 1
+				for j in $(seq 1 1 "$PUBS_PER_TOPIC") #THIS FOR LOOP IS OBSOLETE WITH NEW IMPLEMENTATION
 				do
 					NUM_BASE=$(expr $PUBS_PER_TOPIC \* $i)
 					NUM_INC=$(expr $NUM_BASE + $j)
-					echo "pubLogs/pub${x}_$NUM_INC.txt: NEW TOPIC BASE: $TOPIC_OFFSET"
-					node clients/mqtt_client.js pub "$QOS" "$MSGS_PER_CLIENT" "$TOPIC_OFFSET" "$IP_ADDR" "$OFFSET" "$CLIENTS_PER_PROCESS" 2>&1 | tee "pubLogs/pub${x}_$NUM_INC.txt" &
+					echo "pubLogs/pub${x}_$NUM_INC.txt: NEW TOPIC BASE: $TOPIC_OFFSET; NEW OFFSET: $OFFSET"
+					node clients/mqtt_client.js pub "$QOS" "$MSGS_PER_CLIENT" "$TOPIC_OFFSET" "$IP_ADDR_PUB" "$OFFSET" "$CLIENTS_PER_PROCESS" 2>&1 | tee "pubLogs/pub${x}_$NUM_INC.txt" &
 					CLIENT_PIDS="$CLIENT_PIDS $!"
-					OFFSET=`expr $OFFSET + "$MSGS_PER_CLIENT"`
 				done
+				OFFSET=`expr $OFFSET + "$MSGS_TOTAL"`
 				TOPIC_OFFSET=`expr $TOPIC_OFFSET + $CLIENTS_PER_PROCESS`
 			done
 			for pid in $CLIENT_PIDS

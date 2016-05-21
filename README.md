@@ -59,7 +59,7 @@ CURRENTLY, ONLY THE MQTTJS CLIENT IS CONFIGURED FOR EXPERIMENTS.
 
 The num_clients argument determines how many clients the clients.sh script will run at once, and the msgs_per_client represents the number of messages each client will attempt to publish. 
 
-To run client experiment (NOTE, MQTTJS CLIENT SENDS TO PORT 3001 BY DEFAULT, change to 1883 when running pure mosquitto):
+To run client experiment (NOTE, MQTTJS CLIENT SENDS TO PORT 2883 BY DEFAULT, change to 1883 when running pure mosquitto):
 
 	First, make sure your servers are running. Then, run the following command
 
@@ -118,33 +118,33 @@ To run serverSide analysis script (only mosca and ponte should allow this as ser
 
 	NOTE: CHANGES TO THIS WILL BE MADE SOON. CAUTION WHEN USING RIGHT NOW.
 
-	Details of output (in expResults directory): 
-		
-		In Latency file (named 'pyGen[pubsub | multi]Output[num_topics].txt'):
+Details of output (in expResults directory): 
+	
+	In Latency file (named 'pyGen[pubsub | multi]Output[num_topics].txt'):
 
-			Packets lost: [True | False]
+		Packets lost: [True | False]
 
-			"topic avg(ms) min(ms) max(ms) percent_packets_received" --> for each topic
+		"topic avg(ms) min(ms) max(ms) percent_packets_received" --> for each topic
 
-			Total average delay (ms)
+		Total average delay (ms)
 
-		In Server throughput files 
+	In Server throughput files 
 
-		(named [mosca | ponte][num_topics]ServerThroughput.txt, [mosca | ponte][num_topicsClientThroughput.txt):
+	(named [mosca | ponte][num_topics]ServerThroughput.txt, [mosca | ponte][num_topicsClientThroughput.txt):
 
-			Start time (unix timestamp)
+		Start time (unix timestamp)
 
-			End time (unix timestamp)
+		End time (unix timestamp)
 
-			Time elapsed (in milliseconds): end time - start time
+		Time elapsed (in milliseconds): end time - start time
 
-			Messages received: total number of messages received by the broker
+		Messages received: total number of messages received by the broker
 
-			Total messages: total number of messages sent by all the clients in a given experiment (derived from num_topics and subs_per_topic)
+		Total messages: total number of messages sent by all the clients in a given experiment (derived from num_topics and subs_per_topic)
 
-			Percentage received: percentage of messages that were received by the broker.
+		Percentage received: percentage of messages that were received by the broker.
 
-			Throughput: average number of messages that reached the broker per second
+		Throughput: average number of messages that reached the broker per second
 
 To clean scripts:
 

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#usage: ./processClientThroughput.sh [pubsub | multi] [mosca | ponte] [num_topics] [num_msgs]
+#usage: ./processClientThroughput.sh [pubsub | multi] [mosca | ponte] [num_topics] [num_msgs] 
 
 CLIENT_TYPE=$1
 BROKER=$2

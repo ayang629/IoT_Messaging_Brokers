@@ -14,10 +14,10 @@ class Topic:
 
 	def add_entry(self, key, value):
 		self.received+=1
-		if self.dict.has_key(key):
-			self.dict[key].append(value)
-		else:
+		if not self.dict.has_key(key): #ONLY ACCEPTS ONE MESSAGE
 			self.dict[key] = [value]
+		else:
+			print("DUPLICATE FOUND: " + self.name + " index " + str(key))
 
 	def add_missing(self, index):
 		self.missing.add(index)
@@ -25,8 +25,13 @@ class Topic:
 	def get_percentage_received(self):
 		return str(float(self.received) / float(self.total_topic_msgs) * 100) + "%"
 
-	def get_average_latency(self):
-		sum_values = numpy.sum(self.dict.values())
+	def get_average_variance(self, option):
+		if(option == "full"):
+			return
+
+	def get_average_latency(self, option):
+		if(option == "full"):
+			sum_values = numpy.sum(self.dict.values())
 		if(type(sum_values) is list):
 			return float(sum(sum_values) / self.received) if self.received != 0 else 0
 		else:
@@ -43,6 +48,12 @@ class Topic:
 	def get_max(self):
 		return str(self.max)
 
+	def get_min_time(self):
+		return min([item for sublist in self.dict.values() for item in sublist])
+
+	def get_max_time(self):
+		return max([item for sublist in self.dict.values() for item in sublist])
+
 	def get_received(self):
 		return self.received
 
@@ -53,18 +64,24 @@ def _not_empty(topic_dict):
 			filled += 1
 	return filled
 
-def calculate_statistics(topic_dict, topic_set, order):
-	total_avg_delay = 0
-	print "topic\tavg(ms)\tmin(ms)\tmax(ms)\tpercent"
-	for entry in order:
-		v = topic_dict[entry]
-		total_avg_delay += v.get_average_latency()
-		print "{:7}\t{:6}\t{:6}\t{:6}\t{:6}".format(entry, str(v.get_average_latency()), 
-			v.get_min(), v.get_max(),v.get_percentage_received())
-	num_empty = _not_empty(topic_dict)
-	print "Total Avg delay: " + str(total_avg_delay/num_empty) + " ms"
+def calculate_statistics(topic_dict, topic_set, order, total_msgs):
+    total_avg_delay = 0
+    total_received = 0
+    print "topic\tavg(ms)\tmin(ms)\tmax(ms)\tpercent"
+    for entry in order:
+            v = topic_dict[entry]
+            total_received += topic_dict[entry].get_received()
+            total_avg_delay += v.get_average_latency("full")
+            print "{:7}\t{:6}\t{:6}\t{:6}\t{:6}".format(entry, str(v.get_average_latency("full")),
+                    v.get_min(), v.get_max(),v.get_percentage_received())
+    num_empty = _not_empty(topic_dict)
+    print "Total Msgs received: " + str(total_received) + " packets"
+    if ( total_received != total_msgs ): #check if packet loss was detected
+            print "Packet Received: {:6.2f}%".format( float((float(total_received) / float(total_msgs)) * 100) )
+    else:
+            print "Packets Received: 100%"
+    print "Total Avg delay: " + str(total_avg_delay/num_empty) + " ms"
 
-#XXX
 def process_file(lines, line_len, num_msgs, subs_per_topic):
 	topic_dict = dict()
 	topic_set = set()
@@ -90,7 +107,7 @@ def process_file(lines, line_len, num_msgs, subs_per_topic):
 				topic_dict[topic].add_missing( (int(pub_split[3])*subs_per_topic) + i) #redefine definition of missing topic entry
 				break
 		index += (received + 1)
-		
+	
 	return (topic_dict, topic_set, order)
 	
 
@@ -113,7 +130,7 @@ if __name__ == "__main__":
 	else:
 		print "Packet Loss: False"
 	result_tuple = process_file(lines, line_len, num_msgs, subs_per_topic)
-	calculate_statistics(result_tuple[0], result_tuple[1], result_tuple[2])
+	calculate_statistics(result_tuple[0], result_tuple[1], result_tuple[2], num_topics*num_msgs)
 	# except IndexError as e:
 	# 	print "Error in main: " + str(e)
 	# 	exit(1)

@@ -57,7 +57,7 @@ do
 			echo "pubLogs/pub${x}_${i}.txt"
 			cat "pubLogs/pub${x}_${i}.txt" >> "expResults/pubsubOutputTemp$NUM_TOPICS.txt"
 		done
-		#sort the files together
+		#remove
 		cat "expResults/pubsubOutputTemp$NUM_TOPICS.txt" | grep -v "SUB" | grep -v "Timing" | grep -v "Finished" | grep -v "Exiting" |sort -k4,4n -k2,2 | grep -v "Number topics"  > "expResults/pubsubOutput$NUM_TOPICS.txt"
 		rm -f "expResults/pubsubOutputTemp$NUM_TOPICS.txt" #remove intermediate file
 		if [ ! -f "expResults/pyGenPubsub$NUM_TOPICS.txt" ]; then #create experiment output file if does not exist
@@ -69,7 +69,7 @@ do
 		echo "Invalid output options: Legal options are [pubsub | multi]"
 	fi
 
-	echo "Processing client throughput..."
-	./processClientThroughput.sh "$TYPE" "$BROKER" "$NUM_TOPICS" "$NUM_MSGS" "$NUM_EXPS"
+#	echo "Processing client throughput..."
+#	./processClientThroughput.sh "$TYPE" "$BROKER" "$NUM_TOPICS" "$NUM_MSGS" "$NUM_EXPS"
 
 done
