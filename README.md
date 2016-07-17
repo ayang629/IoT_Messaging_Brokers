@@ -4,9 +4,7 @@ To come (the to-do list):
 
 	- Kafka/redis-cluster integration
 
-	- increased plug-and-play functionality
-
-	- More documentation...
+	- increased plug-and-play functionality, including measurement for SCALE data
 
 REQUIREMENTS:
 
@@ -30,7 +28,7 @@ REQUIREMENTS:
 		
 	other Node-related dependencies are included in the package.json (downloaded into the node_modules folder)
 
-The brokers take one of 3 options: mosca, mosquitto, and ponte.
+About the available brokers: mosca, mosquitto, and ponte.
 
 	The mosquitto broker is a barebones broker that listens on port 1883 by default.
 
@@ -38,136 +36,99 @@ The brokers take one of 3 options: mosca, mosquitto, and ponte.
 
 	The ponte broker uses a mosca instance (port 3001) as well as CoAP (3000) and HTTP (port 8080) servers. 
 
+EXPERIMENT WORKFLOW:
 
-To terminate the server, simply provide a SIGINT (ctrl-c) command, which will trigger a trap to clean up background 
-processes (e.g: redis persistence server, sleep calls, active node clients).
+	Running an experiment is simple. The basic workflow can be essentialized to 5 steps:
 
-To run server individually:
-	
-	$ ./servers.sh [mosquitto | mosca | ponte] 
+		1.) Configure experiment.conf to set up your experiment
 
-	NOTE: As mentioned, the mosca server needs running mosquitto broker as it uses it for its pubsub capabilities. 
+		2.) Launch a server (currently 3 are implemented, NOTE: Ponte may be buggy. This will be updated soon)
 
-	# ./servers.sh mosquitto
+		3.) Run experiment_driver.sh, which currently is only implemented with mqttjs. Paho and SCALE data to come.
 
-	$ ./servers.sh mosca
+		4.)	Run ./processOutput.sh to 
 
-	
-The clients take one of 3 options: simple (bare-mosquitto calls), mqttjs, and paho. 
+		5.) Clean your logs with ./cleanLogs.sh 
 
-CURRENTLY, ONLY THE MQTTJS CLIENT IS CONFIGURED FOR EXPERIMENTS. 
+	Open experiment.conf and read experiment_conf_details.txt to see detailed documentation on how to configure an experiment.
 
-The num_clients argument determines how many clients the clients.sh script will run at once, and the msgs_per_client represents the number of messages each client will attempt to publish. 
-
-To run client experiment (NOTE, MQTTJS CLIENT SENDS TO PORT 2883 BY DEFAULT, change to 1883 when running pure mosquitto):
-
-	First, make sure your servers are running. Then, run the following command
-
-	$ ./experiment.sh experiment.conf
-	
-	Options in configuration file:
-	
-		experiment_type: What type of experiment to run.
+	To run a server:
 		
-		num_topics: The number of unique topics to be instantiated.
+		$ ./servers.sh [mosquitto | mosca | ponte] 
 
-		publishers_per_topic: How many publishers should be assigned to a given topic.
+		NOTE: As mentioned, the mosca server needs running mosquitto broker as it uses it for its pubsub capabilities. 
 
-		msgs_per_topic: How many messages a topic should expect to receive. This number is evenly distributed between clients.
-
-		subscribers_per_topic: The number of clients that will subscribe to a topic
-
-		multipurpose_clients: [yes | no], will tell script to dynamically configure all clients to act as a publisher and a subscriber.
-
-		client_type: Specify what type of client you want to implement
-
-		num_experiments: the number of times you want to run this experiment 
-
-To test different server experiments:
-
-	Pure Mosquitto: (Pure, lightweight MQTT broker)
-
-		$ ./servers.sh mosquitto 
-
-		$ ./experiment_driver.sh experiment_conf
-
-	Mosca: (MQTT broker in NodeJS)
-
-		$ ./servers.sh mosquitto 
+		# ./servers.sh mosquitto
 
 		$ ./servers.sh mosca
 
-		$ ./experiment_driver.sh experiment_conf
+	The clients take one of 3 options: simple (bare-mosquitto calls), mqttjs, and paho. 
 
-	Ponte: (Multiprotocol bridge to handle HTTP and COAP messages)
+	CURRENTLY, ONLY THE MQTTJS CLIENT IS CONFIGURED FOR EXPERIMENTS. 
 
-		$ ./servers.sh ponte
+	To run client experiment:
 
-		#OPTIONAL TO OVERLAY SEPARATE MOSCA BROKER 
-		$ ./servers.sh mosca #This launches the mosca broker on top of ponte
+		First, make sure your servers are running. Then, run the following command
 
-		$ ./experiment_driver.sh [experiment_conf]
+		$ ./experiment.sh experiment.conf
 
-To run analysis script on experiment results (IMPORTANT: DO NOT CHANGE experiment.conf WHEN RUNNING THIS):
+	To run analysis script on experiment results (IMPORTANT: DO NOT CHANGE experiment.conf WHEN RUNNING THIS):
 
-	$ ./processOutput.sh [pubsub | multi] [mosquitto | mosca | ponte] 
+		$ ./processOutput.sh [pubsub | multi] [mosquitto | mosca | ponte] 
 
-To run serverSide analysis script (only mosca and ponte should allow this as server logs are formatted correctly:
-	
-	$ ./processServerOutput.sh [pubsub | multi] [mosca | ponte]
+	To clean scripts:
 
-	NOTE: CHANGES TO THIS WILL BE MADE SOON. CAUTION WHEN USING RIGHT NOW.
+		Cleans all files in multiLogs/ pubLogs/ and subLogs/ automatically. Deletes server output file too
+
+		$ ./cleanLogs.sh [mosca | mosquitto | ponte]
 
 Details of output (in expResults directory): 
 	
 	In Latency file (named 'pyGen[pubsub | multi]Output[num_topics].txt'):
 
-		Packets lost: [True | False]
+		If the "topic" granularity option (-g) is given, each experiment will give basic topic-level statistics, 
+		which include the min, max, and avg RTT as well as the percent received.
 
-		"topic avg(ms) min(ms) max(ms) percent_packets_received" --> for each topic
+		Generally, you will get experiment-level summaries that include the total number and percentage of messages 
+		that have successfully been received as well as experiment-level averages of latency (RTT) and jitter.
 
-		Total average delay (ms)
+EXTRA: About the underlying scripts:
 
-	In Server throughput files 
+	There are two interesting scripts that handle most of the complexity of the experiments: clients/mqtt_client.js and generateOutput.py. They are implemented with specific command line arguments, so below is a brief rundown on how to run them individually:
 
-	(named [mosca | ponte][num_topics]ServerThroughput.txt, [mosca | ponte][num_topicsClientThroughput.txt):
+	For generateOutput.py, type python generateOutput.py --help for a rundown of the arguments and options
 
-		Start time (unix timestamp)
+	For clients/mqtt_client.js what arguments you want to provide depend on whether you're launching pubs or subs:
 
-		End time (unix timestamp)
+		For both:
 
-		Time elapsed (in milliseconds): end time - start time
+			--clientType= : pub or sub 
 
-		Messages received: total number of messages received by the broker
+			-q : [0 | 1 | 2]
 
-		Total messages: total number of messages sent by all the clients in a given experiment (derived from num_topics and subs_per_topic)
+			-h : IP address
 
-		Percentage received: percentage of messages that were received by the broker.
+			-p : Port 
 
-		Throughput: average number of messages that reached the broker per second
+			--numTopics= : Number of instances
 
-To clean scripts:
+			--to= : The base number of your topic. Topic names formatted as clientType_mqttjs_topic[topic_offset#]_[instance#]
+					(e.g: pub_mqttjs_topic5_1, sub_mqttjs_topic34_12)
 
-	Cleans all files in multiLogs/ pubLogs/ and subLogs/ automatically. Deletes server output file too
+			--ti= : The number of instances you want the process to launch per topic.
 
-	$ ./cleanLogs.sh [mosca | mosquitto | ponte]
+		For publishers:
+
+			-m : The total number of messages you want published per topic
+
+			--co= : Published messages have an unique publish offset in the context of the experiment. This argument is the
+					base number in a range (from --co to --co + -m) that your publishers will label their messages as.
+
+		No unique subscriber arguments are defined
 
 
-To launch clients in subgroup (OBSOLETE, USE experiment_driver.sh):
 
-	$ ./clients.sh [simple | mqttjs] [pub | sub | multi] [num_clients] [QoS] [topic] [num_msgs (ONLY IF PUB chosen)]
 
-	e.g: 
-
-	$ ./clients.sh mqttjs pub 50 2 test_topic 1000 1
-
-	$ ./clients.sh mqttjs sub 25 1 test_topic 1
-
-To launch node client (mqttjs) directly:
-
-	$ node clients/mqtt_client.js [pub | sub] [0 | 1 | 2] [num_msgs_to_publish] [topic_base_num] [host] [msg_offset] [clients_per_process]
-
-		#num_msgs_to_publish and msg_offset don't matter for sub option 
 	
 
 

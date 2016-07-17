@@ -1,0 +1,48 @@
+Packet Loss: True
+topic	avg(ms)	min(ms)	max(ms)	percent
+topic0 	2634.0	124   	3279  	69.4% 
+topic1 	3307.0	1531  	3821  	89.6% 
+topic2 	1652.0	1176  	2007  	80.2% 
+topic3 	2336.0	71    	3003  	73.4% 
+topic4 	1689.0	1183  	1965  	72.6% 
+Total Avg delay: 2323.6 ms
+Packet Loss: True
+topic	avg(ms)	min(ms)	max(ms)	percent
+topic0 	1071.0	70    	3594  	31.7% 
+topic1 	1496.0	57    	3966  	89.0% 
+topic2 	1058.0	56    	3442  	39.3% 
+topic3 	2124.0	70    	3821  	72.5% 
+topic4 	1406.0	15    	3878  	100.0%
+Total Avg delay: 1431.0 ms
+Packet Loss: True
+topic	avg(ms)	min(ms)	max(ms)	percent
+topic0 	2850.0	92    	3787  	39.2% 
+topic1 	3723.0	3361  	4134  	19.6% 
+topic2 	2697.0	157   	3702  	13.1% 
+topic3 	2907.0	111   	3849  	38.7% 
+topic4 	3145.0	2186  	3821  	39.2% 
+Total Avg delay: 3064.4 ms
+Packet Loss: True
+topic	avg(ms)	min(ms)	max(ms)	percent
+topic0 	2402.0	202   	3456  	41.6% 
+topic1 	697.0 	596   	765   	37.4% 
+topic2 	2586.0	1504  	3555  	24.8% 
+topic3 	1867.0	60    	3213  	48.5% 
+topic4 	2427.0	750   	3214  	50.5% 
+Total Avg delay: 1995.8 ms
+Packet Loss: True
+topic	avg(ms)	min(ms)	max(ms)	percent
+topic0 	637.0 	29    	2052  	99.9% 
+topic1 	956.0 	23    	1981  	95.6% 
+topic2 	850.0 	31    	2079  	100.0%
+topic3 	1420.0	29    	2160  	87.8% 
+topic4 	1038.0	20    	2283  	100.0%
+Total Avg delay: 980.2 ms
+Packet Loss: True
+topic	avg(ms)	min(ms)	max(ms)	percent
+topic0 	841.0 	21    	2949  	99.9% 
+topic1 	1721.0	354   	2847  	48.0% 
+topic2 	1442.0	28    	2975  	100.0%
+topic3 	1860.0	79    	3071  	49.5% 
+topic4 	1583.0	51    	3057  	100.0%
+Total Avg delay: 1489.4 ms

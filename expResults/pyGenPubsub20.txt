@@ -1,0 +1,26 @@
+topic	avg(ms)	min(ms)	max(ms)	percent
+topic0 	3.0   	0     	12    	100.0%
+topic1 	5.0   	1     	15    	100.0%
+topic2 	6.0   	2     	23    	100.0%
+topic3 	7.0   	2     	32    	100.0%
+topic4 	8.0   	3     	32    	100.0%
+topic5 	9.0   	2     	32    	100.0%
+topic6 	9.0   	2     	33    	100.0%
+topic7 	10.0  	2     	31    	100.0%
+topic8 	10.0  	3     	34    	100.0%
+topic9 	11.0  	3     	35    	100.0%
+topic10	3.0   	0     	10    	100.0%
+topic11	4.0   	1     	11    	100.0%
+topic12	5.0   	2     	12    	100.0%
+topic13	6.0   	1     	15    	100.0%
+topic14	7.0   	1     	15    	100.0%
+topic15	8.0   	2     	18    	100.0%
+topic16	9.0   	2     	24    	100.0%
+topic17	10.0  	3     	25    	100.0%
+topic18	10.0  	3     	29    	100.0%
+topic19	12.0  	3     	31    	100.0%
+Total RECV's received:   10000 of   10000 messages
+Packet Received: 100.00%
+Total Avg delay: 7.6 ms
+Total Avg jitter: 0.743987975952 ms
+

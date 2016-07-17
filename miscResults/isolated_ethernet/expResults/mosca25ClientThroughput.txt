@@ -1,0 +1,45 @@
+
+Running Throughput experiment with mosca (25 Topics)
+Start time: 1463387250257
+End time: 1463387288627
+Time elapsed: 38370
+Msgs received: 25000
+Total messages sent by clients: 25000
+Percent received: 100.00%
+Throughput (per sec) : 650.00
+
+Running Throughput experiment with mosca (25 Topics)
+Start time: 1463387582780
+End time: 1463387619495
+Time elapsed: 36715
+Msgs received: 25000
+Total messages sent by clients: 25000
+Percent received: 100.00%
+Throughput (per sec) : 680.00
+
+Running Throughput experiment with mosca (25 Topics)
+Start time: 1463387702345
+End time: 1463387738868
+Time elapsed: 36523
+Msgs received: 25000
+Total messages sent by clients: 25000
+Percent received: 100.00%
+Throughput (per sec) : 680.00
+
+Running Throughput experiment with mosca (25 Topics)
+Start time: 1463387837950
+End time: 1463387876063
+Time elapsed: 38113
+Msgs received: 25000
+Total messages sent by clients: 25000
+Percent received: 100.00%
+Throughput (per sec) : 650.00
+
+Running Throughput experiment with mosca (25 Topics)
+Start time: 1463387939145
+End time: 1463387975439
+Time elapsed: 36294
+Msgs received: 25000
+Total messages sent by clients: 25000
+Percent received: 100.00%
+Throughput (per sec) : 680.00

@@ -1,0 +1,63 @@
+More about what the configurations in experiment.conf mean:
+
+The goal for this experiment script suite is to provide a flexible driver to run latency and throughput related 
+tests for messaging protocols used by IoT devices. The end-goal is to be able to plug in any, arbitrary messaging client
+that has the capability of sending and receiving messages of acceptable formats and being able to run these 
+measurements with relative ease. 
+
+However, to maintain some flexibility, there are 15 experiment configuration options that need to be considered 
+before running an experiment. This document is intended to demystify their meanings and provide recommendations on 
+configuration options. Before going into the configuration options, below is a brief rundown on how an experiment is setup:
+
+Clients are assigned assigned a role: As a publisher or subscriber. The experiment gives a configuration to allow the driver to launch either only publishers, only subscribers, or both. 
+
+Brokers receive connection requests from publishers and subscribers (configured at the client) and receive publisher messages and broadcast subscriber requests for messages.
+
+The main idea of the experiment is to set up a broker to begin listening for connection requests. Then, configure your experiment.conf to launch the experiment script accordingly. The aim is to stress test the brokers, which is why there 
+there aren't many complex configurations and scenarios for the clients. Below are the options:
+
+	num_topics: Represents the total number of topics an experiment will create to define the testbed.
+
+	pub_clients_per_topic: Defines how many unique client instances will publish to a topic. For example, if there are 
+						   10 topics and 5 pub_clients_per_topic, then 50 publisher client instances will be created.
+
+	total_msgs_per_topic: Defines the number of messages to be sent to a topic. This number is NOT affected by configuring
+						  pub_clients_per_topic (e.g: 10 pub_clients_per_topic with 100 messages means each publisher client 
+						  instance will publish 10 messages). Because of this, please evenly divide this number with the
+						  number above.
+
+	sub_clients_per_topic: Defines unique client instances to subscribe per topic. Same principle as pub_clients_per_topic.
+
+	pub_topics_per_process: The currently existing mqtt client implementation written in node.js allows us to launch multiple
+							client instances per node process. This number specifies how many instances each process should 
+							spin up. Please keep this <= pub_clients_per_topic and evenly divisible to num_topics.
+
+	sub_topics_per_process: Same principle as above but with subscribers instead
+
+	client_type: Keep this as mqttjs for now. This specifies which client implementation to use, and for now only the node 
+				 implementation, mqtt_client.js, works with this experiment configuration.
+
+	QoS: Options are 0, 1, or 2. (i.e: unreliable, reliable, guaranteed according to mqtt standard)
+
+	run_times: Defines how many times you would like to run this experiment you've configured.
+
+	ip_pub: The ip address of the broker where you want your publisher clients to publish to.
+
+	pport: The port of the broker where you want your publisher clients to publish to.
+
+	ip_sub: The ip address of the broker where you want your subscriber clients to subscribe from.
+
+	sport: The port of the broker where you want your subscriber clients to subscribe from.
+
+	isolated: The options are PUB, SUB, and NO. NO means the experiment_driver will launch the subscribers according to your
+			  configuration, sleep for a defined amount of time, then launch the publishers according to your configuration.
+			  PUB will only launch the publisher clients and SUB will only launch the subscriber clients.
+
+	sleep: If your option chosen was NO, then this defines the grace period you want your script to sleep to allow your 
+		   subscribers time to actually connect to your broker before the publishers begin connecting and publishing messages
+
+
+
+
+
+

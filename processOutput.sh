@@ -6,65 +6,34 @@
 TYPE=$1
 BROKER=$2
 DATA=`cat experiment.conf | grep -e '^-'`
-NUM_TOPICS=`echo "$DATA" | sed -n 2p | awk '{print $2}'`
-NUM_MSGS=`echo "$DATA" | sed -n 4p | awk '{print $2}'`
-NUM_EXPS=`echo "$DATA" | sed -n 9p | awk '{print $2}'` 
-SUBS_PER_TOPIC=`echo "$DATA" | sed -n 5p | awk '{print $2}'`
-CLIENTS_PER_PROCESS=`echo "$DATA" | sed -n 10p | awk '{print $2}'` 
+#========Gather relevant data from experiment config file to process experiment results...=======#
+NUM_TOPICS=`echo "$DATA" | sed -n 1p | awk '{print $2}'`
+NUM_MSGS=`echo "$DATA" | sed -n 3p | awk '{print $2}'`
+SUBS_PER_TOPIC=`echo "$DATA" | sed -n 4p | awk '{print $2}'`
+NUM_EXPS=`echo "$DATA" | sed -n 10p | awk '{print $2}'` 
+
+#========PROCESS EACH EXPERIMENT========#
 for x in $(seq 1 1 "$NUM_EXPS")
 do
-	# if [[ "$BROKER" == "ponte" ]] || [[ "$BROKER" == "mosca" ]]; then
-	# 	echo "Processing server throughput..."
-	# 	./processServerThroughput.sh "$TYPE" "$BROKER" "$NUM_TOPICS" "$NUM_MSGS"
-	# fi
 	if [[ "$TYPE" == "multi" ]]; then
 		echo "Processing multipurpose output experiment #${x}..."
-		COUNT=`ls -l multiLogs/ | wc | awk '{print $1}'` #number of files in multiLog
-		echo "Number topics: $NUM_TOPICS" > "expResults/multiOutput$NUM_TOPICS.txt"
-		NUM_FILES=`expr $COUNT - 1`
-		FILENAME="multi"
-		for i in $(seq 1 1 "$NUM_FILES")
-		do
-			FILENAME="${FILENAME}${i}.txt"
-			cat multiLogs/${FILENAME} >> "expResults/multiOutputTemp$NUM_TOPICS.txt"
-			echo $FILENAME
-			FILENAME="multi"
-		done
-		cat "expResults/multiOutputTemp$NUM_TOPICS.txt" |  grep -v "SUB" | grep -v "Timing" | grep -v "Finished" | grep -v "Exiting" | sort -n -k2,2 -k4,4 -k1,1 > "expResults/multiOutput$NUM_TOPICS.txt"
-		rm -f "expResults/multiOutputTemp$NUM_TOPICS.txt"
-		echo "Running python script..."
+		#=============NEED CAT STATEMENT HERE================#
 		if [ ! -f "expResults/pyGenMulti$NUM_TOPICS.txt" ]; then
 			echo "Output file not found"
 	    	touch "expResults/pyGenMulti$NUM_TOPICS.txt"
 		fi
-		python generateGraph.py "expResults/multiOutput$NUM_TOPICS.txt" "$NUM_TOPICS" "$NUM_MSGS" "$SUBS_PER_TOPIC" >> "expResults/pyGenMulti$NUM_TOPICS.txt"
+		python generateOutput.py "expResults/multiOutput$NUM_TOPICS.txt" "$NUM_TOPICS" "$NUM_MSGS" "$SUBS_PER_TOPIC" >> "expResults/pyGenMulti$NUM_TOPICS.txt"
 	elif [[ "$TYPE" == "pubsub" ]]; then
-		echo "Processing pubsub output into "expResults/pubsubOutput$NUM_TOPICS.txt"..."
-		SUB_INT=`ls -l subLogs/ | wc | awk '{print $1}'`
-		COUNT_SUB=`expr $SUB_INT - 1` #removes 'total' line from ls -l
-		COUNT_SUB=`expr $COUNT_SUB / $NUM_EXPS` #divides experiments 
-		PUB_INT=`ls -l pubLogs/ | wc | awk '{print $1}'`
-		COUNT_PUB=`expr $PUB_INT - 1` #removes 'total' line from ls -l
-		COUNT_PUB=`expr $COUNT_PUB / $NUM_EXPS`
-		echo "Number topics: $NUM_TOPICS" > "expResults/pubsubOutputTemp$NUM_TOPICS.txt"
-		for i in $(seq 1 1 "$COUNT_SUB") #cat in subLogs files
-		do
-			echo "subLogs/sub${x}_${i}.txt"
-			cat "subLogs/sub${x}_${i}.txt" >> "expResults/pubsubOutputTemp$NUM_TOPICS.txt"
-		done
-		for i in $(seq 1 1 "$COUNT_PUB") #cat in pubLogs files
-		do
-			echo "pubLogs/pub${x}_${i}.txt"
-			cat "pubLogs/pub${x}_${i}.txt" >> "expResults/pubsubOutputTemp$NUM_TOPICS.txt"
-		done
-		#remove
-		cat "expResults/pubsubOutputTemp$NUM_TOPICS.txt" | grep -v "SUB" | grep -v "Timing" | grep -v "Finished" | grep -v "Exiting" |sort -k4,4n -k2,2 | grep -v "Number topics"  > "expResults/pubsubOutput$NUM_TOPICS.txt"
-		rm -f "expResults/pubsubOutputTemp$NUM_TOPICS.txt" #remove intermediate file
+		echo "Processing pubsub output into \"expResults/pubsubOutput$NUM_TOPICS.txt\"..."
+		#============Format raw output into a intermediate file===============#
+		cat subLogs/sub${x}_*.txt pubLogs/pub${x}_*.txt | grep -E 'RECV|PUB' | sort -n -k4 > "expResults/pubsubOutput$NUM_TOPICS.txt"
 		if [ ! -f "expResults/pyGenPubsub$NUM_TOPICS.txt" ]; then #create experiment output file if does not exist
-			echo "Output file not found"
+			echo "Creating output file \"expResults/pyGenPubsub$NUM_TOPICS.txt\""
 	    	touch "expResults/pyGenPubsub$NUM_TOPICS.txt"
 		fi
-		python generateGraph.py "expResults/pubsubOutput$NUM_TOPICS.txt" "$NUM_TOPICS" "$NUM_MSGS" "$SUBS_PER_TOPIC" >> "expResults/pyGenPubsub$NUM_TOPICS.txt"
+		#=============CALL EXTERNAL PYTHON SCRIPT TO HANDLE CONVERTING FORMATTED OUTPUT INTO STATISTICS================#
+		python generateOutput.py -g topic -f "expResults/pubsubOutput$NUM_TOPICS.txt" -t "$NUM_TOPICS" -m "$NUM_MSGS" -s "$SUBS_PER_TOPIC" >> "expResults/pyGenPubsub$NUM_TOPICS.txt"
+		#rm -f "expResults/pubsubOutput$NUM_TOPICS.txt" #remove intermediate text document
 	else
 		echo "Invalid output options: Legal options are [pubsub | multi]"
 	fi

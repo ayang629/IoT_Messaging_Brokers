@@ -1,1669 +1,844 @@
-1463788592: mosquitto version 1.4.8 (build date 2016-02-14 11:22:37-0800) starting
-1463788592: Config loaded from brokers/broker_config.conf.
-1463788592: Opening ipv4 listen socket on port 1883.
-1463788592: Opening ipv6 listen socket on port 1883.
-1463788605: New connection from 127.0.0.1 on port 1883.
-1463788605: New connection from 127.0.0.1 on port 1883.
-1463788605: New connection from 127.0.0.1 on port 1883.
-1463788605: New connection from 127.0.0.1 on port 1883.
-1463788605: New connection from 127.0.0.1 on port 1883.
-1463788605: New connection from 127.0.0.1 on port 1883.
-1463788605: New connection from 127.0.0.1 on port 1883.
-1463788605: New connection from 127.0.0.1 on port 1883.
-1463788605: New connection from 127.0.0.1 on port 1883.
-1463788605: New connection from 127.0.0.1 on port 1883.
-1463788605: New connection from 127.0.0.1 on port 1883.
-1463788605: New connection from 127.0.0.1 on port 1883.
-1463788605: New client connected from 127.0.0.1 as sub_mqttjs_topic24 (c1, k600).
-1463788605: New connection from 127.0.0.1 on port 1883.
-1463788605: New connection from 127.0.0.1 on port 1883.
-1463788605: New connection from 127.0.0.1 on port 1883.
-1463788605: New connection from 127.0.0.1 on port 1883.
-1463788605: New connection from 127.0.0.1 on port 1883.
-1463788605: New connection from 127.0.0.1 on port 1883.
-1463788605: New client connected from 127.0.0.1 as sub_mqttjs_topic25 (c1, k600).
-1463788605: New client connected from 127.0.0.1 as sub_mqttjs_topic6 (c1, k600).
-1463788605: New client connected from 127.0.0.1 as sub_mqttjs_topic26 (c1, k600).
-1463788605: New client connected from 127.0.0.1 as sub_mqttjs_topic18 (c1, k600).
-1463788605: New client connected from 127.0.0.1 as sub_mqttjs_topic27 (c1, k600).
-1463788605: New client connected from 127.0.0.1 as sub_mqttjs_topic28 (c1, k600).
-1463788605: New client connected from 127.0.0.1 as sub_mqttjs_topic29 (c1, k600).
-1463788605: New client connected from 127.0.0.1 as sub_mqttjs_topic19 (c1, k600).
-1463788605: New client connected from 127.0.0.1 as sub_mqttjs_topic7 (c1, k600).
-1463788605: New client connected from 127.0.0.1 as sub_mqttjs_topic20 (c1, k600).
-1463788605: New client connected from 127.0.0.1 as sub_mqttjs_topic21 (c1, k600).
-1463788605: New client connected from 127.0.0.1 as sub_mqttjs_topic22 (c1, k600).
-1463788605: New client connected from 127.0.0.1 as sub_mqttjs_topic23 (c1, k600).
-1463788605: New client connected from 127.0.0.1 as sub_mqttjs_topic8 (c1, k600).
-1463788605: New client connected from 127.0.0.1 as sub_mqttjs_topic9 (c1, k600).
-1463788605: New client connected from 127.0.0.1 as sub_mqttjs_topic10 (c1, k600).
-1463788605: New client connected from 127.0.0.1 as sub_mqttjs_topic11 (c1, k600).
-1463788605: New connection from 127.0.0.1 on port 1883.
-1463788605: New connection from 127.0.0.1 on port 1883.
-1463788605: New connection from 127.0.0.1 on port 1883.
-1463788605: New connection from 127.0.0.1 on port 1883.
-1463788605: New connection from 127.0.0.1 on port 1883.
-1463788605: New connection from 127.0.0.1 on port 1883.
-1463788605: New connection from 127.0.0.1 on port 1883.
-1463788605: New client connected from 127.0.0.1 as sub_mqttjs_topic12 (c1, k600).
-1463788605: New connection from 127.0.0.1 on port 1883.
-1463788605: New client connected from 127.0.0.1 as sub_mqttjs_topic13 (c1, k600).
-1463788605: New connection from 127.0.0.1 on port 1883.
-1463788605: New client connected from 127.0.0.1 as sub_mqttjs_topic14 (c1, k600).
-1463788605: New client connected from 127.0.0.1 as sub_mqttjs_topic15 (c1, k600).
-1463788605: New client connected from 127.0.0.1 as sub_mqttjs_topic16 (c1, k600).
-1463788605: New client connected from 127.0.0.1 as sub_mqttjs_topic17 (c1, k600).
-1463788605: New connection from 127.0.0.1 on port 1883.
-1463788605: New connection from 127.0.0.1 on port 1883.
-1463788605: New connection from 127.0.0.1 on port 1883.
-1463788605: New client connected from 127.0.0.1 as sub_mqttjs_topic0 (c1, k600).
-1463788605: New client connected from 127.0.0.1 as sub_mqttjs_topic1 (c1, k600).
-1463788605: New client connected from 127.0.0.1 as sub_mqttjs_topic2 (c1, k600).
-1463788605: New client connected from 127.0.0.1 as sub_mqttjs_topic3 (c1, k600).
-1463788605: New client connected from 127.0.0.1 as sub_mqttjs_topic4 (c1, k600).
-1463788605: New client connected from 127.0.0.1 as sub_mqttjs_topic5 (c1, k600).
-1463788610: New connection from 127.0.0.1 on port 1883.
-1463788610: New connection from 127.0.0.1 on port 1883.
-1463788610: New connection from 127.0.0.1 on port 1883.
-1463788610: New connection from 127.0.0.1 on port 1883.
-1463788610: New connection from 127.0.0.1 on port 1883.
-1463788610: New connection from 127.0.0.1 on port 1883.
-1463788610: New client connected from 127.0.0.1 as pub_mqttjs_topic0 (c1, k600).
-1463788610: New client connected from 127.0.0.1 as pub_mqttjs_topic1 (c1, k600).
-1463788610: New client connected from 127.0.0.1 as pub_mqttjs_topic2 (c1, k600).
-1463788610: New client connected from 127.0.0.1 as pub_mqttjs_topic3 (c1, k600).
-1463788610: New client connected from 127.0.0.1 as pub_mqttjs_topic4 (c1, k600).
-1463788610: New client connected from 127.0.0.1 as pub_mqttjs_topic5 (c1, k600).
-1463788610: New connection from 127.0.0.1 on port 1883.
-1463788610: New connection from 127.0.0.1 on port 1883.
-1463788610: New connection from 127.0.0.1 on port 1883.
-1463788610: New connection from 127.0.0.1 on port 1883.
-1463788610: New connection from 127.0.0.1 on port 1883.
-1463788610: New connection from 127.0.0.1 on port 1883.
-1463788610: New client connected from 127.0.0.1 as pub_mqttjs_topic6 (c1, k600).
-1463788610: New client connected from 127.0.0.1 as pub_mqttjs_topic7 (c1, k600).
-1463788610: New client connected from 127.0.0.1 as pub_mqttjs_topic8 (c1, k600).
-1463788610: New client connected from 127.0.0.1 as pub_mqttjs_topic9 (c1, k600).
-1463788610: New client connected from 127.0.0.1 as pub_mqttjs_topic10 (c1, k600).
-1463788610: New client connected from 127.0.0.1 as pub_mqttjs_topic11 (c1, k600).
-1463788611: New connection from 127.0.0.1 on port 1883.
-1463788611: New connection from 127.0.0.1 on port 1883.
-1463788611: New connection from 127.0.0.1 on port 1883.
-1463788611: New connection from 127.0.0.1 on port 1883.
-1463788611: New connection from 127.0.0.1 on port 1883.
-1463788611: New connection from 127.0.0.1 on port 1883.
-1463788611: New client connected from 127.0.0.1 as pub_mqttjs_topic12 (c1, k600).
-1463788611: New client connected from 127.0.0.1 as pub_mqttjs_topic13 (c1, k600).
-1463788611: New client connected from 127.0.0.1 as pub_mqttjs_topic14 (c1, k600).
-1463788611: New client connected from 127.0.0.1 as pub_mqttjs_topic15 (c1, k600).
-1463788611: New client connected from 127.0.0.1 as pub_mqttjs_topic16 (c1, k600).
-1463788611: New client connected from 127.0.0.1 as pub_mqttjs_topic17 (c1, k600).
-1463788611: New connection from 127.0.0.1 on port 1883.
-1463788611: New connection from 127.0.0.1 on port 1883.
-1463788611: New connection from 127.0.0.1 on port 1883.
-1463788611: New connection from 127.0.0.1 on port 1883.
-1463788611: New connection from 127.0.0.1 on port 1883.
-1463788611: New connection from 127.0.0.1 on port 1883.
-1463788611: New connection from 127.0.0.1 on port 1883.
-1463788611: New connection from 127.0.0.1 on port 1883.
-1463788611: New connection from 127.0.0.1 on port 1883.
-1463788611: New connection from 127.0.0.1 on port 1883.
-1463788611: New connection from 127.0.0.1 on port 1883.
-1463788611: New connection from 127.0.0.1 on port 1883.
-1463788611: New client connected from 127.0.0.1 as pub_mqttjs_topic18 (c1, k600).
-1463788611: New client connected from 127.0.0.1 as pub_mqttjs_topic24 (c1, k600).
-1463788611: New client connected from 127.0.0.1 as pub_mqttjs_topic19 (c1, k600).
-1463788611: New client connected from 127.0.0.1 as pub_mqttjs_topic25 (c1, k600).
-1463788611: New client connected from 127.0.0.1 as pub_mqttjs_topic26 (c1, k600).
-1463788611: New client connected from 127.0.0.1 as pub_mqttjs_topic27 (c1, k600).
-1463788611: New client connected from 127.0.0.1 as pub_mqttjs_topic28 (c1, k600).
-1463788611: New client connected from 127.0.0.1 as pub_mqttjs_topic29 (c1, k600).
-1463788611: New client connected from 127.0.0.1 as pub_mqttjs_topic20 (c1, k600).
-1463788611: New client connected from 127.0.0.1 as pub_mqttjs_topic21 (c1, k600).
-1463788611: New client connected from 127.0.0.1 as pub_mqttjs_topic22 (c1, k600).
-1463788611: New client connected from 127.0.0.1 as pub_mqttjs_topic23 (c1, k600).
-1463788612: Client sub_mqttjs_topic5 disconnected.
-1463788612: Socket error on client sub_mqttjs_topic0, disconnecting.
-1463788612: Socket error on client sub_mqttjs_topic1, disconnecting.
-1463788612: Socket error on client sub_mqttjs_topic2, disconnecting.
-1463788612: Socket error on client sub_mqttjs_topic3, disconnecting.
-1463788612: Socket error on client sub_mqttjs_topic4, disconnecting.
-1463788612: Client sub_mqttjs_topic11 disconnected.
-1463788612: Socket error on client sub_mqttjs_topic6, disconnecting.
-1463788612: Socket error on client sub_mqttjs_topic7, disconnecting.
-1463788612: Socket error on client sub_mqttjs_topic8, disconnecting.
-1463788612: Socket error on client sub_mqttjs_topic9, disconnecting.
-1463788612: Socket error on client sub_mqttjs_topic10, disconnecting.
-1463788612: Client sub_mqttjs_topic23 disconnected.
-1463788612: Client sub_mqttjs_topic29 disconnected.
-1463788612: Socket error on client sub_mqttjs_topic18, disconnecting.
-1463788612: Socket error on client sub_mqttjs_topic19, disconnecting.
-1463788612: Socket error on client sub_mqttjs_topic20, disconnecting.
-1463788612: Socket error on client sub_mqttjs_topic21, disconnecting.
-1463788612: Socket error on client sub_mqttjs_topic22, disconnecting.
-1463788612: Socket error on client sub_mqttjs_topic27, disconnecting.
-1463788612: Socket error on client sub_mqttjs_topic28, disconnecting.
-1463788612: Socket error on client sub_mqttjs_topic24, disconnecting.
-1463788612: Socket error on client sub_mqttjs_topic25, disconnecting.
-1463788612: Socket error on client sub_mqttjs_topic26, disconnecting.
-1463788612: Socket error on client pub_mqttjs_topic0, disconnecting.
-1463788612: Socket error on client pub_mqttjs_topic1, disconnecting.
-1463788612: Socket error on client pub_mqttjs_topic2, disconnecting.
-1463788612: Socket error on client pub_mqttjs_topic3, disconnecting.
-1463788612: Socket error on client pub_mqttjs_topic4, disconnecting.
-1463788612: Socket error on client pub_mqttjs_topic5, disconnecting.
-1463788612: Client sub_mqttjs_topic17 disconnected.
-1463788612: Socket error on client sub_mqttjs_topic12, disconnecting.
-1463788612: Socket error on client sub_mqttjs_topic13, disconnecting.
-1463788612: Socket error on client sub_mqttjs_topic14, disconnecting.
-1463788612: Socket error on client sub_mqttjs_topic15, disconnecting.
-1463788612: Socket error on client sub_mqttjs_topic16, disconnecting.
-1463788612: Socket error on client pub_mqttjs_topic6, disconnecting.
-1463788612: Socket error on client pub_mqttjs_topic7, disconnecting.
-1463788612: Socket error on client pub_mqttjs_topic8, disconnecting.
-1463788612: Socket error on client pub_mqttjs_topic9, disconnecting.
-1463788612: Socket error on client pub_mqttjs_topic10, disconnecting.
-1463788612: Socket error on client pub_mqttjs_topic11, disconnecting.
-1463788612: Socket error on client pub_mqttjs_topic18, disconnecting.
-1463788612: Socket error on client pub_mqttjs_topic24, disconnecting.
-1463788612: Socket error on client pub_mqttjs_topic19, disconnecting.
-1463788612: Socket error on client pub_mqttjs_topic20, disconnecting.
-1463788612: Socket error on client pub_mqttjs_topic21, disconnecting.
-1463788612: Socket error on client pub_mqttjs_topic22, disconnecting.
-1463788612: Socket error on client pub_mqttjs_topic25, disconnecting.
-1463788612: Socket error on client pub_mqttjs_topic26, disconnecting.
-1463788612: Socket error on client pub_mqttjs_topic27, disconnecting.
-1463788612: Socket error on client pub_mqttjs_topic28, disconnecting.
-1463788612: Socket error on client pub_mqttjs_topic23, disconnecting.
-1463788612: Socket error on client pub_mqttjs_topic29, disconnecting.
-1463788612: Socket error on client pub_mqttjs_topic12, disconnecting.
-1463788612: Socket error on client pub_mqttjs_topic13, disconnecting.
-1463788612: Socket error on client pub_mqttjs_topic14, disconnecting.
-1463788612: Socket error on client pub_mqttjs_topic15, disconnecting.
-1463788612: Socket error on client pub_mqttjs_topic16, disconnecting.
-1463788612: Socket error on client pub_mqttjs_topic17, disconnecting.
-1463788671: New connection from 127.0.0.1 on port 1883.
-1463788671: New connection from 127.0.0.1 on port 1883.
-1463788671: New connection from 127.0.0.1 on port 1883.
-1463788671: New connection from 127.0.0.1 on port 1883.
-1463788671: New connection from 127.0.0.1 on port 1883.
-1463788671: New connection from 127.0.0.1 on port 1883.
-1463788671: New client connected from 127.0.0.1 as sub_mqttjs_topic0 (c1, k600).
-1463788671: New client connected from 127.0.0.1 as sub_mqttjs_topic1 (c1, k600).
-1463788671: New client connected from 127.0.0.1 as sub_mqttjs_topic2 (c1, k600).
-1463788671: New client connected from 127.0.0.1 as sub_mqttjs_topic3 (c1, k600).
-1463788671: New client connected from 127.0.0.1 as sub_mqttjs_topic4 (c1, k600).
-1463788671: New client connected from 127.0.0.1 as sub_mqttjs_topic5 (c1, k600).
-1463788671: New connection from 127.0.0.1 on port 1883.
-1463788671: New connection from 127.0.0.1 on port 1883.
-1463788671: New connection from 127.0.0.1 on port 1883.
-1463788671: New connection from 127.0.0.1 on port 1883.
-1463788671: New connection from 127.0.0.1 on port 1883.
-1463788671: New connection from 127.0.0.1 on port 1883.
-1463788671: New client connected from 127.0.0.1 as sub_mqttjs_topic6 (c1, k600).
-1463788671: New client connected from 127.0.0.1 as sub_mqttjs_topic7 (c1, k600).
-1463788671: New client connected from 127.0.0.1 as sub_mqttjs_topic8 (c1, k600).
-1463788671: New client connected from 127.0.0.1 as sub_mqttjs_topic9 (c1, k600).
-1463788671: New client connected from 127.0.0.1 as sub_mqttjs_topic10 (c1, k600).
-1463788671: New client connected from 127.0.0.1 as sub_mqttjs_topic11 (c1, k600).
-1463788671: New connection from 127.0.0.1 on port 1883.
-1463788671: New connection from 127.0.0.1 on port 1883.
-1463788671: New connection from 127.0.0.1 on port 1883.
-1463788671: New connection from 127.0.0.1 on port 1883.
-1463788671: New connection from 127.0.0.1 on port 1883.
-1463788671: New connection from 127.0.0.1 on port 1883.
-1463788671: New client connected from 127.0.0.1 as sub_mqttjs_topic12 (c1, k600).
-1463788671: New client connected from 127.0.0.1 as sub_mqttjs_topic13 (c1, k600).
-1463788671: New client connected from 127.0.0.1 as sub_mqttjs_topic14 (c1, k600).
-1463788671: New client connected from 127.0.0.1 as sub_mqttjs_topic15 (c1, k600).
-1463788671: New client connected from 127.0.0.1 as sub_mqttjs_topic16 (c1, k600).
-1463788671: New client connected from 127.0.0.1 as sub_mqttjs_topic17 (c1, k600).
-1463788671: New connection from 127.0.0.1 on port 1883.
-1463788671: New connection from 127.0.0.1 on port 1883.
-1463788671: New connection from 127.0.0.1 on port 1883.
-1463788671: New connection from 127.0.0.1 on port 1883.
-1463788671: New connection from 127.0.0.1 on port 1883.
-1463788671: New connection from 127.0.0.1 on port 1883.
-1463788671: New client connected from 127.0.0.1 as sub_mqttjs_topic18 (c1, k600).
-1463788671: New client connected from 127.0.0.1 as sub_mqttjs_topic19 (c1, k600).
-1463788671: New client connected from 127.0.0.1 as sub_mqttjs_topic20 (c1, k600).
-1463788671: New client connected from 127.0.0.1 as sub_mqttjs_topic21 (c1, k600).
-1463788671: New client connected from 127.0.0.1 as sub_mqttjs_topic22 (c1, k600).
-1463788671: New client connected from 127.0.0.1 as sub_mqttjs_topic23 (c1, k600).
-1463788671: New connection from 127.0.0.1 on port 1883.
-1463788671: New connection from 127.0.0.1 on port 1883.
-1463788671: New connection from 127.0.0.1 on port 1883.
-1463788671: New connection from 127.0.0.1 on port 1883.
-1463788671: New connection from 127.0.0.1 on port 1883.
-1463788671: New connection from 127.0.0.1 on port 1883.
-1463788671: New client connected from 127.0.0.1 as sub_mqttjs_topic24 (c1, k600).
-1463788671: New client connected from 127.0.0.1 as sub_mqttjs_topic25 (c1, k600).
-1463788671: New client connected from 127.0.0.1 as sub_mqttjs_topic26 (c1, k600).
-1463788671: New client connected from 127.0.0.1 as sub_mqttjs_topic27 (c1, k600).
-1463788671: New client connected from 127.0.0.1 as sub_mqttjs_topic28 (c1, k600).
-1463788671: New client connected from 127.0.0.1 as sub_mqttjs_topic29 (c1, k600).
-1463788675: Socket error on client sub_mqttjs_topic0, disconnecting.
-1463788675: Socket error on client sub_mqttjs_topic1, disconnecting.
-1463788675: Socket error on client sub_mqttjs_topic2, disconnecting.
-1463788675: Socket error on client sub_mqttjs_topic3, disconnecting.
-1463788675: Socket error on client sub_mqttjs_topic4, disconnecting.
-1463788675: Socket error on client sub_mqttjs_topic5, disconnecting.
-1463788675: Socket error on client sub_mqttjs_topic12, disconnecting.
-1463788675: Socket error on client sub_mqttjs_topic13, disconnecting.
-1463788675: Socket error on client sub_mqttjs_topic14, disconnecting.
-1463788675: Socket error on client sub_mqttjs_topic15, disconnecting.
-1463788675: Socket error on client sub_mqttjs_topic16, disconnecting.
-1463788675: Socket error on client sub_mqttjs_topic17, disconnecting.
-1463788675: Socket error on client sub_mqttjs_topic18, disconnecting.
-1463788675: Socket error on client sub_mqttjs_topic19, disconnecting.
-1463788675: Socket error on client sub_mqttjs_topic20, disconnecting.
-1463788675: Socket error on client sub_mqttjs_topic21, disconnecting.
-1463788675: Socket error on client sub_mqttjs_topic22, disconnecting.
-1463788675: Socket error on client sub_mqttjs_topic23, disconnecting.
-1463788675: Socket error on client sub_mqttjs_topic24, disconnecting.
-1463788675: Socket error on client sub_mqttjs_topic25, disconnecting.
-1463788675: Socket error on client sub_mqttjs_topic26, disconnecting.
-1463788675: Socket error on client sub_mqttjs_topic27, disconnecting.
-1463788675: Socket error on client sub_mqttjs_topic28, disconnecting.
-1463788675: Socket error on client sub_mqttjs_topic29, disconnecting.
-1463788675: Socket error on client sub_mqttjs_topic8, disconnecting.
-1463788675: Socket error on client sub_mqttjs_topic9, disconnecting.
-1463788675: Socket error on client sub_mqttjs_topic10, disconnecting.
-1463788675: Socket error on client sub_mqttjs_topic11, disconnecting.
-1463788675: Socket error on client sub_mqttjs_topic6, disconnecting.
-1463788675: Socket error on client sub_mqttjs_topic7, disconnecting.
-1463788721: New connection from 127.0.0.1 on port 1883.
-1463788721: New connection from 127.0.0.1 on port 1883.
-1463788721: New connection from 127.0.0.1 on port 1883.
-1463788721: New connection from 127.0.0.1 on port 1883.
-1463788721: New connection from 127.0.0.1 on port 1883.
-1463788721: New connection from 127.0.0.1 on port 1883.
-1463788721: New client connected from 127.0.0.1 as sub_mqttjs_topic0 (c1, k600).
-1463788721: New client connected from 127.0.0.1 as sub_mqttjs_topic1 (c1, k600).
-1463788721: New client connected from 127.0.0.1 as sub_mqttjs_topic2 (c1, k600).
-1463788721: New client connected from 127.0.0.1 as sub_mqttjs_topic3 (c1, k600).
-1463788721: New client connected from 127.0.0.1 as sub_mqttjs_topic4 (c1, k600).
-1463788721: New client connected from 127.0.0.1 as sub_mqttjs_topic5 (c1, k600).
-1463788721: New connection from 127.0.0.1 on port 1883.
-1463788721: New connection from 127.0.0.1 on port 1883.
-1463788721: New connection from 127.0.0.1 on port 1883.
-1463788721: New connection from 127.0.0.1 on port 1883.
-1463788721: New connection from 127.0.0.1 on port 1883.
-1463788721: New connection from 127.0.0.1 on port 1883.
-1463788721: New client connected from 127.0.0.1 as sub_mqttjs_topic6 (c1, k600).
-1463788721: New client connected from 127.0.0.1 as sub_mqttjs_topic7 (c1, k600).
-1463788721: New client connected from 127.0.0.1 as sub_mqttjs_topic8 (c1, k600).
-1463788721: New client connected from 127.0.0.1 as sub_mqttjs_topic9 (c1, k600).
-1463788721: New client connected from 127.0.0.1 as sub_mqttjs_topic10 (c1, k600).
-1463788721: New client connected from 127.0.0.1 as sub_mqttjs_topic11 (c1, k600).
-1463788721: New connection from 127.0.0.1 on port 1883.
-1463788721: New connection from 127.0.0.1 on port 1883.
-1463788721: New connection from 127.0.0.1 on port 1883.
-1463788721: New connection from 127.0.0.1 on port 1883.
-1463788721: New connection from 127.0.0.1 on port 1883.
-1463788721: New connection from 127.0.0.1 on port 1883.
-1463788721: New client connected from 127.0.0.1 as sub_mqttjs_topic12 (c1, k600).
-1463788721: New client connected from 127.0.0.1 as sub_mqttjs_topic13 (c1, k600).
-1463788721: New client connected from 127.0.0.1 as sub_mqttjs_topic14 (c1, k600).
-1463788721: New client connected from 127.0.0.1 as sub_mqttjs_topic15 (c1, k600).
-1463788721: New client connected from 127.0.0.1 as sub_mqttjs_topic16 (c1, k600).
-1463788721: New client connected from 127.0.0.1 as sub_mqttjs_topic17 (c1, k600).
-1463788721: New connection from 127.0.0.1 on port 1883.
-1463788721: New connection from 127.0.0.1 on port 1883.
-1463788721: New connection from 127.0.0.1 on port 1883.
-1463788721: New connection from 127.0.0.1 on port 1883.
-1463788721: New connection from 127.0.0.1 on port 1883.
-1463788721: New connection from 127.0.0.1 on port 1883.
-1463788721: New client connected from 127.0.0.1 as sub_mqttjs_topic18 (c1, k600).
-1463788721: New connection from 127.0.0.1 on port 1883.
-1463788721: New connection from 127.0.0.1 on port 1883.
-1463788721: New client connected from 127.0.0.1 as sub_mqttjs_topic19 (c1, k600).
-1463788721: New client connected from 127.0.0.1 as sub_mqttjs_topic20 (c1, k600).
-1463788721: New client connected from 127.0.0.1 as sub_mqttjs_topic21 (c1, k600).
-1463788721: New client connected from 127.0.0.1 as sub_mqttjs_topic22 (c1, k600).
-1463788721: New client connected from 127.0.0.1 as sub_mqttjs_topic23 (c1, k600).
-1463788721: New connection from 127.0.0.1 on port 1883.
-1463788721: New connection from 127.0.0.1 on port 1883.
-1463788721: New connection from 127.0.0.1 on port 1883.
-1463788721: New connection from 127.0.0.1 on port 1883.
-1463788721: New client connected from 127.0.0.1 as sub_mqttjs_topic24 (c1, k600).
-1463788721: New client connected from 127.0.0.1 as sub_mqttjs_topic25 (c1, k600).
-1463788721: New client connected from 127.0.0.1 as sub_mqttjs_topic26 (c1, k600).
-1463788721: New client connected from 127.0.0.1 as sub_mqttjs_topic27 (c1, k600).
-1463788721: New client connected from 127.0.0.1 as sub_mqttjs_topic28 (c1, k600).
-1463788721: New client connected from 127.0.0.1 as sub_mqttjs_topic29 (c1, k600).
-1463788726: New connection from 127.0.0.1 on port 1883.
-1463788726: New connection from 127.0.0.1 on port 1883.
-1463788726: New connection from 127.0.0.1 on port 1883.
-1463788726: New connection from 127.0.0.1 on port 1883.
-1463788726: New connection from 127.0.0.1 on port 1883.
-1463788726: New connection from 127.0.0.1 on port 1883.
-1463788726: New client connected from 127.0.0.1 as pub_mqttjs_topic0 (c1, k600).
-1463788726: New client connected from 127.0.0.1 as pub_mqttjs_topic1 (c1, k600).
-1463788726: New client connected from 127.0.0.1 as pub_mqttjs_topic2 (c1, k600).
-1463788726: New client connected from 127.0.0.1 as pub_mqttjs_topic3 (c1, k600).
-1463788726: New client connected from 127.0.0.1 as pub_mqttjs_topic4 (c1, k600).
-1463788726: New client connected from 127.0.0.1 as pub_mqttjs_topic5 (c1, k600).
-1463788726: New connection from 127.0.0.1 on port 1883.
-1463788726: New connection from 127.0.0.1 on port 1883.
-1463788726: New connection from 127.0.0.1 on port 1883.
-1463788726: New connection from 127.0.0.1 on port 1883.
-1463788726: New connection from 127.0.0.1 on port 1883.
-1463788726: New connection from 127.0.0.1 on port 1883.
-1463788726: New client connected from 127.0.0.1 as pub_mqttjs_topic6 (c1, k600).
-1463788726: New client connected from 127.0.0.1 as pub_mqttjs_topic7 (c1, k600).
-1463788726: New client connected from 127.0.0.1 as pub_mqttjs_topic8 (c1, k600).
-1463788726: New client connected from 127.0.0.1 as pub_mqttjs_topic9 (c1, k600).
-1463788726: New client connected from 127.0.0.1 as pub_mqttjs_topic10 (c1, k600).
-1463788726: New client connected from 127.0.0.1 as pub_mqttjs_topic11 (c1, k600).
-1463788726: New connection from 127.0.0.1 on port 1883.
-1463788726: New connection from 127.0.0.1 on port 1883.
-1463788726: New connection from 127.0.0.1 on port 1883.
-1463788726: New connection from 127.0.0.1 on port 1883.
-1463788726: New connection from 127.0.0.1 on port 1883.
-1463788726: New connection from 127.0.0.1 on port 1883.
-1463788726: New client connected from 127.0.0.1 as pub_mqttjs_topic12 (c1, k600).
-1463788726: New client connected from 127.0.0.1 as pub_mqttjs_topic13 (c1, k600).
-1463788726: New client connected from 127.0.0.1 as pub_mqttjs_topic14 (c1, k600).
-1463788726: New client connected from 127.0.0.1 as pub_mqttjs_topic15 (c1, k600).
-1463788726: New client connected from 127.0.0.1 as pub_mqttjs_topic16 (c1, k600).
-1463788726: New client connected from 127.0.0.1 as pub_mqttjs_topic17 (c1, k600).
-1463788726: New connection from 127.0.0.1 on port 1883.
-1463788726: New connection from 127.0.0.1 on port 1883.
-1463788726: New connection from 127.0.0.1 on port 1883.
-1463788726: New connection from 127.0.0.1 on port 1883.
-1463788726: New connection from 127.0.0.1 on port 1883.
-1463788726: New connection from 127.0.0.1 on port 1883.
-1463788726: New client connected from 127.0.0.1 as pub_mqttjs_topic18 (c1, k600).
-1463788726: New client connected from 127.0.0.1 as pub_mqttjs_topic19 (c1, k600).
-1463788726: New client connected from 127.0.0.1 as pub_mqttjs_topic20 (c1, k600).
-1463788726: New client connected from 127.0.0.1 as pub_mqttjs_topic21 (c1, k600).
-1463788726: New client connected from 127.0.0.1 as pub_mqttjs_topic22 (c1, k600).
-1463788726: New client connected from 127.0.0.1 as pub_mqttjs_topic23 (c1, k600).
-1463788726: New connection from 127.0.0.1 on port 1883.
-1463788726: New connection from 127.0.0.1 on port 1883.
-1463788726: New connection from 127.0.0.1 on port 1883.
-1463788726: New connection from 127.0.0.1 on port 1883.
-1463788726: New connection from 127.0.0.1 on port 1883.
-1463788726: New connection from 127.0.0.1 on port 1883.
-1463788726: New client connected from 127.0.0.1 as pub_mqttjs_topic24 (c1, k600).
-1463788726: New client connected from 127.0.0.1 as pub_mqttjs_topic25 (c1, k600).
-1463788726: New client connected from 127.0.0.1 as pub_mqttjs_topic26 (c1, k600).
-1463788726: New client connected from 127.0.0.1 as pub_mqttjs_topic27 (c1, k600).
-1463788726: New client connected from 127.0.0.1 as pub_mqttjs_topic28 (c1, k600).
-1463788726: New client connected from 127.0.0.1 as pub_mqttjs_topic29 (c1, k600).
-1463788727: Client sub_mqttjs_topic5 disconnected.
-1463788727: Socket error on client sub_mqttjs_topic1, disconnecting.
-1463788727: Socket error on client sub_mqttjs_topic2, disconnecting.
-1463788727: Socket error on client sub_mqttjs_topic3, disconnecting.
-1463788727: Socket error on client sub_mqttjs_topic4, disconnecting.
-1463788727: Socket error on client sub_mqttjs_topic0, disconnecting.
-1463788727: Client sub_mqttjs_topic11 disconnected.
-1463788727: Socket error on client sub_mqttjs_topic6, disconnecting.
-1463788727: Socket error on client sub_mqttjs_topic7, disconnecting.
-1463788727: Socket error on client sub_mqttjs_topic8, disconnecting.
-1463788727: Socket error on client sub_mqttjs_topic9, disconnecting.
-1463788727: Socket error on client sub_mqttjs_topic10, disconnecting.
-1463788727: Client sub_mqttjs_topic17 disconnected.
-1463788727: Socket error on client sub_mqttjs_topic12, disconnecting.
-1463788727: Socket error on client sub_mqttjs_topic13, disconnecting.
-1463788727: Socket error on client sub_mqttjs_topic14, disconnecting.
-1463788727: Socket error on client sub_mqttjs_topic15, disconnecting.
-1463788727: Socket error on client sub_mqttjs_topic16, disconnecting.
-1463788727: Client sub_mqttjs_topic23 disconnected.
-1463788727: Socket error on client sub_mqttjs_topic18, disconnecting.
-1463788727: Socket error on client sub_mqttjs_topic19, disconnecting.
-1463788727: Socket error on client sub_mqttjs_topic20, disconnecting.
-1463788727: Socket error on client sub_mqttjs_topic21, disconnecting.
-1463788727: Socket error on client sub_mqttjs_topic22, disconnecting.
-1463788727: Client sub_mqttjs_topic29 disconnected.
-1463788727: Socket error on client sub_mqttjs_topic24, disconnecting.
-1463788727: Socket error on client sub_mqttjs_topic25, disconnecting.
-1463788727: Socket error on client sub_mqttjs_topic26, disconnecting.
-1463788727: Socket error on client sub_mqttjs_topic27, disconnecting.
-1463788727: Socket error on client sub_mqttjs_topic28, disconnecting.
-1463788727: Socket error on client pub_mqttjs_topic0, disconnecting.
-1463788727: Socket error on client pub_mqttjs_topic1, disconnecting.
-1463788727: Socket error on client pub_mqttjs_topic2, disconnecting.
-1463788727: Socket error on client pub_mqttjs_topic3, disconnecting.
-1463788727: Socket error on client pub_mqttjs_topic4, disconnecting.
-1463788727: Socket error on client pub_mqttjs_topic5, disconnecting.
-1463788727: Socket error on client pub_mqttjs_topic6, disconnecting.
-1463788727: Socket error on client pub_mqttjs_topic7, disconnecting.
-1463788727: Socket error on client pub_mqttjs_topic8, disconnecting.
-1463788727: Socket error on client pub_mqttjs_topic9, disconnecting.
-1463788727: Socket error on client pub_mqttjs_topic10, disconnecting.
-1463788727: Socket error on client pub_mqttjs_topic11, disconnecting.
-1463788727: Socket error on client pub_mqttjs_topic12, disconnecting.
-1463788727: Socket error on client pub_mqttjs_topic13, disconnecting.
-1463788727: Socket error on client pub_mqttjs_topic14, disconnecting.
-1463788727: Socket error on client pub_mqttjs_topic15, disconnecting.
-1463788727: Socket error on client pub_mqttjs_topic16, disconnecting.
-1463788727: Socket error on client pub_mqttjs_topic17, disconnecting.
-1463788727: Socket error on client pub_mqttjs_topic18, disconnecting.
-1463788727: Socket error on client pub_mqttjs_topic19, disconnecting.
-1463788727: Socket error on client pub_mqttjs_topic20, disconnecting.
-1463788727: Socket error on client pub_mqttjs_topic21, disconnecting.
-1463788727: Socket error on client pub_mqttjs_topic22, disconnecting.
-1463788727: Socket error on client pub_mqttjs_topic23, disconnecting.
-1463788727: Socket error on client pub_mqttjs_topic24, disconnecting.
-1463788727: Socket error on client pub_mqttjs_topic25, disconnecting.
-1463788727: Socket error on client pub_mqttjs_topic26, disconnecting.
-1463788727: Socket error on client pub_mqttjs_topic27, disconnecting.
-1463788727: Socket error on client pub_mqttjs_topic28, disconnecting.
-1463788727: Socket error on client pub_mqttjs_topic29, disconnecting.
-1463788915: New connection from 127.0.0.1 on port 1883.
-1463788915: New connection from 127.0.0.1 on port 1883.
-1463788915: New connection from 127.0.0.1 on port 1883.
-1463788915: New connection from 127.0.0.1 on port 1883.
-1463788915: New connection from 127.0.0.1 on port 1883.
-1463788915: New connection from 127.0.0.1 on port 1883.
-1463788915: New client connected from 127.0.0.1 as sub_mqttjs_topic0 (c1, k600).
-1463788915: New client connected from 127.0.0.1 as sub_mqttjs_topic1 (c1, k600).
-1463788915: New client connected from 127.0.0.1 as sub_mqttjs_topic2 (c1, k600).
-1463788915: New client connected from 127.0.0.1 as sub_mqttjs_topic3 (c1, k600).
-1463788915: New client connected from 127.0.0.1 as sub_mqttjs_topic4 (c1, k600).
-1463788915: New client connected from 127.0.0.1 as sub_mqttjs_topic5 (c1, k600).
-1463788915: New connection from 127.0.0.1 on port 1883.
-1463788915: New connection from 127.0.0.1 on port 1883.
-1463788915: New connection from 127.0.0.1 on port 1883.
-1463788915: New connection from 127.0.0.1 on port 1883.
-1463788915: New connection from 127.0.0.1 on port 1883.
-1463788915: New connection from 127.0.0.1 on port 1883.
-1463788915: New client connected from 127.0.0.1 as sub_mqttjs_topic6 (c1, k600).
-1463788915: New client connected from 127.0.0.1 as sub_mqttjs_topic7 (c1, k600).
-1463788915: New client connected from 127.0.0.1 as sub_mqttjs_topic8 (c1, k600).
-1463788915: New client connected from 127.0.0.1 as sub_mqttjs_topic9 (c1, k600).
-1463788915: New client connected from 127.0.0.1 as sub_mqttjs_topic10 (c1, k600).
-1463788915: New client connected from 127.0.0.1 as sub_mqttjs_topic11 (c1, k600).
-1463788915: New connection from 127.0.0.1 on port 1883.
-1463788915: New connection from 127.0.0.1 on port 1883.
-1463788915: New connection from 127.0.0.1 on port 1883.
-1463788915: New connection from 127.0.0.1 on port 1883.
-1463788915: New connection from 127.0.0.1 on port 1883.
-1463788915: New connection from 127.0.0.1 on port 1883.
-1463788915: New client connected from 127.0.0.1 as sub_mqttjs_topic18 (c1, k600).
-1463788915: New client connected from 127.0.0.1 as sub_mqttjs_topic19 (c1, k600).
-1463788915: New client connected from 127.0.0.1 as sub_mqttjs_topic20 (c1, k600).
-1463788915: New client connected from 127.0.0.1 as sub_mqttjs_topic21 (c1, k600).
-1463788915: New client connected from 127.0.0.1 as sub_mqttjs_topic22 (c1, k600).
-1463788915: New client connected from 127.0.0.1 as sub_mqttjs_topic23 (c1, k600).
-1463788915: New connection from 127.0.0.1 on port 1883.
-1463788915: New connection from 127.0.0.1 on port 1883.
-1463788915: New connection from 127.0.0.1 on port 1883.
-1463788915: New connection from 127.0.0.1 on port 1883.
-1463788915: New connection from 127.0.0.1 on port 1883.
-1463788915: New connection from 127.0.0.1 on port 1883.
-1463788915: New connection from 127.0.0.1 on port 1883.
-1463788915: New client connected from 127.0.0.1 as sub_mqttjs_topic24 (c1, k600).
-1463788915: New client connected from 127.0.0.1 as sub_mqttjs_topic25 (c1, k600).
-1463788915: New connection from 127.0.0.1 on port 1883.
-1463788915: New client connected from 127.0.0.1 as sub_mqttjs_topic26 (c1, k600).
-1463788915: New connection from 127.0.0.1 on port 1883.
-1463788915: New client connected from 127.0.0.1 as sub_mqttjs_topic27 (c1, k600).
-1463788915: New client connected from 127.0.0.1 as sub_mqttjs_topic28 (c1, k600).
-1463788915: New connection from 127.0.0.1 on port 1883.
-1463788915: New client connected from 127.0.0.1 as sub_mqttjs_topic29 (c1, k600).
-1463788915: New connection from 127.0.0.1 on port 1883.
-1463788915: New connection from 127.0.0.1 on port 1883.
-1463788915: New client connected from 127.0.0.1 as sub_mqttjs_topic12 (c1, k600).
-1463788915: New client connected from 127.0.0.1 as sub_mqttjs_topic13 (c1, k600).
-1463788915: New client connected from 127.0.0.1 as sub_mqttjs_topic14 (c1, k600).
-1463788915: New client connected from 127.0.0.1 as sub_mqttjs_topic15 (c1, k600).
-1463788915: New client connected from 127.0.0.1 as sub_mqttjs_topic16 (c1, k600).
-1463788915: New client connected from 127.0.0.1 as sub_mqttjs_topic17 (c1, k600).
-1463788920: New connection from 127.0.0.1 on port 1883.
-1463788920: New connection from 127.0.0.1 on port 1883.
-1463788920: New connection from 127.0.0.1 on port 1883.
-1463788920: New connection from 127.0.0.1 on port 1883.
-1463788920: New connection from 127.0.0.1 on port 1883.
-1463788920: New connection from 127.0.0.1 on port 1883.
-1463788920: New client connected from 127.0.0.1 as pub_mqttjs_topic0 (c1, k600).
-1463788920: New client connected from 127.0.0.1 as pub_mqttjs_topic1 (c1, k600).
-1463788920: New client connected from 127.0.0.1 as pub_mqttjs_topic2 (c1, k600).
-1463788920: New client connected from 127.0.0.1 as pub_mqttjs_topic3 (c1, k600).
-1463788920: New client connected from 127.0.0.1 as pub_mqttjs_topic4 (c1, k600).
-1463788920: New client connected from 127.0.0.1 as pub_mqttjs_topic5 (c1, k600).
-1463788920: New connection from 127.0.0.1 on port 1883.
-1463788920: New connection from 127.0.0.1 on port 1883.
-1463788920: New connection from 127.0.0.1 on port 1883.
-1463788920: New connection from 127.0.0.1 on port 1883.
-1463788920: New connection from 127.0.0.1 on port 1883.
-1463788920: New connection from 127.0.0.1 on port 1883.
-1463788920: New client connected from 127.0.0.1 as pub_mqttjs_topic6 (c1, k600).
-1463788920: New client connected from 127.0.0.1 as pub_mqttjs_topic7 (c1, k600).
-1463788920: New client connected from 127.0.0.1 as pub_mqttjs_topic8 (c1, k600).
-1463788920: New client connected from 127.0.0.1 as pub_mqttjs_topic9 (c1, k600).
-1463788920: New client connected from 127.0.0.1 as pub_mqttjs_topic10 (c1, k600).
-1463788920: New client connected from 127.0.0.1 as pub_mqttjs_topic11 (c1, k600).
-1463788920: New connection from 127.0.0.1 on port 1883.
-1463788920: New connection from 127.0.0.1 on port 1883.
-1463788920: New connection from 127.0.0.1 on port 1883.
-1463788920: New connection from 127.0.0.1 on port 1883.
-1463788920: New connection from 127.0.0.1 on port 1883.
-1463788920: New connection from 127.0.0.1 on port 1883.
-1463788920: New client connected from 127.0.0.1 as pub_mqttjs_topic12 (c1, k600).
-1463788920: New client connected from 127.0.0.1 as pub_mqttjs_topic13 (c1, k600).
-1463788920: New client connected from 127.0.0.1 as pub_mqttjs_topic14 (c1, k600).
-1463788920: New client connected from 127.0.0.1 as pub_mqttjs_topic15 (c1, k600).
-1463788920: New client connected from 127.0.0.1 as pub_mqttjs_topic16 (c1, k600).
-1463788920: New client connected from 127.0.0.1 as pub_mqttjs_topic17 (c1, k600).
-1463788920: New connection from 127.0.0.1 on port 1883.
-1463788920: New connection from 127.0.0.1 on port 1883.
-1463788920: New connection from 127.0.0.1 on port 1883.
-1463788920: New connection from 127.0.0.1 on port 1883.
-1463788920: New connection from 127.0.0.1 on port 1883.
-1463788920: New connection from 127.0.0.1 on port 1883.
-1463788920: New client connected from 127.0.0.1 as pub_mqttjs_topic18 (c1, k600).
-1463788920: New client connected from 127.0.0.1 as pub_mqttjs_topic19 (c1, k600).
-1463788920: New client connected from 127.0.0.1 as pub_mqttjs_topic20 (c1, k600).
-1463788920: New client connected from 127.0.0.1 as pub_mqttjs_topic21 (c1, k600).
-1463788920: New client connected from 127.0.0.1 as pub_mqttjs_topic22 (c1, k600).
-1463788920: New client connected from 127.0.0.1 as pub_mqttjs_topic23 (c1, k600).
-1463788920: New connection from 127.0.0.1 on port 1883.
-1463788920: New connection from 127.0.0.1 on port 1883.
-1463788920: New connection from 127.0.0.1 on port 1883.
-1463788920: New connection from 127.0.0.1 on port 1883.
-1463788920: New connection from 127.0.0.1 on port 1883.
-1463788920: New connection from 127.0.0.1 on port 1883.
-1463788920: New client connected from 127.0.0.1 as pub_mqttjs_topic24 (c1, k600).
-1463788920: New client connected from 127.0.0.1 as pub_mqttjs_topic25 (c1, k600).
-1463788920: New client connected from 127.0.0.1 as pub_mqttjs_topic26 (c1, k600).
-1463788920: New client connected from 127.0.0.1 as pub_mqttjs_topic27 (c1, k600).
-1463788920: New client connected from 127.0.0.1 as pub_mqttjs_topic28 (c1, k600).
-1463788920: New client connected from 127.0.0.1 as pub_mqttjs_topic29 (c1, k600).
-1463788921: Client sub_mqttjs_topic5 disconnected.
-1463788921: Socket error on client sub_mqttjs_topic0, disconnecting.
-1463788921: Socket error on client sub_mqttjs_topic1, disconnecting.
-1463788921: Socket error on client sub_mqttjs_topic2, disconnecting.
-1463788921: Socket error on client sub_mqttjs_topic3, disconnecting.
-1463788921: Socket error on client sub_mqttjs_topic4, disconnecting.
-1463788921: Client sub_mqttjs_topic11 disconnected.
-1463788921: Socket error on client sub_mqttjs_topic6, disconnecting.
-1463788921: Socket error on client sub_mqttjs_topic7, disconnecting.
-1463788921: Socket error on client sub_mqttjs_topic8, disconnecting.
-1463788921: Socket error on client sub_mqttjs_topic9, disconnecting.
-1463788921: Socket error on client sub_mqttjs_topic10, disconnecting.
-1463788921: Client sub_mqttjs_topic17 disconnected.
-1463788921: Socket error on client sub_mqttjs_topic12, disconnecting.
-1463788921: Socket error on client sub_mqttjs_topic13, disconnecting.
-1463788921: Socket error on client sub_mqttjs_topic14, disconnecting.
-1463788921: Socket error on client sub_mqttjs_topic15, disconnecting.
-1463788921: Socket error on client sub_mqttjs_topic16, disconnecting.
-1463788921: Socket error on client pub_mqttjs_topic0, disconnecting.
-1463788921: Socket error on client pub_mqttjs_topic1, disconnecting.
-1463788921: Socket error on client pub_mqttjs_topic2, disconnecting.
-1463788921: Socket error on client pub_mqttjs_topic3, disconnecting.
-1463788921: Socket error on client pub_mqttjs_topic4, disconnecting.
-1463788921: Socket error on client pub_mqttjs_topic5, disconnecting.
-1463788921: Client sub_mqttjs_topic23 disconnected.
-1463788921: Client sub_mqttjs_topic29 disconnected.
-1463788921: Socket error on client sub_mqttjs_topic18, disconnecting.
-1463788921: Socket error on client sub_mqttjs_topic19, disconnecting.
-1463788921: Socket error on client sub_mqttjs_topic20, disconnecting.
-1463788921: Socket error on client sub_mqttjs_topic21, disconnecting.
-1463788921: Socket error on client sub_mqttjs_topic22, disconnecting.
-1463788921: Socket error on client sub_mqttjs_topic24, disconnecting.
-1463788921: Socket error on client sub_mqttjs_topic25, disconnecting.
-1463788921: Socket error on client sub_mqttjs_topic26, disconnecting.
-1463788921: Socket error on client sub_mqttjs_topic27, disconnecting.
-1463788921: Socket error on client sub_mqttjs_topic28, disconnecting.
-1463788921: Socket error on client pub_mqttjs_topic6, disconnecting.
-1463788921: Socket error on client pub_mqttjs_topic7, disconnecting.
-1463788921: Socket error on client pub_mqttjs_topic8, disconnecting.
-1463788921: Socket error on client pub_mqttjs_topic9, disconnecting.
-1463788921: Socket error on client pub_mqttjs_topic10, disconnecting.
-1463788921: Socket error on client pub_mqttjs_topic11, disconnecting.
-1463788921: Socket error on client pub_mqttjs_topic12, disconnecting.
-1463788921: Socket error on client pub_mqttjs_topic13, disconnecting.
-1463788921: Socket error on client pub_mqttjs_topic14, disconnecting.
-1463788921: Socket error on client pub_mqttjs_topic15, disconnecting.
-1463788921: Socket error on client pub_mqttjs_topic16, disconnecting.
-1463788921: Socket error on client pub_mqttjs_topic17, disconnecting.
-1463788922: Socket error on client pub_mqttjs_topic18, disconnecting.
-1463788922: Socket error on client pub_mqttjs_topic24, disconnecting.
-1463788922: Socket error on client pub_mqttjs_topic19, disconnecting.
-1463788922: Socket error on client pub_mqttjs_topic20, disconnecting.
-1463788922: Socket error on client pub_mqttjs_topic21, disconnecting.
-1463788922: Socket error on client pub_mqttjs_topic22, disconnecting.
-1463788922: Socket error on client pub_mqttjs_topic23, disconnecting.
-1463788922: Socket error on client pub_mqttjs_topic25, disconnecting.
-1463788922: Socket error on client pub_mqttjs_topic26, disconnecting.
-1463788922: Socket error on client pub_mqttjs_topic27, disconnecting.
-1463788922: Socket error on client pub_mqttjs_topic28, disconnecting.
-1463788922: Socket error on client pub_mqttjs_topic29, disconnecting.
-1463788971: New connection from 127.0.0.1 on port 1883.
-1463788971: New connection from 127.0.0.1 on port 1883.
-1463788971: New connection from 127.0.0.1 on port 1883.
-1463788971: New connection from 127.0.0.1 on port 1883.
-1463788971: New connection from 127.0.0.1 on port 1883.
-1463788971: New connection from 127.0.0.1 on port 1883.
-1463788971: New client connected from 127.0.0.1 as sub_mqttjs_topic0 (c1, k600).
-1463788971: New client connected from 127.0.0.1 as sub_mqttjs_topic1 (c1, k600).
-1463788971: New client connected from 127.0.0.1 as sub_mqttjs_topic2 (c1, k600).
-1463788971: New client connected from 127.0.0.1 as sub_mqttjs_topic3 (c1, k600).
-1463788971: New client connected from 127.0.0.1 as sub_mqttjs_topic4 (c1, k600).
-1463788971: New client connected from 127.0.0.1 as sub_mqttjs_topic5 (c1, k600).
-1463788971: New connection from 127.0.0.1 on port 1883.
-1463788971: New connection from 127.0.0.1 on port 1883.
-1463788971: New connection from 127.0.0.1 on port 1883.
-1463788971: New connection from 127.0.0.1 on port 1883.
-1463788971: New connection from 127.0.0.1 on port 1883.
-1463788971: New connection from 127.0.0.1 on port 1883.
-1463788971: New client connected from 127.0.0.1 as sub_mqttjs_topic6 (c1, k600).
-1463788971: New client connected from 127.0.0.1 as sub_mqttjs_topic7 (c1, k600).
-1463788971: New client connected from 127.0.0.1 as sub_mqttjs_topic8 (c1, k600).
-1463788971: New client connected from 127.0.0.1 as sub_mqttjs_topic9 (c1, k600).
-1463788971: New client connected from 127.0.0.1 as sub_mqttjs_topic10 (c1, k600).
-1463788971: New client connected from 127.0.0.1 as sub_mqttjs_topic11 (c1, k600).
-1463788971: New connection from 127.0.0.1 on port 1883.
-1463788971: New connection from 127.0.0.1 on port 1883.
-1463788971: New connection from 127.0.0.1 on port 1883.
-1463788971: New connection from 127.0.0.1 on port 1883.
-1463788971: New connection from 127.0.0.1 on port 1883.
-1463788971: New connection from 127.0.0.1 on port 1883.
-1463788971: New client connected from 127.0.0.1 as sub_mqttjs_topic12 (c1, k600).
-1463788971: New client connected from 127.0.0.1 as sub_mqttjs_topic13 (c1, k600).
-1463788971: New client connected from 127.0.0.1 as sub_mqttjs_topic14 (c1, k600).
-1463788971: New client connected from 127.0.0.1 as sub_mqttjs_topic15 (c1, k600).
-1463788971: New client connected from 127.0.0.1 as sub_mqttjs_topic16 (c1, k600).
-1463788971: New client connected from 127.0.0.1 as sub_mqttjs_topic17 (c1, k600).
-1463788971: New connection from 127.0.0.1 on port 1883.
-1463788971: New connection from 127.0.0.1 on port 1883.
-1463788971: New connection from 127.0.0.1 on port 1883.
-1463788971: New connection from 127.0.0.1 on port 1883.
-1463788971: New connection from 127.0.0.1 on port 1883.
-1463788971: New connection from 127.0.0.1 on port 1883.
-1463788971: New client connected from 127.0.0.1 as sub_mqttjs_topic24 (c1, k600).
-1463788971: New client connected from 127.0.0.1 as sub_mqttjs_topic25 (c1, k600).
-1463788971: New client connected from 127.0.0.1 as sub_mqttjs_topic26 (c1, k600).
-1463788971: New client connected from 127.0.0.1 as sub_mqttjs_topic27 (c1, k600).
-1463788971: New client connected from 127.0.0.1 as sub_mqttjs_topic28 (c1, k600).
-1463788971: New client connected from 127.0.0.1 as sub_mqttjs_topic29 (c1, k600).
-1463788971: New connection from 127.0.0.1 on port 1883.
-1463788971: New connection from 127.0.0.1 on port 1883.
-1463788971: New connection from 127.0.0.1 on port 1883.
-1463788971: New connection from 127.0.0.1 on port 1883.
-1463788971: New connection from 127.0.0.1 on port 1883.
-1463788971: New connection from 127.0.0.1 on port 1883.
-1463788971: New client connected from 127.0.0.1 as sub_mqttjs_topic18 (c1, k600).
-1463788971: New client connected from 127.0.0.1 as sub_mqttjs_topic19 (c1, k600).
-1463788971: New client connected from 127.0.0.1 as sub_mqttjs_topic20 (c1, k600).
-1463788971: New client connected from 127.0.0.1 as sub_mqttjs_topic21 (c1, k600).
-1463788971: New client connected from 127.0.0.1 as sub_mqttjs_topic22 (c1, k600).
-1463788971: New client connected from 127.0.0.1 as sub_mqttjs_topic23 (c1, k600).
-1463788976: New connection from 127.0.0.1 on port 1883.
-1463788976: New connection from 127.0.0.1 on port 1883.
-1463788976: New connection from 127.0.0.1 on port 1883.
-1463788976: New connection from 127.0.0.1 on port 1883.
-1463788976: New connection from 127.0.0.1 on port 1883.
-1463788976: New connection from 127.0.0.1 on port 1883.
-1463788976: New client connected from 127.0.0.1 as pub_mqttjs_topic0 (c1, k600).
-1463788976: New client connected from 127.0.0.1 as pub_mqttjs_topic1 (c1, k600).
-1463788976: New client connected from 127.0.0.1 as pub_mqttjs_topic2 (c1, k600).
-1463788976: New client connected from 127.0.0.1 as pub_mqttjs_topic3 (c1, k600).
-1463788976: New client connected from 127.0.0.1 as pub_mqttjs_topic4 (c1, k600).
-1463788976: New client connected from 127.0.0.1 as pub_mqttjs_topic5 (c1, k600).
-1463788976: New connection from 127.0.0.1 on port 1883.
-1463788976: New connection from 127.0.0.1 on port 1883.
-1463788976: New connection from 127.0.0.1 on port 1883.
-1463788976: New connection from 127.0.0.1 on port 1883.
-1463788976: New connection from 127.0.0.1 on port 1883.
-1463788976: New connection from 127.0.0.1 on port 1883.
-1463788976: New client connected from 127.0.0.1 as pub_mqttjs_topic6 (c1, k600).
-1463788976: New client connected from 127.0.0.1 as pub_mqttjs_topic7 (c1, k600).
-1463788976: New client connected from 127.0.0.1 as pub_mqttjs_topic8 (c1, k600).
-1463788976: New client connected from 127.0.0.1 as pub_mqttjs_topic9 (c1, k600).
-1463788976: New client connected from 127.0.0.1 as pub_mqttjs_topic10 (c1, k600).
-1463788976: New client connected from 127.0.0.1 as pub_mqttjs_topic11 (c1, k600).
-1463788976: New connection from 127.0.0.1 on port 1883.
-1463788976: New connection from 127.0.0.1 on port 1883.
-1463788976: New connection from 127.0.0.1 on port 1883.
-1463788976: New connection from 127.0.0.1 on port 1883.
-1463788976: New connection from 127.0.0.1 on port 1883.
-1463788976: New connection from 127.0.0.1 on port 1883.
-1463788976: New client connected from 127.0.0.1 as pub_mqttjs_topic12 (c1, k600).
-1463788976: New client connected from 127.0.0.1 as pub_mqttjs_topic13 (c1, k600).
-1463788976: New client connected from 127.0.0.1 as pub_mqttjs_topic14 (c1, k600).
-1463788976: New client connected from 127.0.0.1 as pub_mqttjs_topic15 (c1, k600).
-1463788976: New client connected from 127.0.0.1 as pub_mqttjs_topic16 (c1, k600).
-1463788976: New client connected from 127.0.0.1 as pub_mqttjs_topic17 (c1, k600).
-1463788976: New connection from 127.0.0.1 on port 1883.
-1463788976: New connection from 127.0.0.1 on port 1883.
-1463788976: New connection from 127.0.0.1 on port 1883.
-1463788976: New connection from 127.0.0.1 on port 1883.
-1463788976: New connection from 127.0.0.1 on port 1883.
-1463788976: New connection from 127.0.0.1 on port 1883.
-1463788976: New client connected from 127.0.0.1 as pub_mqttjs_topic18 (c1, k600).
-1463788976: New client connected from 127.0.0.1 as pub_mqttjs_topic19 (c1, k600).
-1463788976: New client connected from 127.0.0.1 as pub_mqttjs_topic20 (c1, k600).
-1463788976: New client connected from 127.0.0.1 as pub_mqttjs_topic21 (c1, k600).
-1463788976: New client connected from 127.0.0.1 as pub_mqttjs_topic22 (c1, k600).
-1463788976: New client connected from 127.0.0.1 as pub_mqttjs_topic23 (c1, k600).
-1463788976: New connection from 127.0.0.1 on port 1883.
-1463788976: New connection from 127.0.0.1 on port 1883.
-1463788976: New connection from 127.0.0.1 on port 1883.
-1463788976: New connection from 127.0.0.1 on port 1883.
-1463788976: New connection from 127.0.0.1 on port 1883.
-1463788976: New connection from 127.0.0.1 on port 1883.
-1463788976: New client connected from 127.0.0.1 as pub_mqttjs_topic24 (c1, k600).
-1463788976: New client connected from 127.0.0.1 as pub_mqttjs_topic25 (c1, k600).
-1463788976: New client connected from 127.0.0.1 as pub_mqttjs_topic26 (c1, k600).
-1463788976: New client connected from 127.0.0.1 as pub_mqttjs_topic27 (c1, k600).
-1463788976: New client connected from 127.0.0.1 as pub_mqttjs_topic28 (c1, k600).
-1463788976: New client connected from 127.0.0.1 as pub_mqttjs_topic29 (c1, k600).
-1463788977: Client sub_mqttjs_topic5 disconnected.
-1463788977: Socket error on client sub_mqttjs_topic0, disconnecting.
-1463788977: Socket error on client sub_mqttjs_topic1, disconnecting.
-1463788977: Socket error on client sub_mqttjs_topic2, disconnecting.
-1463788977: Socket error on client sub_mqttjs_topic3, disconnecting.
-1463788977: Socket error on client sub_mqttjs_topic4, disconnecting.
-1463788977: Client sub_mqttjs_topic17 disconnected.
-1463788977: Client sub_mqttjs_topic11 disconnected.
-1463788977: Socket error on client sub_mqttjs_topic14, disconnecting.
-1463788977: Socket error on client sub_mqttjs_topic15, disconnecting.
-1463788977: Socket error on client sub_mqttjs_topic16, disconnecting.
-1463788977: Socket error on client sub_mqttjs_topic12, disconnecting.
-1463788977: Socket error on client sub_mqttjs_topic13, disconnecting.
-1463788977: Socket error on client sub_mqttjs_topic6, disconnecting.
-1463788977: Socket error on client sub_mqttjs_topic7, disconnecting.
-1463788977: Socket error on client sub_mqttjs_topic8, disconnecting.
-1463788977: Socket error on client sub_mqttjs_topic9, disconnecting.
-1463788977: Socket error on client sub_mqttjs_topic10, disconnecting.
-1463788977: Socket error on client pub_mqttjs_topic0, disconnecting.
-1463788977: Socket error on client pub_mqttjs_topic1, disconnecting.
-1463788977: Socket error on client pub_mqttjs_topic2, disconnecting.
-1463788977: Socket error on client pub_mqttjs_topic3, disconnecting.
-1463788977: Socket error on client pub_mqttjs_topic4, disconnecting.
-1463788977: Socket error on client pub_mqttjs_topic5, disconnecting.
-1463788977: Client sub_mqttjs_topic23 disconnected.
-1463788977: Socket error on client sub_mqttjs_topic18, disconnecting.
-1463788977: Socket error on client sub_mqttjs_topic19, disconnecting.
-1463788977: Socket error on client sub_mqttjs_topic20, disconnecting.
-1463788977: Socket error on client sub_mqttjs_topic21, disconnecting.
-1463788977: Socket error on client sub_mqttjs_topic22, disconnecting.
-1463788977: Socket error on client pub_mqttjs_topic6, disconnecting.
-1463788977: Socket error on client pub_mqttjs_topic7, disconnecting.
-1463788977: Socket error on client pub_mqttjs_topic8, disconnecting.
-1463788977: Socket error on client pub_mqttjs_topic9, disconnecting.
-1463788977: Socket error on client pub_mqttjs_topic10, disconnecting.
-1463788977: Socket error on client pub_mqttjs_topic12, disconnecting.
-1463788977: Socket error on client pub_mqttjs_topic13, disconnecting.
-1463788977: Socket error on client pub_mqttjs_topic14, disconnecting.
-1463788977: Socket error on client pub_mqttjs_topic15, disconnecting.
-1463788977: Socket error on client pub_mqttjs_topic16, disconnecting.
-1463788977: Socket error on client pub_mqttjs_topic11, disconnecting.
-1463788977: Socket error on client pub_mqttjs_topic17, disconnecting.
-1463788977: Client sub_mqttjs_topic29 disconnected.
-1463788977: Socket error on client sub_mqttjs_topic27, disconnecting.
-1463788977: Socket error on client sub_mqttjs_topic28, disconnecting.
-1463788977: Socket error on client sub_mqttjs_topic24, disconnecting.
-1463788977: Socket error on client sub_mqttjs_topic25, disconnecting.
-1463788977: Socket error on client sub_mqttjs_topic26, disconnecting.
-1463788977: Socket error on client pub_mqttjs_topic18, disconnecting.
-1463788977: Socket error on client pub_mqttjs_topic19, disconnecting.
-1463788977: Socket error on client pub_mqttjs_topic20, disconnecting.
-1463788977: Socket error on client pub_mqttjs_topic21, disconnecting.
-1463788977: Socket error on client pub_mqttjs_topic22, disconnecting.
-1463788977: Socket error on client pub_mqttjs_topic23, disconnecting.
-1463788977: Socket error on client pub_mqttjs_topic24, disconnecting.
-1463788977: Socket error on client pub_mqttjs_topic25, disconnecting.
-1463788977: Socket error on client pub_mqttjs_topic26, disconnecting.
-1463788977: Socket error on client pub_mqttjs_topic27, disconnecting.
-1463788977: Socket error on client pub_mqttjs_topic28, disconnecting.
-1463788977: Socket error on client pub_mqttjs_topic29, disconnecting.
-1463789398: New connection from 127.0.0.1 on port 1883.
-1463789398: New connection from 127.0.0.1 on port 1883.
-1463789398: New connection from 127.0.0.1 on port 1883.
-1463789398: New connection from 127.0.0.1 on port 1883.
-1463789398: New connection from 127.0.0.1 on port 1883.
-1463789398: New client connected from 127.0.0.1 as sub_mqttjs_topic15 (c1, k600).
-1463789398: New client connected from 127.0.0.1 as sub_mqttjs_topic16 (c1, k600).
-1463789398: New client connected from 127.0.0.1 as sub_mqttjs_topic17 (c1, k600).
-1463789398: New client connected from 127.0.0.1 as sub_mqttjs_topic18 (c1, k600).
-1463789398: New client connected from 127.0.0.1 as sub_mqttjs_topic19 (c1, k600).
-1463789398: New connection from 127.0.0.1 on port 1883.
-1463789398: New connection from 127.0.0.1 on port 1883.
-1463789398: New connection from 127.0.0.1 on port 1883.
-1463789398: New connection from 127.0.0.1 on port 1883.
-1463789398: New connection from 127.0.0.1 on port 1883.
-1463789398: New client connected from 127.0.0.1 as sub_mqttjs_topic0 (c1, k600).
-1463789398: New client connected from 127.0.0.1 as sub_mqttjs_topic1 (c1, k600).
-1463789398: New client connected from 127.0.0.1 as sub_mqttjs_topic2 (c1, k600).
-1463789398: New client connected from 127.0.0.1 as sub_mqttjs_topic3 (c1, k600).
-1463789398: New client connected from 127.0.0.1 as sub_mqttjs_topic4 (c1, k600).
-1463789398: New connection from 127.0.0.1 on port 1883.
-1463789398: New connection from 127.0.0.1 on port 1883.
-1463789398: New connection from 127.0.0.1 on port 1883.
-1463789398: New connection from 127.0.0.1 on port 1883.
-1463789398: New connection from 127.0.0.1 on port 1883.
-1463789398: New client connected from 127.0.0.1 as sub_mqttjs_topic5 (c1, k600).
-1463789398: New client connected from 127.0.0.1 as sub_mqttjs_topic6 (c1, k600).
-1463789398: New client connected from 127.0.0.1 as sub_mqttjs_topic7 (c1, k600).
-1463789398: New client connected from 127.0.0.1 as sub_mqttjs_topic8 (c1, k600).
-1463789398: New client connected from 127.0.0.1 as sub_mqttjs_topic9 (c1, k600).
-1463789398: New connection from 127.0.0.1 on port 1883.
-1463789398: New connection from 127.0.0.1 on port 1883.
-1463789398: New connection from 127.0.0.1 on port 1883.
-1463789398: New connection from 127.0.0.1 on port 1883.
-1463789398: New connection from 127.0.0.1 on port 1883.
-1463789398: New client connected from 127.0.0.1 as sub_mqttjs_topic10 (c1, k600).
-1463789398: New client connected from 127.0.0.1 as sub_mqttjs_topic11 (c1, k600).
-1463789398: New client connected from 127.0.0.1 as sub_mqttjs_topic12 (c1, k600).
-1463789398: New client connected from 127.0.0.1 as sub_mqttjs_topic13 (c1, k600).
-1463789398: New client connected from 127.0.0.1 as sub_mqttjs_topic14 (c1, k600).
-1463789398: New connection from 127.0.0.1 on port 1883.
-1463789398: New connection from 127.0.0.1 on port 1883.
-1463789398: New connection from 127.0.0.1 on port 1883.
-1463789398: New connection from 127.0.0.1 on port 1883.
-1463789398: New connection from 127.0.0.1 on port 1883.
-1463789398: New client connected from 127.0.0.1 as sub_mqttjs_topic20 (c1, k600).
-1463789398: New client connected from 127.0.0.1 as sub_mqttjs_topic21 (c1, k600).
-1463789398: New client connected from 127.0.0.1 as sub_mqttjs_topic22 (c1, k600).
-1463789398: New client connected from 127.0.0.1 as sub_mqttjs_topic23 (c1, k600).
-1463789398: New client connected from 127.0.0.1 as sub_mqttjs_topic24 (c1, k600).
-1463789402: Socket error on client sub_mqttjs_topic15, disconnecting.
-1463789402: Socket error on client sub_mqttjs_topic16, disconnecting.
-1463789402: Socket error on client sub_mqttjs_topic17, disconnecting.
-1463789402: Socket error on client sub_mqttjs_topic18, disconnecting.
-1463789402: Socket error on client sub_mqttjs_topic19, disconnecting.
-1463789402: Socket error on client sub_mqttjs_topic0, disconnecting.
-1463789402: Socket error on client sub_mqttjs_topic1, disconnecting.
-1463789402: Socket error on client sub_mqttjs_topic2, disconnecting.
-1463789402: Socket error on client sub_mqttjs_topic3, disconnecting.
-1463789402: Socket error on client sub_mqttjs_topic4, disconnecting.
-1463789402: Socket error on client sub_mqttjs_topic10, disconnecting.
-1463789402: Socket error on client sub_mqttjs_topic11, disconnecting.
-1463789402: Socket error on client sub_mqttjs_topic12, disconnecting.
-1463789402: Socket error on client sub_mqttjs_topic13, disconnecting.
-1463789402: Socket error on client sub_mqttjs_topic14, disconnecting.
-1463789402: Socket error on client sub_mqttjs_topic20, disconnecting.
-1463789402: Socket error on client sub_mqttjs_topic21, disconnecting.
-1463789402: Socket error on client sub_mqttjs_topic22, disconnecting.
-1463789402: Socket error on client sub_mqttjs_topic23, disconnecting.
-1463789402: Socket error on client sub_mqttjs_topic24, disconnecting.
-1463789402: Socket error on client sub_mqttjs_topic5, disconnecting.
-1463789402: Socket error on client sub_mqttjs_topic6, disconnecting.
-1463789402: Socket error on client sub_mqttjs_topic7, disconnecting.
-1463789402: Socket error on client sub_mqttjs_topic8, disconnecting.
-1463789402: Socket error on client sub_mqttjs_topic9, disconnecting.
-1463789403: New connection from 127.0.0.1 on port 1883.
-1463789403: New connection from 127.0.0.1 on port 1883.
-1463789403: New connection from 127.0.0.1 on port 1883.
-1463789403: New connection from 127.0.0.1 on port 1883.
-1463789403: New connection from 127.0.0.1 on port 1883.
-1463789403: New client connected from 127.0.0.1 as pub_mqttjs_topic0 (c1, k600).
-1463789403: New client connected from 127.0.0.1 as pub_mqttjs_topic1 (c1, k600).
-1463789403: New client connected from 127.0.0.1 as pub_mqttjs_topic2 (c1, k600).
-1463789403: New client connected from 127.0.0.1 as pub_mqttjs_topic3 (c1, k600).
-1463789403: New client connected from 127.0.0.1 as pub_mqttjs_topic4 (c1, k600).
-1463789403: New connection from 127.0.0.1 on port 1883.
-1463789403: New connection from 127.0.0.1 on port 1883.
-1463789403: New connection from 127.0.0.1 on port 1883.
-1463789403: New connection from 127.0.0.1 on port 1883.
-1463789403: New connection from 127.0.0.1 on port 1883.
-1463789403: New client connected from 127.0.0.1 as pub_mqttjs_topic5 (c1, k600).
-1463789403: New client connected from 127.0.0.1 as pub_mqttjs_topic6 (c1, k600).
-1463789403: New client connected from 127.0.0.1 as pub_mqttjs_topic7 (c1, k600).
-1463789403: New client connected from 127.0.0.1 as pub_mqttjs_topic8 (c1, k600).
-1463789403: New client connected from 127.0.0.1 as pub_mqttjs_topic9 (c1, k600).
-1463789403: New connection from 127.0.0.1 on port 1883.
-1463789403: New connection from 127.0.0.1 on port 1883.
-1463789403: New connection from 127.0.0.1 on port 1883.
-1463789403: New connection from 127.0.0.1 on port 1883.
-1463789403: New connection from 127.0.0.1 on port 1883.
-1463789403: New client connected from 127.0.0.1 as pub_mqttjs_topic10 (c1, k600).
-1463789403: New client connected from 127.0.0.1 as pub_mqttjs_topic11 (c1, k600).
-1463789403: New client connected from 127.0.0.1 as pub_mqttjs_topic12 (c1, k600).
-1463789403: New client connected from 127.0.0.1 as pub_mqttjs_topic13 (c1, k600).
-1463789403: New client connected from 127.0.0.1 as pub_mqttjs_topic14 (c1, k600).
-1463789403: New connection from 127.0.0.1 on port 1883.
-1463789403: New connection from 127.0.0.1 on port 1883.
-1463789403: New connection from 127.0.0.1 on port 1883.
-1463789403: New connection from 127.0.0.1 on port 1883.
-1463789403: New connection from 127.0.0.1 on port 1883.
-1463789403: New client connected from 127.0.0.1 as pub_mqttjs_topic15 (c1, k600).
-1463789403: New client connected from 127.0.0.1 as pub_mqttjs_topic16 (c1, k600).
-1463789403: New client connected from 127.0.0.1 as pub_mqttjs_topic17 (c1, k600).
-1463789403: New client connected from 127.0.0.1 as pub_mqttjs_topic18 (c1, k600).
-1463789403: New client connected from 127.0.0.1 as pub_mqttjs_topic19 (c1, k600).
-1463789403: New connection from 127.0.0.1 on port 1883.
-1463789403: New connection from 127.0.0.1 on port 1883.
-1463789403: New connection from 127.0.0.1 on port 1883.
-1463789403: New connection from 127.0.0.1 on port 1883.
-1463789403: New connection from 127.0.0.1 on port 1883.
-1463789403: New client connected from 127.0.0.1 as pub_mqttjs_topic20 (c1, k600).
-1463789403: New client connected from 127.0.0.1 as pub_mqttjs_topic21 (c1, k600).
-1463789403: New client connected from 127.0.0.1 as pub_mqttjs_topic22 (c1, k600).
-1463789403: New client connected from 127.0.0.1 as pub_mqttjs_topic23 (c1, k600).
-1463789403: New client connected from 127.0.0.1 as pub_mqttjs_topic24 (c1, k600).
-1463789404: Socket error on client pub_mqttjs_topic0, disconnecting.
-1463789404: Socket error on client pub_mqttjs_topic1, disconnecting.
-1463789404: Socket error on client pub_mqttjs_topic2, disconnecting.
-1463789404: Socket error on client pub_mqttjs_topic3, disconnecting.
-1463789404: Socket error on client pub_mqttjs_topic4, disconnecting.
-1463789404: Socket error on client pub_mqttjs_topic5, disconnecting.
-1463789404: Socket error on client pub_mqttjs_topic6, disconnecting.
-1463789404: Socket error on client pub_mqttjs_topic7, disconnecting.
-1463789404: Socket error on client pub_mqttjs_topic8, disconnecting.
-1463789404: Socket error on client pub_mqttjs_topic9, disconnecting.
-1463789404: Socket error on client pub_mqttjs_topic10, disconnecting.
-1463789404: Socket error on client pub_mqttjs_topic11, disconnecting.
-1463789404: Socket error on client pub_mqttjs_topic12, disconnecting.
-1463789404: Socket error on client pub_mqttjs_topic13, disconnecting.
-1463789404: Socket error on client pub_mqttjs_topic14, disconnecting.
-1463789404: Socket error on client pub_mqttjs_topic15, disconnecting.
-1463789404: Socket error on client pub_mqttjs_topic20, disconnecting.
-1463789404: Socket error on client pub_mqttjs_topic16, disconnecting.
-1463789404: Socket error on client pub_mqttjs_topic17, disconnecting.
-1463789404: Socket error on client pub_mqttjs_topic18, disconnecting.
-1463789404: Socket error on client pub_mqttjs_topic19, disconnecting.
-1463789404: Socket error on client pub_mqttjs_topic21, disconnecting.
-1463789404: Socket error on client pub_mqttjs_topic22, disconnecting.
-1463789404: Socket error on client pub_mqttjs_topic23, disconnecting.
-1463789404: Socket error on client pub_mqttjs_topic24, disconnecting.
-1463789423: New connection from 127.0.0.1 on port 1883.
-1463789423: New connection from 127.0.0.1 on port 1883.
-1463789423: New connection from 127.0.0.1 on port 1883.
-1463789423: New connection from 127.0.0.1 on port 1883.
-1463789423: New connection from 127.0.0.1 on port 1883.
-1463789423: New client connected from 127.0.0.1 as sub_mqttjs_topic0 (c1, k600).
-1463789423: New client connected from 127.0.0.1 as sub_mqttjs_topic1 (c1, k600).
-1463789423: New client connected from 127.0.0.1 as sub_mqttjs_topic2 (c1, k600).
-1463789423: New client connected from 127.0.0.1 as sub_mqttjs_topic3 (c1, k600).
-1463789423: New client connected from 127.0.0.1 as sub_mqttjs_topic4 (c1, k600).
-1463789423: New connection from 127.0.0.1 on port 1883.
-1463789423: New connection from 127.0.0.1 on port 1883.
-1463789423: New connection from 127.0.0.1 on port 1883.
-1463789423: New connection from 127.0.0.1 on port 1883.
-1463789423: New connection from 127.0.0.1 on port 1883.
-1463789423: New client connected from 127.0.0.1 as sub_mqttjs_topic5 (c1, k600).
-1463789423: New client connected from 127.0.0.1 as sub_mqttjs_topic6 (c1, k600).
-1463789423: New client connected from 127.0.0.1 as sub_mqttjs_topic7 (c1, k600).
-1463789423: New client connected from 127.0.0.1 as sub_mqttjs_topic8 (c1, k600).
-1463789423: New client connected from 127.0.0.1 as sub_mqttjs_topic9 (c1, k600).
-1463789423: New connection from 127.0.0.1 on port 1883.
-1463789423: New connection from 127.0.0.1 on port 1883.
-1463789423: New connection from 127.0.0.1 on port 1883.
-1463789423: New connection from 127.0.0.1 on port 1883.
-1463789423: New connection from 127.0.0.1 on port 1883.
-1463789423: New client connected from 127.0.0.1 as sub_mqttjs_topic10 (c1, k600).
-1463789423: New client connected from 127.0.0.1 as sub_mqttjs_topic11 (c1, k600).
-1463789423: New client connected from 127.0.0.1 as sub_mqttjs_topic12 (c1, k600).
-1463789423: New client connected from 127.0.0.1 as sub_mqttjs_topic13 (c1, k600).
-1463789423: New client connected from 127.0.0.1 as sub_mqttjs_topic14 (c1, k600).
-1463789423: New connection from 127.0.0.1 on port 1883.
-1463789423: New connection from 127.0.0.1 on port 1883.
-1463789423: New connection from 127.0.0.1 on port 1883.
-1463789423: New connection from 127.0.0.1 on port 1883.
-1463789423: New connection from 127.0.0.1 on port 1883.
-1463789423: New client connected from 127.0.0.1 as sub_mqttjs_topic15 (c1, k600).
-1463789423: New client connected from 127.0.0.1 as sub_mqttjs_topic16 (c1, k600).
-1463789423: New client connected from 127.0.0.1 as sub_mqttjs_topic17 (c1, k600).
-1463789423: New client connected from 127.0.0.1 as sub_mqttjs_topic18 (c1, k600).
-1463789423: New client connected from 127.0.0.1 as sub_mqttjs_topic19 (c1, k600).
-1463789423: New connection from 127.0.0.1 on port 1883.
-1463789423: New connection from 127.0.0.1 on port 1883.
-1463789423: New connection from 127.0.0.1 on port 1883.
-1463789423: New connection from 127.0.0.1 on port 1883.
-1463789423: New connection from 127.0.0.1 on port 1883.
-1463789423: New client connected from 127.0.0.1 as sub_mqttjs_topic20 (c1, k600).
-1463789423: New client connected from 127.0.0.1 as sub_mqttjs_topic21 (c1, k600).
-1463789423: New client connected from 127.0.0.1 as sub_mqttjs_topic22 (c1, k600).
-1463789423: New client connected from 127.0.0.1 as sub_mqttjs_topic23 (c1, k600).
-1463789423: New client connected from 127.0.0.1 as sub_mqttjs_topic24 (c1, k600).
-1463789429: New connection from 127.0.0.1 on port 1883.
-1463789429: New connection from 127.0.0.1 on port 1883.
-1463789429: New connection from 127.0.0.1 on port 1883.
-1463789429: New connection from 127.0.0.1 on port 1883.
-1463789429: New connection from 127.0.0.1 on port 1883.
-1463789429: New client connected from 127.0.0.1 as pub_mqttjs_topic0 (c1, k600).
-1463789429: New client connected from 127.0.0.1 as pub_mqttjs_topic1 (c1, k600).
-1463789429: New client connected from 127.0.0.1 as pub_mqttjs_topic2 (c1, k600).
-1463789429: New client connected from 127.0.0.1 as pub_mqttjs_topic3 (c1, k600).
-1463789429: New client connected from 127.0.0.1 as pub_mqttjs_topic4 (c1, k600).
-1463789429: New connection from 127.0.0.1 on port 1883.
-1463789429: New connection from 127.0.0.1 on port 1883.
-1463789429: New connection from 127.0.0.1 on port 1883.
-1463789429: New connection from 127.0.0.1 on port 1883.
-1463789429: New connection from 127.0.0.1 on port 1883.
-1463789429: New client connected from 127.0.0.1 as pub_mqttjs_topic5 (c1, k600).
-1463789429: New client connected from 127.0.0.1 as pub_mqttjs_topic6 (c1, k600).
-1463789429: New client connected from 127.0.0.1 as pub_mqttjs_topic7 (c1, k600).
-1463789429: New client connected from 127.0.0.1 as pub_mqttjs_topic8 (c1, k600).
-1463789429: New client connected from 127.0.0.1 as pub_mqttjs_topic9 (c1, k600).
-1463789429: New connection from 127.0.0.1 on port 1883.
-1463789429: New connection from 127.0.0.1 on port 1883.
-1463789429: New connection from 127.0.0.1 on port 1883.
-1463789429: New connection from 127.0.0.1 on port 1883.
-1463789429: New connection from 127.0.0.1 on port 1883.
-1463789429: New client connected from 127.0.0.1 as pub_mqttjs_topic10 (c1, k600).
-1463789429: New client connected from 127.0.0.1 as pub_mqttjs_topic11 (c1, k600).
-1463789429: New client connected from 127.0.0.1 as pub_mqttjs_topic12 (c1, k600).
-1463789429: New client connected from 127.0.0.1 as pub_mqttjs_topic13 (c1, k600).
-1463789429: New client connected from 127.0.0.1 as pub_mqttjs_topic14 (c1, k600).
-1463789429: New connection from 127.0.0.1 on port 1883.
-1463789429: New connection from 127.0.0.1 on port 1883.
-1463789429: New connection from 127.0.0.1 on port 1883.
-1463789429: New connection from 127.0.0.1 on port 1883.
-1463789429: New connection from 127.0.0.1 on port 1883.
-1463789429: New client connected from 127.0.0.1 as pub_mqttjs_topic15 (c1, k600).
-1463789429: New client connected from 127.0.0.1 as pub_mqttjs_topic16 (c1, k600).
-1463789429: New client connected from 127.0.0.1 as pub_mqttjs_topic17 (c1, k600).
-1463789429: New client connected from 127.0.0.1 as pub_mqttjs_topic18 (c1, k600).
-1463789429: New client connected from 127.0.0.1 as pub_mqttjs_topic19 (c1, k600).
-1463789429: New connection from 127.0.0.1 on port 1883.
-1463789429: New connection from 127.0.0.1 on port 1883.
-1463789429: New connection from 127.0.0.1 on port 1883.
-1463789429: New connection from 127.0.0.1 on port 1883.
-1463789429: New connection from 127.0.0.1 on port 1883.
-1463789429: New client connected from 127.0.0.1 as pub_mqttjs_topic20 (c1, k600).
-1463789429: New client connected from 127.0.0.1 as pub_mqttjs_topic21 (c1, k600).
-1463789429: New client connected from 127.0.0.1 as pub_mqttjs_topic22 (c1, k600).
-1463789429: New client connected from 127.0.0.1 as pub_mqttjs_topic23 (c1, k600).
-1463789429: New client connected from 127.0.0.1 as pub_mqttjs_topic24 (c1, k600).
-1463789430: Client sub_mqttjs_topic4 disconnected.
-1463789430: Socket error on client sub_mqttjs_topic0, disconnecting.
-1463789430: Socket error on client sub_mqttjs_topic1, disconnecting.
-1463789430: Socket error on client sub_mqttjs_topic2, disconnecting.
-1463789430: Socket error on client sub_mqttjs_topic3, disconnecting.
-1463789430: Client sub_mqttjs_topic9 disconnected.
-1463789430: Socket error on client sub_mqttjs_topic5, disconnecting.
-1463789430: Socket error on client sub_mqttjs_topic6, disconnecting.
-1463789430: Socket error on client sub_mqttjs_topic7, disconnecting.
-1463789430: Socket error on client sub_mqttjs_topic8, disconnecting.
-1463789430: Client sub_mqttjs_topic14 disconnected.
-1463789430: Socket error on client sub_mqttjs_topic10, disconnecting.
-1463789430: Socket error on client sub_mqttjs_topic11, disconnecting.
-1463789430: Socket error on client sub_mqttjs_topic12, disconnecting.
-1463789430: Socket error on client sub_mqttjs_topic13, disconnecting.
-1463789430: Client sub_mqttjs_topic19 disconnected.
-1463789430: Socket error on client sub_mqttjs_topic15, disconnecting.
-1463789430: Socket error on client sub_mqttjs_topic16, disconnecting.
-1463789430: Socket error on client sub_mqttjs_topic17, disconnecting.
-1463789430: Socket error on client sub_mqttjs_topic18, disconnecting.
-1463789430: Client sub_mqttjs_topic24 disconnected.
-1463789430: Socket error on client sub_mqttjs_topic20, disconnecting.
-1463789430: Socket error on client sub_mqttjs_topic21, disconnecting.
-1463789430: Socket error on client sub_mqttjs_topic22, disconnecting.
-1463789430: Socket error on client sub_mqttjs_topic23, disconnecting.
-1463789430: Socket error on client pub_mqttjs_topic0, disconnecting.
-1463789430: Socket error on client pub_mqttjs_topic1, disconnecting.
-1463789430: Socket error on client pub_mqttjs_topic2, disconnecting.
-1463789430: Socket error on client pub_mqttjs_topic3, disconnecting.
-1463789430: Socket error on client pub_mqttjs_topic4, disconnecting.
-1463789430: Socket error on client pub_mqttjs_topic5, disconnecting.
-1463789430: Socket error on client pub_mqttjs_topic6, disconnecting.
-1463789430: Socket error on client pub_mqttjs_topic7, disconnecting.
-1463789430: Socket error on client pub_mqttjs_topic8, disconnecting.
-1463789430: Socket error on client pub_mqttjs_topic9, disconnecting.
-1463789430: Socket error on client pub_mqttjs_topic10, disconnecting.
-1463789430: Socket error on client pub_mqttjs_topic11, disconnecting.
-1463789430: Socket error on client pub_mqttjs_topic12, disconnecting.
-1463789430: Socket error on client pub_mqttjs_topic13, disconnecting.
-1463789430: Socket error on client pub_mqttjs_topic14, disconnecting.
-1463789430: Socket error on client pub_mqttjs_topic15, disconnecting.
-1463789430: Socket error on client pub_mqttjs_topic16, disconnecting.
-1463789430: Socket error on client pub_mqttjs_topic17, disconnecting.
-1463789430: Socket error on client pub_mqttjs_topic18, disconnecting.
-1463789430: Socket error on client pub_mqttjs_topic19, disconnecting.
-1463789430: Socket error on client pub_mqttjs_topic20, disconnecting.
-1463789430: Socket error on client pub_mqttjs_topic21, disconnecting.
-1463789430: Socket error on client pub_mqttjs_topic22, disconnecting.
-1463789430: Socket error on client pub_mqttjs_topic23, disconnecting.
-1463789430: Socket error on client pub_mqttjs_topic24, disconnecting.
-1463789478: New connection from 127.0.0.1 on port 1883.
-1463789478: New connection from 127.0.0.1 on port 1883.
-1463789478: New connection from 127.0.0.1 on port 1883.
-1463789478: New connection from 127.0.0.1 on port 1883.
-1463789478: New connection from 127.0.0.1 on port 1883.
-1463789478: New client connected from 127.0.0.1 as sub_mqttjs_topic0 (c1, k600).
-1463789478: New client connected from 127.0.0.1 as sub_mqttjs_topic1 (c1, k600).
-1463789478: New client connected from 127.0.0.1 as sub_mqttjs_topic2 (c1, k600).
-1463789478: New client connected from 127.0.0.1 as sub_mqttjs_topic3 (c1, k600).
-1463789478: New client connected from 127.0.0.1 as sub_mqttjs_topic4 (c1, k600).
-1463789478: New connection from 127.0.0.1 on port 1883.
-1463789478: New connection from 127.0.0.1 on port 1883.
-1463789478: New connection from 127.0.0.1 on port 1883.
-1463789478: New connection from 127.0.0.1 on port 1883.
-1463789478: New connection from 127.0.0.1 on port 1883.
-1463789478: New client connected from 127.0.0.1 as sub_mqttjs_topic5 (c1, k600).
-1463789478: New client connected from 127.0.0.1 as sub_mqttjs_topic6 (c1, k600).
-1463789478: New client connected from 127.0.0.1 as sub_mqttjs_topic7 (c1, k600).
-1463789478: New client connected from 127.0.0.1 as sub_mqttjs_topic8 (c1, k600).
-1463789478: New client connected from 127.0.0.1 as sub_mqttjs_topic9 (c1, k600).
-1463789478: New connection from 127.0.0.1 on port 1883.
-1463789478: New connection from 127.0.0.1 on port 1883.
-1463789478: New connection from 127.0.0.1 on port 1883.
-1463789478: New connection from 127.0.0.1 on port 1883.
-1463789478: New connection from 127.0.0.1 on port 1883.
-1463789478: New client connected from 127.0.0.1 as sub_mqttjs_topic10 (c1, k600).
-1463789478: New client connected from 127.0.0.1 as sub_mqttjs_topic11 (c1, k600).
-1463789478: New client connected from 127.0.0.1 as sub_mqttjs_topic12 (c1, k600).
-1463789478: New client connected from 127.0.0.1 as sub_mqttjs_topic13 (c1, k600).
-1463789478: New client connected from 127.0.0.1 as sub_mqttjs_topic14 (c1, k600).
-1463789478: New connection from 127.0.0.1 on port 1883.
-1463789478: New connection from 127.0.0.1 on port 1883.
-1463789478: New connection from 127.0.0.1 on port 1883.
-1463789478: New connection from 127.0.0.1 on port 1883.
-1463789478: New connection from 127.0.0.1 on port 1883.
-1463789478: New client connected from 127.0.0.1 as sub_mqttjs_topic15 (c1, k600).
-1463789478: New client connected from 127.0.0.1 as sub_mqttjs_topic16 (c1, k600).
-1463789478: New client connected from 127.0.0.1 as sub_mqttjs_topic17 (c1, k600).
-1463789478: New client connected from 127.0.0.1 as sub_mqttjs_topic18 (c1, k600).
-1463789478: New client connected from 127.0.0.1 as sub_mqttjs_topic19 (c1, k600).
-1463789478: New connection from 127.0.0.1 on port 1883.
-1463789478: New connection from 127.0.0.1 on port 1883.
-1463789478: New connection from 127.0.0.1 on port 1883.
-1463789478: New connection from 127.0.0.1 on port 1883.
-1463789478: New connection from 127.0.0.1 on port 1883.
-1463789478: New client connected from 127.0.0.1 as sub_mqttjs_topic20 (c1, k600).
-1463789478: New client connected from 127.0.0.1 as sub_mqttjs_topic21 (c1, k600).
-1463789478: New client connected from 127.0.0.1 as sub_mqttjs_topic22 (c1, k600).
-1463789478: New client connected from 127.0.0.1 as sub_mqttjs_topic23 (c1, k600).
-1463789478: New client connected from 127.0.0.1 as sub_mqttjs_topic24 (c1, k600).
-1463789481: Socket error on client sub_mqttjs_topic0, disconnecting.
-1463789481: Socket error on client sub_mqttjs_topic1, disconnecting.
-1463789481: Socket error on client sub_mqttjs_topic2, disconnecting.
-1463789481: Socket error on client sub_mqttjs_topic3, disconnecting.
-1463789481: Socket error on client sub_mqttjs_topic4, disconnecting.
-1463789481: Socket error on client sub_mqttjs_topic15, disconnecting.
-1463789481: Socket error on client sub_mqttjs_topic16, disconnecting.
-1463789481: Socket error on client sub_mqttjs_topic17, disconnecting.
-1463789481: Socket error on client sub_mqttjs_topic18, disconnecting.
-1463789481: Socket error on client sub_mqttjs_topic19, disconnecting.
-1463789481: Socket error on client sub_mqttjs_topic10, disconnecting.
-1463789481: Socket error on client sub_mqttjs_topic11, disconnecting.
-1463789481: Socket error on client sub_mqttjs_topic12, disconnecting.
-1463789481: Socket error on client sub_mqttjs_topic13, disconnecting.
-1463789481: Socket error on client sub_mqttjs_topic14, disconnecting.
-1463789481: Socket error on client sub_mqttjs_topic20, disconnecting.
-1463789481: Socket error on client sub_mqttjs_topic21, disconnecting.
-1463789481: Socket error on client sub_mqttjs_topic22, disconnecting.
-1463789481: Socket error on client sub_mqttjs_topic23, disconnecting.
-1463789481: Socket error on client sub_mqttjs_topic24, disconnecting.
-1463789481: Socket error on client sub_mqttjs_topic5, disconnecting.
-1463789481: Socket error on client sub_mqttjs_topic6, disconnecting.
-1463789481: Socket error on client sub_mqttjs_topic7, disconnecting.
-1463789481: Socket error on client sub_mqttjs_topic8, disconnecting.
-1463789481: Socket error on client sub_mqttjs_topic9, disconnecting.
-1463789481: New connection from 127.0.0.1 on port 1883.
-1463789481: New connection from 127.0.0.1 on port 1883.
-1463789481: New connection from 127.0.0.1 on port 1883.
-1463789481: New connection from 127.0.0.1 on port 1883.
-1463789481: New connection from 127.0.0.1 on port 1883.
-1463789482: New client connected from 127.0.0.1 as pub_mqttjs_topic0 (c1, k600).
-1463789482: New client connected from 127.0.0.1 as pub_mqttjs_topic1 (c1, k600).
-1463789482: New client connected from 127.0.0.1 as pub_mqttjs_topic2 (c1, k600).
-1463789482: New client connected from 127.0.0.1 as pub_mqttjs_topic3 (c1, k600).
-1463789482: New client connected from 127.0.0.1 as pub_mqttjs_topic4 (c1, k600).
-1463789482: New connection from 127.0.0.1 on port 1883.
-1463789482: New connection from 127.0.0.1 on port 1883.
-1463789482: New connection from 127.0.0.1 on port 1883.
-1463789482: New connection from 127.0.0.1 on port 1883.
-1463789482: New connection from 127.0.0.1 on port 1883.
-1463789482: New client connected from 127.0.0.1 as pub_mqttjs_topic5 (c1, k600).
-1463789482: New client connected from 127.0.0.1 as pub_mqttjs_topic6 (c1, k600).
-1463789482: New client connected from 127.0.0.1 as pub_mqttjs_topic7 (c1, k600).
-1463789482: New client connected from 127.0.0.1 as pub_mqttjs_topic8 (c1, k600).
-1463789482: New client connected from 127.0.0.1 as pub_mqttjs_topic9 (c1, k600).
-1463789482: New connection from 127.0.0.1 on port 1883.
-1463789482: New connection from 127.0.0.1 on port 1883.
-1463789482: New connection from 127.0.0.1 on port 1883.
-1463789482: New connection from 127.0.0.1 on port 1883.
-1463789482: New connection from 127.0.0.1 on port 1883.
-1463789482: New client connected from 127.0.0.1 as pub_mqttjs_topic10 (c1, k600).
-1463789482: New client connected from 127.0.0.1 as pub_mqttjs_topic11 (c1, k600).
-1463789482: New client connected from 127.0.0.1 as pub_mqttjs_topic12 (c1, k600).
-1463789482: New client connected from 127.0.0.1 as pub_mqttjs_topic13 (c1, k600).
-1463789482: New client connected from 127.0.0.1 as pub_mqttjs_topic14 (c1, k600).
-1463789482: New connection from 127.0.0.1 on port 1883.
-1463789482: New connection from 127.0.0.1 on port 1883.
-1463789482: New connection from 127.0.0.1 on port 1883.
-1463789482: New connection from 127.0.0.1 on port 1883.
-1463789482: New connection from 127.0.0.1 on port 1883.
-1463789482: New client connected from 127.0.0.1 as pub_mqttjs_topic15 (c1, k600).
-1463789482: New client connected from 127.0.0.1 as pub_mqttjs_topic16 (c1, k600).
-1463789482: New client connected from 127.0.0.1 as pub_mqttjs_topic17 (c1, k600).
-1463789482: New client connected from 127.0.0.1 as pub_mqttjs_topic18 (c1, k600).
-1463789482: New client connected from 127.0.0.1 as pub_mqttjs_topic19 (c1, k600).
-1463789482: New connection from 127.0.0.1 on port 1883.
-1463789482: New connection from 127.0.0.1 on port 1883.
-1463789482: New connection from 127.0.0.1 on port 1883.
-1463789482: New connection from 127.0.0.1 on port 1883.
-1463789482: New connection from 127.0.0.1 on port 1883.
-1463789482: New client connected from 127.0.0.1 as pub_mqttjs_topic20 (c1, k600).
-1463789482: New client connected from 127.0.0.1 as pub_mqttjs_topic21 (c1, k600).
-1463789482: New client connected from 127.0.0.1 as pub_mqttjs_topic22 (c1, k600).
-1463789482: New client connected from 127.0.0.1 as pub_mqttjs_topic23 (c1, k600).
-1463789482: New client connected from 127.0.0.1 as pub_mqttjs_topic24 (c1, k600).
-1463789483: Socket error on client pub_mqttjs_topic0, disconnecting.
-1463789483: Socket error on client pub_mqttjs_topic1, disconnecting.
-1463789483: Socket error on client pub_mqttjs_topic2, disconnecting.
-1463789483: Socket error on client pub_mqttjs_topic3, disconnecting.
-1463789483: Socket error on client pub_mqttjs_topic4, disconnecting.
-1463789483: Socket error on client pub_mqttjs_topic5, disconnecting.
-1463789483: Socket error on client pub_mqttjs_topic6, disconnecting.
-1463789483: Socket error on client pub_mqttjs_topic7, disconnecting.
-1463789483: Socket error on client pub_mqttjs_topic8, disconnecting.
-1463789483: Socket error on client pub_mqttjs_topic9, disconnecting.
-1463789483: Socket error on client pub_mqttjs_topic10, disconnecting.
-1463789483: Socket error on client pub_mqttjs_topic11, disconnecting.
-1463789483: Socket error on client pub_mqttjs_topic12, disconnecting.
-1463789483: Socket error on client pub_mqttjs_topic13, disconnecting.
-1463789483: Socket error on client pub_mqttjs_topic14, disconnecting.
-1463789483: Socket error on client pub_mqttjs_topic15, disconnecting.
-1463789483: Socket error on client pub_mqttjs_topic16, disconnecting.
-1463789483: Socket error on client pub_mqttjs_topic17, disconnecting.
-1463789483: Socket error on client pub_mqttjs_topic18, disconnecting.
-1463789483: Socket error on client pub_mqttjs_topic19, disconnecting.
-1463789483: Socket error on client pub_mqttjs_topic20, disconnecting.
-1463789483: Socket error on client pub_mqttjs_topic21, disconnecting.
-1463789483: Socket error on client pub_mqttjs_topic22, disconnecting.
-1463789483: Socket error on client pub_mqttjs_topic23, disconnecting.
-1463789483: Socket error on client pub_mqttjs_topic24, disconnecting.
-1463789583: New connection from 127.0.0.1 on port 1883.
-1463789583: New connection from 127.0.0.1 on port 1883.
-1463789583: New connection from 127.0.0.1 on port 1883.
-1463789583: New connection from 127.0.0.1 on port 1883.
-1463789583: New connection from 127.0.0.1 on port 1883.
-1463789583: New client connected from 127.0.0.1 as sub_mqttjs_topic0 (c1, k600).
-1463789583: New client connected from 127.0.0.1 as sub_mqttjs_topic1 (c1, k600).
-1463789583: New client connected from 127.0.0.1 as sub_mqttjs_topic2 (c1, k600).
-1463789583: New client connected from 127.0.0.1 as sub_mqttjs_topic3 (c1, k600).
-1463789583: New client connected from 127.0.0.1 as sub_mqttjs_topic4 (c1, k600).
-1463789583: New connection from 127.0.0.1 on port 1883.
-1463789583: New connection from 127.0.0.1 on port 1883.
-1463789583: New connection from 127.0.0.1 on port 1883.
-1463789583: New connection from 127.0.0.1 on port 1883.
-1463789583: New connection from 127.0.0.1 on port 1883.
-1463789583: New client connected from 127.0.0.1 as sub_mqttjs_topic5 (c1, k600).
-1463789583: New client connected from 127.0.0.1 as sub_mqttjs_topic6 (c1, k600).
-1463789583: New client connected from 127.0.0.1 as sub_mqttjs_topic7 (c1, k600).
-1463789583: New client connected from 127.0.0.1 as sub_mqttjs_topic8 (c1, k600).
-1463789583: New client connected from 127.0.0.1 as sub_mqttjs_topic9 (c1, k600).
-1463789583: New connection from 127.0.0.1 on port 1883.
-1463789583: New connection from 127.0.0.1 on port 1883.
-1463789583: New connection from 127.0.0.1 on port 1883.
-1463789583: New connection from 127.0.0.1 on port 1883.
-1463789583: New connection from 127.0.0.1 on port 1883.
-1463789583: New client connected from 127.0.0.1 as sub_mqttjs_topic10 (c1, k600).
-1463789583: New client connected from 127.0.0.1 as sub_mqttjs_topic11 (c1, k600).
-1463789583: New client connected from 127.0.0.1 as sub_mqttjs_topic12 (c1, k600).
-1463789583: New client connected from 127.0.0.1 as sub_mqttjs_topic13 (c1, k600).
-1463789583: New client connected from 127.0.0.1 as sub_mqttjs_topic14 (c1, k600).
-1463789584: New connection from 127.0.0.1 on port 1883.
-1463789584: New connection from 127.0.0.1 on port 1883.
-1463789584: New connection from 127.0.0.1 on port 1883.
-1463789584: New connection from 127.0.0.1 on port 1883.
-1463789584: New connection from 127.0.0.1 on port 1883.
-1463789584: New client connected from 127.0.0.1 as sub_mqttjs_topic15 (c1, k600).
-1463789584: New client connected from 127.0.0.1 as sub_mqttjs_topic16 (c1, k600).
-1463789584: New client connected from 127.0.0.1 as sub_mqttjs_topic17 (c1, k600).
-1463789584: New client connected from 127.0.0.1 as sub_mqttjs_topic18 (c1, k600).
-1463789584: New client connected from 127.0.0.1 as sub_mqttjs_topic19 (c1, k600).
-1463789584: New connection from 127.0.0.1 on port 1883.
-1463789584: New connection from 127.0.0.1 on port 1883.
-1463789584: New connection from 127.0.0.1 on port 1883.
-1463789584: New connection from 127.0.0.1 on port 1883.
-1463789584: New connection from 127.0.0.1 on port 1883.
-1463789584: New client connected from 127.0.0.1 as sub_mqttjs_topic20 (c1, k600).
-1463789584: New client connected from 127.0.0.1 as sub_mqttjs_topic21 (c1, k600).
-1463789584: New client connected from 127.0.0.1 as sub_mqttjs_topic22 (c1, k600).
-1463789584: New client connected from 127.0.0.1 as sub_mqttjs_topic23 (c1, k600).
-1463789584: New client connected from 127.0.0.1 as sub_mqttjs_topic24 (c1, k600).
-1463789585: Socket error on client sub_mqttjs_topic10, disconnecting.
-1463789585: Socket error on client sub_mqttjs_topic11, disconnecting.
-1463789585: Socket error on client sub_mqttjs_topic12, disconnecting.
-1463789585: Socket error on client sub_mqttjs_topic13, disconnecting.
-1463789585: Socket error on client sub_mqttjs_topic14, disconnecting.
-1463789585: Socket error on client sub_mqttjs_topic15, disconnecting.
-1463789585: Socket error on client sub_mqttjs_topic16, disconnecting.
-1463789585: Socket error on client sub_mqttjs_topic17, disconnecting.
-1463789585: Socket error on client sub_mqttjs_topic18, disconnecting.
-1463789585: Socket error on client sub_mqttjs_topic19, disconnecting.
-1463789585: Socket error on client sub_mqttjs_topic20, disconnecting.
-1463789585: Socket error on client sub_mqttjs_topic21, disconnecting.
-1463789585: Socket error on client sub_mqttjs_topic22, disconnecting.
-1463789585: Socket error on client sub_mqttjs_topic23, disconnecting.
-1463789585: Socket error on client sub_mqttjs_topic24, disconnecting.
-1463789585: Socket error on client sub_mqttjs_topic5, disconnecting.
-1463789585: Socket error on client sub_mqttjs_topic6, disconnecting.
-1463789585: Socket error on client sub_mqttjs_topic7, disconnecting.
-1463789585: Socket error on client sub_mqttjs_topic8, disconnecting.
-1463789585: Socket error on client sub_mqttjs_topic9, disconnecting.
-1463789585: Socket error on client sub_mqttjs_topic0, disconnecting.
-1463789585: Socket error on client sub_mqttjs_topic1, disconnecting.
-1463789585: Socket error on client sub_mqttjs_topic2, disconnecting.
-1463789585: Socket error on client sub_mqttjs_topic3, disconnecting.
-1463789585: Socket error on client sub_mqttjs_topic4, disconnecting.
-1463789589: New connection from 127.0.0.1 on port 1883.
-1463789589: New connection from 127.0.0.1 on port 1883.
-1463789589: New connection from 127.0.0.1 on port 1883.
-1463789589: New connection from 127.0.0.1 on port 1883.
-1463789589: New connection from 127.0.0.1 on port 1883.
-1463789589: New client connected from 127.0.0.1 as sub_mqttjs_topic0 (c1, k600).
-1463789589: New client connected from 127.0.0.1 as sub_mqttjs_topic1 (c1, k600).
-1463789589: New client connected from 127.0.0.1 as sub_mqttjs_topic2 (c1, k600).
-1463789589: New client connected from 127.0.0.1 as sub_mqttjs_topic3 (c1, k600).
-1463789589: New client connected from 127.0.0.1 as sub_mqttjs_topic4 (c1, k600).
-1463789589: New connection from 127.0.0.1 on port 1883.
-1463789589: New connection from 127.0.0.1 on port 1883.
-1463789589: New connection from 127.0.0.1 on port 1883.
-1463789589: New connection from 127.0.0.1 on port 1883.
-1463789589: New connection from 127.0.0.1 on port 1883.
-1463789589: New client connected from 127.0.0.1 as sub_mqttjs_topic5 (c1, k600).
-1463789589: New client connected from 127.0.0.1 as sub_mqttjs_topic6 (c1, k600).
-1463789589: New client connected from 127.0.0.1 as sub_mqttjs_topic7 (c1, k600).
-1463789589: New client connected from 127.0.0.1 as sub_mqttjs_topic8 (c1, k600).
-1463789589: New client connected from 127.0.0.1 as sub_mqttjs_topic9 (c1, k600).
-1463789589: New connection from 127.0.0.1 on port 1883.
-1463789589: New connection from 127.0.0.1 on port 1883.
-1463789589: New connection from 127.0.0.1 on port 1883.
-1463789589: New connection from 127.0.0.1 on port 1883.
-1463789589: New connection from 127.0.0.1 on port 1883.
-1463789589: New client connected from 127.0.0.1 as sub_mqttjs_topic10 (c1, k600).
-1463789589: New client connected from 127.0.0.1 as sub_mqttjs_topic11 (c1, k600).
-1463789589: New client connected from 127.0.0.1 as sub_mqttjs_topic12 (c1, k600).
-1463789589: New client connected from 127.0.0.1 as sub_mqttjs_topic13 (c1, k600).
-1463789589: New client connected from 127.0.0.1 as sub_mqttjs_topic14 (c1, k600).
-1463789589: New connection from 127.0.0.1 on port 1883.
-1463789589: New connection from 127.0.0.1 on port 1883.
-1463789589: New connection from 127.0.0.1 on port 1883.
-1463789589: New connection from 127.0.0.1 on port 1883.
-1463789589: New connection from 127.0.0.1 on port 1883.
-1463789589: New client connected from 127.0.0.1 as sub_mqttjs_topic20 (c1, k600).
-1463789589: New client connected from 127.0.0.1 as sub_mqttjs_topic21 (c1, k600).
-1463789589: New client connected from 127.0.0.1 as sub_mqttjs_topic22 (c1, k600).
-1463789589: New client connected from 127.0.0.1 as sub_mqttjs_topic23 (c1, k600).
-1463789589: New client connected from 127.0.0.1 as sub_mqttjs_topic24 (c1, k600).
-1463789589: New connection from 127.0.0.1 on port 1883.
-1463789589: New connection from 127.0.0.1 on port 1883.
-1463789589: New connection from 127.0.0.1 on port 1883.
-1463789589: New connection from 127.0.0.1 on port 1883.
-1463789589: New connection from 127.0.0.1 on port 1883.
-1463789589: New client connected from 127.0.0.1 as sub_mqttjs_topic15 (c1, k600).
-1463789589: New client connected from 127.0.0.1 as sub_mqttjs_topic16 (c1, k600).
-1463789589: New client connected from 127.0.0.1 as sub_mqttjs_topic17 (c1, k600).
-1463789589: New client connected from 127.0.0.1 as sub_mqttjs_topic18 (c1, k600).
-1463789589: New client connected from 127.0.0.1 as sub_mqttjs_topic19 (c1, k600).
-1463789594: New connection from 127.0.0.1 on port 1883.
-1463789594: New connection from 127.0.0.1 on port 1883.
-1463789594: New connection from 127.0.0.1 on port 1883.
-1463789594: New connection from 127.0.0.1 on port 1883.
-1463789594: New connection from 127.0.0.1 on port 1883.
-1463789594: New client connected from 127.0.0.1 as pub_mqttjs_topic0 (c1, k600).
-1463789594: New client connected from 127.0.0.1 as pub_mqttjs_topic1 (c1, k600).
-1463789594: New client connected from 127.0.0.1 as pub_mqttjs_topic2 (c1, k600).
-1463789594: New client connected from 127.0.0.1 as pub_mqttjs_topic3 (c1, k600).
-1463789594: New client connected from 127.0.0.1 as pub_mqttjs_topic4 (c1, k600).
-1463789594: New connection from 127.0.0.1 on port 1883.
-1463789594: New connection from 127.0.0.1 on port 1883.
-1463789594: New connection from 127.0.0.1 on port 1883.
-1463789594: New connection from 127.0.0.1 on port 1883.
-1463789594: New connection from 127.0.0.1 on port 1883.
-1463789594: New client connected from 127.0.0.1 as pub_mqttjs_topic5 (c1, k600).
-1463789594: New client connected from 127.0.0.1 as pub_mqttjs_topic6 (c1, k600).
-1463789594: New client connected from 127.0.0.1 as pub_mqttjs_topic7 (c1, k600).
-1463789594: New client connected from 127.0.0.1 as pub_mqttjs_topic8 (c1, k600).
-1463789594: New client connected from 127.0.0.1 as pub_mqttjs_topic9 (c1, k600).
-1463789594: New connection from 127.0.0.1 on port 1883.
-1463789594: New connection from 127.0.0.1 on port 1883.
-1463789594: New connection from 127.0.0.1 on port 1883.
-1463789594: New connection from 127.0.0.1 on port 1883.
-1463789594: New connection from 127.0.0.1 on port 1883.
-1463789594: New client connected from 127.0.0.1 as pub_mqttjs_topic20 (c1, k600).
-1463789594: New client connected from 127.0.0.1 as pub_mqttjs_topic21 (c1, k600).
-1463789594: New client connected from 127.0.0.1 as pub_mqttjs_topic22 (c1, k600).
-1463789594: New client connected from 127.0.0.1 as pub_mqttjs_topic23 (c1, k600).
-1463789594: New client connected from 127.0.0.1 as pub_mqttjs_topic24 (c1, k600).
-1463789594: New connection from 127.0.0.1 on port 1883.
-1463789594: New connection from 127.0.0.1 on port 1883.
-1463789594: New connection from 127.0.0.1 on port 1883.
-1463789594: New connection from 127.0.0.1 on port 1883.
-1463789594: New connection from 127.0.0.1 on port 1883.
-1463789594: New client connected from 127.0.0.1 as pub_mqttjs_topic10 (c1, k600).
-1463789594: New client connected from 127.0.0.1 as pub_mqttjs_topic11 (c1, k600).
-1463789594: New client connected from 127.0.0.1 as pub_mqttjs_topic12 (c1, k600).
-1463789594: New client connected from 127.0.0.1 as pub_mqttjs_topic13 (c1, k600).
-1463789594: New client connected from 127.0.0.1 as pub_mqttjs_topic14 (c1, k600).
-1463789594: New connection from 127.0.0.1 on port 1883.
-1463789594: New connection from 127.0.0.1 on port 1883.
-1463789594: New connection from 127.0.0.1 on port 1883.
-1463789594: New connection from 127.0.0.1 on port 1883.
-1463789594: New connection from 127.0.0.1 on port 1883.
-1463789594: New client connected from 127.0.0.1 as pub_mqttjs_topic15 (c1, k600).
-1463789594: New client connected from 127.0.0.1 as pub_mqttjs_topic16 (c1, k600).
-1463789594: New client connected from 127.0.0.1 as pub_mqttjs_topic17 (c1, k600).
-1463789594: New client connected from 127.0.0.1 as pub_mqttjs_topic18 (c1, k600).
-1463789594: New client connected from 127.0.0.1 as pub_mqttjs_topic19 (c1, k600).
-1463789595: Client sub_mqttjs_topic4 disconnected.
-1463789595: Socket error on client sub_mqttjs_topic0, disconnecting.
-1463789595: Socket error on client sub_mqttjs_topic1, disconnecting.
-1463789595: Socket error on client sub_mqttjs_topic2, disconnecting.
-1463789595: Socket error on client sub_mqttjs_topic3, disconnecting.
-1463789595: Client sub_mqttjs_topic9 disconnected.
-1463789595: Socket error on client sub_mqttjs_topic5, disconnecting.
-1463789595: Socket error on client sub_mqttjs_topic6, disconnecting.
-1463789595: Socket error on client sub_mqttjs_topic7, disconnecting.
-1463789595: Socket error on client sub_mqttjs_topic8, disconnecting.
-1463789595: Client sub_mqttjs_topic14 disconnected.
-1463789595: Client sub_mqttjs_topic24 disconnected.
-1463789595: Socket error on client sub_mqttjs_topic10, disconnecting.
-1463789595: Socket error on client sub_mqttjs_topic11, disconnecting.
-1463789595: Socket error on client sub_mqttjs_topic12, disconnecting.
-1463789595: Socket error on client sub_mqttjs_topic13, disconnecting.
-1463789595: Socket error on client sub_mqttjs_topic15, disconnecting.
-1463789595: Socket error on client sub_mqttjs_topic16, disconnecting.
-1463789595: Socket error on client sub_mqttjs_topic17, disconnecting.
-1463789595: Socket error on client sub_mqttjs_topic18, disconnecting.
-1463789595: Socket error on client sub_mqttjs_topic19, disconnecting.
-1463789595: Socket error on client sub_mqttjs_topic20, disconnecting.
-1463789595: Socket error on client sub_mqttjs_topic21, disconnecting.
-1463789595: Socket error on client sub_mqttjs_topic22, disconnecting.
-1463789595: Socket error on client sub_mqttjs_topic23, disconnecting.
-1463789595: Socket error on client pub_mqttjs_topic0, disconnecting.
-1463789595: Socket error on client pub_mqttjs_topic1, disconnecting.
-1463789595: Socket error on client pub_mqttjs_topic2, disconnecting.
-1463789595: Socket error on client pub_mqttjs_topic3, disconnecting.
-1463789595: Socket error on client pub_mqttjs_topic4, disconnecting.
-1463789595: Socket error on client pub_mqttjs_topic5, disconnecting.
-1463789595: Socket error on client pub_mqttjs_topic6, disconnecting.
-1463789595: Socket error on client pub_mqttjs_topic7, disconnecting.
-1463789595: Socket error on client pub_mqttjs_topic8, disconnecting.
-1463789595: Socket error on client pub_mqttjs_topic9, disconnecting.
-1463789596: Socket error on client pub_mqttjs_topic10, disconnecting.
-1463789596: Socket error on client pub_mqttjs_topic15, disconnecting.
-1463789596: Socket error on client pub_mqttjs_topic20, disconnecting.
-1463789596: Socket error on client pub_mqttjs_topic11, disconnecting.
-1463789596: Socket error on client pub_mqttjs_topic12, disconnecting.
-1463789596: Socket error on client pub_mqttjs_topic13, disconnecting.
-1463789596: Socket error on client pub_mqttjs_topic14, disconnecting.
-1463789596: Socket error on client pub_mqttjs_topic16, disconnecting.
-1463789596: Socket error on client pub_mqttjs_topic17, disconnecting.
-1463789596: Socket error on client pub_mqttjs_topic18, disconnecting.
-1463789596: Socket error on client pub_mqttjs_topic19, disconnecting.
-1463789596: Socket error on client pub_mqttjs_topic21, disconnecting.
-1463789596: Socket error on client pub_mqttjs_topic22, disconnecting.
-1463789596: Socket error on client pub_mqttjs_topic23, disconnecting.
-1463789596: Socket error on client pub_mqttjs_topic24, disconnecting.
-1463789753: New connection from 127.0.0.1 on port 1883.
-1463789753: New connection from 127.0.0.1 on port 1883.
-1463789753: New connection from 127.0.0.1 on port 1883.
-1463789753: New connection from 127.0.0.1 on port 1883.
-1463789753: New connection from 127.0.0.1 on port 1883.
-1463789753: New client connected from 127.0.0.1 as sub_mqttjs_topic0 (c1, k600).
-1463789753: New client connected from 127.0.0.1 as sub_mqttjs_topic1 (c1, k600).
-1463789753: New client connected from 127.0.0.1 as sub_mqttjs_topic2 (c1, k600).
-1463789753: New client connected from 127.0.0.1 as sub_mqttjs_topic3 (c1, k600).
-1463789753: New client connected from 127.0.0.1 as sub_mqttjs_topic4 (c1, k600).
-1463789753: New connection from 127.0.0.1 on port 1883.
-1463789753: New connection from 127.0.0.1 on port 1883.
-1463789753: New connection from 127.0.0.1 on port 1883.
-1463789753: New connection from 127.0.0.1 on port 1883.
-1463789753: New connection from 127.0.0.1 on port 1883.
-1463789753: New client connected from 127.0.0.1 as sub_mqttjs_topic5 (c1, k600).
-1463789753: New client connected from 127.0.0.1 as sub_mqttjs_topic6 (c1, k600).
-1463789753: New client connected from 127.0.0.1 as sub_mqttjs_topic7 (c1, k600).
-1463789753: New client connected from 127.0.0.1 as sub_mqttjs_topic8 (c1, k600).
-1463789753: New client connected from 127.0.0.1 as sub_mqttjs_topic9 (c1, k600).
-1463789753: New connection from 127.0.0.1 on port 1883.
-1463789753: New connection from 127.0.0.1 on port 1883.
-1463789753: New connection from 127.0.0.1 on port 1883.
-1463789753: New connection from 127.0.0.1 on port 1883.
-1463789753: New connection from 127.0.0.1 on port 1883.
-1463789753: New connection from 127.0.0.1 on port 1883.
-1463789753: New connection from 127.0.0.1 on port 1883.
-1463789753: New connection from 127.0.0.1 on port 1883.
-1463789753: New connection from 127.0.0.1 on port 1883.
-1463789753: New connection from 127.0.0.1 on port 1883.
-1463789753: New client connected from 127.0.0.1 as sub_mqttjs_topic15 (c1, k600).
-1463789753: New client connected from 127.0.0.1 as sub_mqttjs_topic20 (c1, k600).
-1463789753: New client connected from 127.0.0.1 as sub_mqttjs_topic16 (c1, k600).
-1463789753: New client connected from 127.0.0.1 as sub_mqttjs_topic21 (c1, k600).
-1463789753: New client connected from 127.0.0.1 as sub_mqttjs_topic17 (c1, k600).
-1463789753: New client connected from 127.0.0.1 as sub_mqttjs_topic22 (c1, k600).
-1463789753: New client connected from 127.0.0.1 as sub_mqttjs_topic23 (c1, k600).
-1463789753: New client connected from 127.0.0.1 as sub_mqttjs_topic18 (c1, k600).
-1463789753: New client connected from 127.0.0.1 as sub_mqttjs_topic24 (c1, k600).
-1463789753: New client connected from 127.0.0.1 as sub_mqttjs_topic19 (c1, k600).
-1463789753: New connection from 127.0.0.1 on port 1883.
-1463789753: New connection from 127.0.0.1 on port 1883.
-1463789753: New connection from 127.0.0.1 on port 1883.
-1463789753: New connection from 127.0.0.1 on port 1883.
-1463789753: New connection from 127.0.0.1 on port 1883.
-1463789753: New client connected from 127.0.0.1 as sub_mqttjs_topic10 (c1, k600).
-1463789753: New client connected from 127.0.0.1 as sub_mqttjs_topic11 (c1, k600).
-1463789753: New client connected from 127.0.0.1 as sub_mqttjs_topic12 (c1, k600).
-1463789753: New client connected from 127.0.0.1 as sub_mqttjs_topic13 (c1, k600).
-1463789753: New client connected from 127.0.0.1 as sub_mqttjs_topic14 (c1, k600).
-1463789758: New connection from 127.0.0.1 on port 1883.
-1463789758: New connection from 127.0.0.1 on port 1883.
-1463789758: New connection from 127.0.0.1 on port 1883.
-1463789758: New connection from 127.0.0.1 on port 1883.
-1463789758: New connection from 127.0.0.1 on port 1883.
-1463789758: New client connected from 127.0.0.1 as pub_mqttjs_topic0 (c1, k600).
-1463789758: New client connected from 127.0.0.1 as pub_mqttjs_topic1 (c1, k600).
-1463789758: New client connected from 127.0.0.1 as pub_mqttjs_topic2 (c1, k600).
-1463789758: New client connected from 127.0.0.1 as pub_mqttjs_topic3 (c1, k600).
-1463789758: New client connected from 127.0.0.1 as pub_mqttjs_topic4 (c1, k600).
-1463789758: New connection from 127.0.0.1 on port 1883.
-1463789758: New connection from 127.0.0.1 on port 1883.
-1463789758: New connection from 127.0.0.1 on port 1883.
-1463789758: New connection from 127.0.0.1 on port 1883.
-1463789758: New connection from 127.0.0.1 on port 1883.
-1463789758: New client connected from 127.0.0.1 as pub_mqttjs_topic15 (c1, k600).
-1463789758: New connection from 127.0.0.1 on port 1883.
-1463789758: New client connected from 127.0.0.1 as pub_mqttjs_topic16 (c1, k600).
-1463789758: New connection from 127.0.0.1 on port 1883.
-1463789758: New client connected from 127.0.0.1 as pub_mqttjs_topic17 (c1, k600).
-1463789758: New connection from 127.0.0.1 on port 1883.
-1463789758: New connection from 127.0.0.1 on port 1883.
-1463789758: New client connected from 127.0.0.1 as pub_mqttjs_topic18 (c1, k600).
-1463789758: New client connected from 127.0.0.1 as pub_mqttjs_topic19 (c1, k600).
-1463789758: New connection from 127.0.0.1 on port 1883.
-1463789758: New client connected from 127.0.0.1 as pub_mqttjs_topic5 (c1, k600).
-1463789759: New client connected from 127.0.0.1 as pub_mqttjs_topic6 (c1, k600).
-1463789759: New client connected from 127.0.0.1 as pub_mqttjs_topic7 (c1, k600).
-1463789759: New client connected from 127.0.0.1 as pub_mqttjs_topic8 (c1, k600).
-1463789759: New client connected from 127.0.0.1 as pub_mqttjs_topic9 (c1, k600).
-1463789759: New connection from 127.0.0.1 on port 1883.
-1463789759: New connection from 127.0.0.1 on port 1883.
-1463789759: New connection from 127.0.0.1 on port 1883.
-1463789759: New connection from 127.0.0.1 on port 1883.
-1463789759: New connection from 127.0.0.1 on port 1883.
-1463789759: New client connected from 127.0.0.1 as pub_mqttjs_topic10 (c1, k600).
-1463789759: New client connected from 127.0.0.1 as pub_mqttjs_topic11 (c1, k600).
-1463789759: New client connected from 127.0.0.1 as pub_mqttjs_topic12 (c1, k600).
-1463789759: New client connected from 127.0.0.1 as pub_mqttjs_topic13 (c1, k600).
-1463789759: New client connected from 127.0.0.1 as pub_mqttjs_topic14 (c1, k600).
-1463789759: New connection from 127.0.0.1 on port 1883.
-1463789759: New connection from 127.0.0.1 on port 1883.
-1463789759: New connection from 127.0.0.1 on port 1883.
-1463789759: New connection from 127.0.0.1 on port 1883.
-1463789759: New connection from 127.0.0.1 on port 1883.
-1463789759: New client connected from 127.0.0.1 as pub_mqttjs_topic20 (c1, k600).
-1463789759: New client connected from 127.0.0.1 as pub_mqttjs_topic21 (c1, k600).
-1463789759: New client connected from 127.0.0.1 as pub_mqttjs_topic22 (c1, k600).
-1463789759: New client connected from 127.0.0.1 as pub_mqttjs_topic23 (c1, k600).
-1463789759: New client connected from 127.0.0.1 as pub_mqttjs_topic24 (c1, k600).
-1463789760: Client sub_mqttjs_topic4 disconnected.
-1463789760: Socket error on client sub_mqttjs_topic0, disconnecting.
-1463789760: Socket error on client sub_mqttjs_topic1, disconnecting.
-1463789760: Socket error on client sub_mqttjs_topic2, disconnecting.
-1463789760: Socket error on client sub_mqttjs_topic3, disconnecting.
-1463789760: Client sub_mqttjs_topic19 disconnected.
-1463789760: Socket error on client sub_mqttjs_topic16, disconnecting.
-1463789760: Socket error on client sub_mqttjs_topic17, disconnecting.
-1463789760: Socket error on client sub_mqttjs_topic18, disconnecting.
-1463789760: Socket error on client sub_mqttjs_topic15, disconnecting.
-1463789760: Socket error on client sub_mqttjs_topic20, disconnecting.
-1463789760: Socket error on client sub_mqttjs_topic21, disconnecting.
-1463789760: Socket error on client sub_mqttjs_topic22, disconnecting.
-1463789760: Socket error on client sub_mqttjs_topic23, disconnecting.
-1463789760: Socket error on client sub_mqttjs_topic24, disconnecting.
-1463789760: Client sub_mqttjs_topic9 disconnected.
-1463789760: Socket error on client sub_mqttjs_topic5, disconnecting.
-1463789760: Socket error on client sub_mqttjs_topic6, disconnecting.
-1463789760: Socket error on client sub_mqttjs_topic7, disconnecting.
-1463789760: Socket error on client sub_mqttjs_topic8, disconnecting.
-1463789760: Client sub_mqttjs_topic14 disconnected.
-1463789760: Socket error on client sub_mqttjs_topic10, disconnecting.
-1463789760: Socket error on client sub_mqttjs_topic11, disconnecting.
-1463789760: Socket error on client sub_mqttjs_topic12, disconnecting.
-1463789760: Socket error on client sub_mqttjs_topic13, disconnecting.
-1463789760: Socket error on client pub_mqttjs_topic0, disconnecting.
-1463789760: Socket error on client pub_mqttjs_topic1, disconnecting.
-1463789760: Socket error on client pub_mqttjs_topic2, disconnecting.
-1463789760: Socket error on client pub_mqttjs_topic3, disconnecting.
-1463789760: Socket error on client pub_mqttjs_topic4, disconnecting.
-1463789760: Socket error on client pub_mqttjs_topic15, disconnecting.
-1463789760: Socket error on client pub_mqttjs_topic16, disconnecting.
-1463789760: Socket error on client pub_mqttjs_topic17, disconnecting.
-1463789760: Socket error on client pub_mqttjs_topic18, disconnecting.
-1463789760: Socket error on client pub_mqttjs_topic19, disconnecting.
-1463789760: Socket error on client pub_mqttjs_topic5, disconnecting.
-1463789760: Socket error on client pub_mqttjs_topic6, disconnecting.
-1463789760: Socket error on client pub_mqttjs_topic7, disconnecting.
-1463789760: Socket error on client pub_mqttjs_topic8, disconnecting.
-1463789760: Socket error on client pub_mqttjs_topic9, disconnecting.
-1463789760: Socket error on client pub_mqttjs_topic20, disconnecting.
-1463789760: Socket error on client pub_mqttjs_topic21, disconnecting.
-1463789760: Socket error on client pub_mqttjs_topic22, disconnecting.
-1463789760: Socket error on client pub_mqttjs_topic23, disconnecting.
-1463789760: Socket error on client pub_mqttjs_topic24, disconnecting.
-1463789760: Socket error on client pub_mqttjs_topic10, disconnecting.
-1463789760: Socket error on client pub_mqttjs_topic11, disconnecting.
-1463789760: Socket error on client pub_mqttjs_topic12, disconnecting.
-1463789760: Socket error on client pub_mqttjs_topic13, disconnecting.
-1463789760: Socket error on client pub_mqttjs_topic14, disconnecting.
-1463789966: New connection from 127.0.0.1 on port 1883.
-1463789966: New connection from 127.0.0.1 on port 1883.
-1463789966: New connection from 127.0.0.1 on port 1883.
-1463789966: New connection from 127.0.0.1 on port 1883.
-1463789966: New connection from 127.0.0.1 on port 1883.
-1463789966: New client connected from 127.0.0.1 as sub_mqttjs_topic1 (c1, k600).
-1463789966: New client connected from 127.0.0.1 as sub_mqttjs_topic2 (c1, k600).
-1463789966: New client connected from 127.0.0.1 as sub_mqttjs_topic3 (c1, k600).
-1463789966: New client connected from 127.0.0.1 as sub_mqttjs_topic4 (c1, k600).
-1463789966: New client connected from 127.0.0.1 as sub_mqttjs_topic5 (c1, k600).
-1463789971: New connection from 127.0.0.1 on port 1883.
-1463789971: New connection from 127.0.0.1 on port 1883.
-1463789971: New connection from 127.0.0.1 on port 1883.
-1463789971: New connection from 127.0.0.1 on port 1883.
-1463789971: New connection from 127.0.0.1 on port 1883.
-1463789971: New client connected from 127.0.0.1 as pub_mqttjs_topic1 (c1, k600).
-1463789971: New client connected from 127.0.0.1 as pub_mqttjs_topic2 (c1, k600).
-1463789971: New client connected from 127.0.0.1 as pub_mqttjs_topic3 (c1, k600).
-1463789971: New client connected from 127.0.0.1 as pub_mqttjs_topic4 (c1, k600).
-1463789971: New client connected from 127.0.0.1 as pub_mqttjs_topic5 (c1, k600).
-1463789982: Client sub_mqttjs_topic5 disconnected.
-1463789982: Socket error on client sub_mqttjs_topic1, disconnecting.
-1463789982: Socket error on client sub_mqttjs_topic2, disconnecting.
-1463789982: Socket error on client sub_mqttjs_topic3, disconnecting.
-1463789982: Socket error on client sub_mqttjs_topic4, disconnecting.
-1463789982: Socket error on client pub_mqttjs_topic1, disconnecting.
-1463789982: Socket error on client pub_mqttjs_topic2, disconnecting.
-1463789982: Socket error on client pub_mqttjs_topic3, disconnecting.
-1463789982: Socket error on client pub_mqttjs_topic4, disconnecting.
-1463789982: Socket error on client pub_mqttjs_topic5, disconnecting.
+1468712377: mosquitto version 1.4.8 (build date 2016-02-14 11:22:37-0800) starting
+1468712377: Config loaded from brokers/broker_config.conf.
+1468712377: Opening ipv6 listen socket on port 1883.
+1468712377: Opening ipv4 listen socket on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic10_0 (c1, k600).
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic10_1 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic10_2 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic10_3 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic10_4 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic11_0 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic11_1 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic11_2 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic11_3 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic11_4 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic12_0 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic12_1 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic12_2 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic12_3 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic12_4 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic13_0 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic13_1 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic13_2 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic13_3 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic13_4 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic14_0 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic14_1 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic14_2 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic14_3 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic14_4 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic15_0 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic15_1 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic15_2 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic15_3 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic15_4 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic16_0 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic16_1 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic16_2 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic16_3 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic16_4 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic17_0 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic17_1 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic17_2 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic17_3 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic17_4 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic18_0 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic18_1 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic18_2 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic18_3 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic18_4 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic19_0 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic19_1 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic19_2 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic19_3 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic19_4 (c1, k600).
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New connection from 127.0.0.1 on port 1883.
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic0_0 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic0_1 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic0_2 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic0_3 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic0_4 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic1_0 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic1_1 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic1_2 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic1_3 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic1_4 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic2_0 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic2_1 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic2_2 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic2_3 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic2_4 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic3_0 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic3_1 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic3_2 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic3_3 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic3_4 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic4_0 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic4_1 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic4_2 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic4_3 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic4_4 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic5_0 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic5_1 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic5_2 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic5_3 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic5_4 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic6_0 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic6_1 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic6_2 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic6_3 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic6_4 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic7_0 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic7_1 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic7_2 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic7_3 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic7_4 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic8_0 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic8_1 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic8_2 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic8_3 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic8_4 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic9_0 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic9_1 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic9_2 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic9_3 (c1, k600).
+1468712525: New client connected from 127.0.0.1 as sub_mqttjs_topic9_4 (c1, k600).
+1468712549: Socket error on client sub_mqttjs_topic10_0, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic10_1, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic10_2, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic10_3, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic10_4, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic11_0, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic11_1, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic11_2, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic11_3, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic11_4, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic12_0, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic12_1, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic12_2, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic12_3, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic12_4, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic13_0, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic13_1, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic13_2, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic13_3, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic13_4, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic14_0, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic14_1, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic14_2, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic14_3, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic14_4, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic15_0, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic15_1, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic15_2, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic15_3, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic15_4, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic16_0, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic16_1, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic16_2, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic16_3, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic16_4, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic17_0, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic17_1, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic17_2, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic17_3, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic17_4, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic18_0, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic18_1, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic18_2, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic18_3, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic18_4, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic19_0, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic19_1, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic19_2, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic19_3, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic19_4, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic0_0, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic0_1, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic0_2, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic0_3, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic0_4, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic1_0, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic1_1, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic1_2, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic1_3, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic1_4, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic2_0, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic2_1, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic2_2, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic2_3, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic2_4, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic3_0, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic3_1, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic3_2, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic3_3, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic3_4, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic4_0, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic4_1, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic4_2, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic4_3, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic4_4, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic5_0, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic5_1, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic5_2, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic5_3, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic5_4, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic6_0, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic6_1, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic6_2, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic6_3, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic6_4, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic7_0, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic7_1, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic7_2, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic7_3, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic7_4, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic8_0, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic8_1, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic8_2, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic8_3, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic8_4, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic9_0, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic9_1, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic9_2, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic9_3, disconnecting.
+1468712549: Socket error on client sub_mqttjs_topic9_4, disconnecting.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic0_0 (c1, k600).
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic0_1 (c1, k600).
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic1_0 (c1, k600).
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic1_1 (c1, k600).
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic2_0 (c1, k600).
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic2_1 (c1, k600).
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic3_0 (c1, k600).
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic3_1 (c1, k600).
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic4_0 (c1, k600).
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic4_1 (c1, k600).
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic5_0 (c1, k600).
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic5_1 (c1, k600).
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic6_0 (c1, k600).
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic6_1 (c1, k600).
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic7_0 (c1, k600).
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic7_1 (c1, k600).
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic8_0 (c1, k600).
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic8_1 (c1, k600).
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic9_0 (c1, k600).
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic9_1 (c1, k600).
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New connection from 127.0.0.1 on port 1883.
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic10_0 (c1, k600).
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic10_1 (c1, k600).
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic11_0 (c1, k600).
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic11_1 (c1, k600).
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic12_0 (c1, k600).
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic12_1 (c1, k600).
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic13_0 (c1, k600).
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic13_1 (c1, k600).
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic14_0 (c1, k600).
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic14_1 (c1, k600).
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic15_0 (c1, k600).
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic15_1 (c1, k600).
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic16_0 (c1, k600).
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic16_1 (c1, k600).
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic17_0 (c1, k600).
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic17_1 (c1, k600).
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic18_0 (c1, k600).
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic18_1 (c1, k600).
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic19_0 (c1, k600).
+1468712563: New client connected from 127.0.0.1 as pub_mqttjs_topic19_1 (c1, k600).
+1468712564: Socket error on client pub_mqttjs_topic10_0, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic10_1, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic11_0, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic11_1, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic12_0, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic12_1, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic13_0, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic13_1, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic14_0, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic14_1, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic15_0, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic15_1, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic16_0, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic16_1, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic17_0, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic17_1, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic18_0, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic18_1, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic19_0, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic19_1, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic0_0, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic0_1, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic1_0, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic1_1, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic2_0, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic2_1, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic3_0, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic3_1, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic4_0, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic4_1, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic5_0, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic5_1, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic6_0, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic6_1, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic7_0, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic7_1, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic8_0, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic8_1, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic9_0, disconnecting.
+1468712564: Socket error on client pub_mqttjs_topic9_1, disconnecting.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic0_0 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic0_1 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic0_2 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic0_3 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic0_4 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic1_0 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic1_1 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic1_2 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic1_3 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic1_4 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic2_0 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic2_1 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic2_2 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic2_3 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic2_4 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic3_0 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic3_1 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic3_2 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic3_3 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic3_4 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic4_0 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic4_1 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic4_2 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic4_3 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic4_4 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic5_0 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic5_1 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic5_2 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic5_3 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic5_4 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic6_0 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic6_1 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic6_2 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic6_3 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic6_4 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic7_0 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic7_1 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic7_2 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic7_3 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic7_4 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic8_0 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic8_1 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic8_2 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic8_3 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic8_4 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic9_0 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic9_1 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic9_2 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic9_3 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic9_4 (c1, k600).
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New connection from 127.0.0.1 on port 1883.
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic10_0 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic10_1 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic10_2 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic10_3 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic10_4 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic11_0 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic11_1 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic11_2 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic11_3 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic11_4 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic12_0 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic12_1 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic12_2 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic12_3 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic12_4 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic13_0 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic13_1 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic13_2 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic13_3 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic13_4 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic14_0 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic14_1 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic14_2 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic14_3 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic14_4 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic15_0 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic15_1 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic15_2 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic15_3 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic15_4 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic16_0 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic16_1 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic16_2 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic16_3 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic16_4 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic17_0 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic17_1 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic17_2 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic17_3 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic17_4 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic18_0 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic18_1 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic18_2 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic18_3 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic18_4 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic19_0 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic19_1 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic19_2 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic19_3 (c1, k600).
+1468712573: New client connected from 127.0.0.1 as sub_mqttjs_topic19_4 (c1, k600).
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic0_0 (c1, k600).
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic0_1 (c1, k600).
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic1_0 (c1, k600).
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic1_1 (c1, k600).
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic2_0 (c1, k600).
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic2_1 (c1, k600).
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic3_0 (c1, k600).
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic3_1 (c1, k600).
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic4_0 (c1, k600).
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic4_1 (c1, k600).
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic5_0 (c1, k600).
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic5_1 (c1, k600).
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic6_0 (c1, k600).
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic6_1 (c1, k600).
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic7_0 (c1, k600).
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic7_1 (c1, k600).
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic8_0 (c1, k600).
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic8_1 (c1, k600).
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic9_0 (c1, k600).
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic9_1 (c1, k600).
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New connection from 127.0.0.1 on port 1883.
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic10_0 (c1, k600).
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic10_1 (c1, k600).
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic11_0 (c1, k600).
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic11_1 (c1, k600).
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic12_0 (c1, k600).
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic12_1 (c1, k600).
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic13_0 (c1, k600).
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic13_1 (c1, k600).
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic14_0 (c1, k600).
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic14_1 (c1, k600).
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic15_0 (c1, k600).
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic15_1 (c1, k600).
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic16_0 (c1, k600).
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic16_1 (c1, k600).
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic17_0 (c1, k600).
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic17_1 (c1, k600).
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic18_0 (c1, k600).
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic18_1 (c1, k600).
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic19_0 (c1, k600).
+1468712586: New client connected from 127.0.0.1 as pub_mqttjs_topic19_1 (c1, k600).
+1468712592: Client sub_mqttjs_topic19_4 disconnected.
+1468712592: Client sub_mqttjs_topic9_4 disconnected.
+1468712592: Socket error on client sub_mqttjs_topic10_0, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic10_1, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic10_2, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic10_3, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic10_4, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic11_0, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic11_1, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic11_2, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic11_3, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic11_4, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic12_0, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic12_1, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic12_2, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic12_3, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic12_4, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic13_0, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic13_1, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic13_2, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic13_3, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic13_4, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic14_0, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic14_1, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic14_2, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic14_3, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic14_4, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic15_0, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic15_1, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic15_2, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic15_3, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic15_4, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic16_0, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic16_1, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic16_2, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic16_3, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic16_4, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic17_0, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic17_1, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic17_2, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic17_3, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic17_4, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic18_0, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic18_1, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic18_2, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic18_3, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic18_4, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic19_0, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic19_1, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic19_2, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic19_3, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic9_2, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic9_3, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic8_3, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic8_4, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic9_0, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic9_1, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic8_1, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic8_2, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic8_0, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic7_4, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic7_2, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic7_3, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic7_0, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic7_1, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic6_3, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic6_4, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic6_2, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic6_0, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic6_1, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic5_3, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic5_4, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic5_2, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic5_0, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic5_1, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic4_4, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic4_3, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic4_2, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic4_1, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic3_4, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic4_0, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic3_3, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic3_2, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic3_0, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic3_1, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic2_3, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic2_4, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic2_2, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic2_1, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic2_0, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic1_4, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic1_2, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic1_3, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic1_1, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic1_0, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic0_3, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic0_4, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic0_1, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic0_2, disconnecting.
+1468712592: Socket error on client sub_mqttjs_topic0_0, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic10_0, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic11_0, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic12_0, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic13_0, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic14_0, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic15_0, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic16_0, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic17_0, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic18_0, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic19_0, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic0_0, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic1_0, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic2_0, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic3_0, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic4_0, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic5_0, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic6_0, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic7_0, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic8_0, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic9_0, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic9_1, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic19_1, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic2_1, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic3_1, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic4_1, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic5_1, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic6_1, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic7_1, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic8_1, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic13_1, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic14_1, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic15_1, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic16_1, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic17_1, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic18_1, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic0_1, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic1_1, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic10_1, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic11_1, disconnecting.
+1468712592: Socket error on client pub_mqttjs_topic12_1, disconnecting.

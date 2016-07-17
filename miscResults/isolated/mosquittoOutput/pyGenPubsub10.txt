@@ -1,0 +1,65 @@
+Packet Loss: True
+topic	avg(ms)	min(ms)	max(ms)	percent
+topic0 	114.0 	10    	485   	99.9% 
+topic1 	217.0 	18    	836   	100.0%
+topic2 	66.0  	10    	809   	100.0%
+topic3 	103.0 	11    	676   	100.0%
+topic4 	129.0 	12    	681   	100.0%
+topic5 	257.0 	9     	855   	100.0%
+topic6 	74.0  	13    	473   	100.0%
+topic7 	147.0 	13    	1008  	100.0%
+topic8 	140.0 	15    	620   	100.0%
+topic9 	91.0  	12    	646   	100.0%
+Total Avg delay: 133.8 ms
+Packet Loss: True
+topic	avg(ms)	min(ms)	max(ms)	percent
+topic0 	134.0 	11    	934   	99.9% 
+topic1 	218.0 	12    	1023  	100.0%
+topic2 	244.0 	16    	1024  	100.0%
+topic3 	251.0 	12    	1413  	100.0%
+topic4 	795.0 	11    	2669  	100.0%
+topic5 	142.0 	11    	784   	100.0%
+topic6 	195.0 	16    	1123  	100.0%
+topic7 	217.0 	13    	1053  	100.0%
+topic8 	198.0 	13    	1083  	100.0%
+topic9 	111.0 	9     	867   	100.0%
+Total Avg delay: 250.5 ms
+Packet Loss: True
+topic	avg(ms)	min(ms)	max(ms)	percent
+topic0 	125.0 	10    	571   	99.9% 
+topic1 	175.0 	14    	1046  	100.0%
+topic2 	147.0 	12    	942   	100.0%
+topic3 	142.0 	12    	789   	100.0%
+topic4 	162.0 	15    	896   	100.0%
+topic5 	159.0 	10    	1083  	100.0%
+topic6 	229.0 	9     	983   	100.0%
+topic7 	191.0 	15    	1235  	100.0%
+topic8 	126.0 	9     	781   	100.0%
+topic9 	116.0 	9     	750   	100.0%
+Total Avg delay: 157.2 ms
+Packet Loss: True
+topic	avg(ms)	min(ms)	max(ms)	percent
+topic0 	150.0 	10    	642   	99.9% 
+topic1 	83.0  	8     	528   	100.0%
+topic2 	125.0 	12    	924   	100.0%
+topic3 	113.0 	11    	907   	100.0%
+topic4 	198.0 	14    	1248  	100.0%
+topic5 	87.0  	8     	821   	100.0%
+topic6 	252.0 	10    	1038  	100.0%
+topic7 	266.0 	13    	903   	100.0%
+topic8 	196.0 	12    	1065  	100.0%
+topic9 	96.0  	9     	632   	100.0%
+Total Avg delay: 156.6 ms
+Packet Loss: True
+topic	avg(ms)	min(ms)	max(ms)	percent
+topic0 	102.0 	9     	527   	99.9% 
+topic1 	103.0 	9     	806   	100.0%
+topic2 	99.0  	11    	669   	100.0%
+topic3 	153.0 	11    	749   	100.0%
+topic4 	124.0 	10    	689   	100.0%
+topic5 	161.0 	13    	975   	100.0%
+topic6 	82.0  	8     	522   	100.0%
+topic7 	136.0 	11    	813   	100.0%
+topic8 	111.0 	10    	479   	100.0%
+topic9 	102.0 	10    	593   	100.0%
+Total Avg delay: 117.3 ms
