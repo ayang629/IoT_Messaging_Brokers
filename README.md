@@ -44,9 +44,9 @@ EXPERIMENT WORKFLOW:
 
 		2.) Launch a server (currently 3 are implemented, NOTE: Ponte may be buggy. This will be updated soon)
 
-		3.) Run experiment_driver.sh, which currently is only implemented with mqttjs. Paho and SCALE data to come.
+		3.) Run experiment_driver.sh, which currently is only implemented with mqttjs. SCALE data to come.
 
-		4.)	Run ./processOutput.sh to 
+		4.)	Run ./processOutput.sh to get your output in expResults/ 
 
 		5.) Clean your logs with ./cleanLogs.sh 
 
@@ -68,13 +68,19 @@ EXPERIMENT WORKFLOW:
 
 	To run client experiment:
 
-		First, make sure your servers are running. Then, run the following command
+		First, make sure your servers are running. Then, run the following command:
 
 		$ ./experiment.sh experiment.conf
 
-	To run analysis script on experiment results (IMPORTANT: DO NOT CHANGE experiment.conf WHEN RUNNING THIS):
+	To run analysis script on experiment results: 
 
-		$ ./processOutput.sh [pubsub | multi] [mosquitto | mosca | ponte] 
+		(IMPORTANT: DO NOT CHANGE THE 1st, 3rd, 4th or 9th ARGUMENTS OF experiment.conf BEFORE YOU RUN THIS):
+
+		(ALSO IMPORTANT: If you choose to to have the experiment run publishers and subscribers on separate machines,
+		 make sure the output, located in pubLogs/ and subLogs/ folders respectively, are on the machine you run 
+		 ./processOutput.sh on. Make sure the experiment.conf configurations for the aforementioned argument are identical.)
+
+		$ ./processOutput.sh [mosquitto | mosca | ponte] 
 
 	To clean scripts:
 
@@ -124,7 +130,7 @@ EXTRA: About the underlying scripts:
 			--co= : Published messages have an unique publish offset in the context of the experiment. This argument is the
 					base number in a range (from --co to --co + -m) that your publishers will label their messages as.
 
-		No unique subscriber arguments are defined
+		No unique subscriber arguments are defined.
 
 
 
